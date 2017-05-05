@@ -1,14 +1,11 @@
-lib-commons-model git repository
-
-[![Quality Gate](http://100.68.126.201:9000/api/badges/gate?key=org.sonarqube:commons-model)](http://100.68.126.201:9000/dashboard/index/org.sonarqube:commons-model)
-
+### smi-lib-commons-model git repository
 
 ### Overview
 
-The commons-model library builds a Java JAR library that makes avalable a collection of shared model classes.  It is intended to be used as a dependency in java projects.
+The smi-lib-commons-model library builds a Java JAR library that makes available a collection of shared model classes.  It is intended to be used as a dependency in java projects.
 
 ### How to use
-The library is published to the following GTIE artifactory server: https://gtie-artifactory.us.dell.com
+Under Construction. Not available via Maven Central yet.... 
 
 ##### Maven Example:
 ~~~
