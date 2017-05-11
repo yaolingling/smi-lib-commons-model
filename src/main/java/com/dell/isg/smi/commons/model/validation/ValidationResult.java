@@ -15,27 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ValidationResult complex type.
- *
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- *
- * <pre>
- * &lt;complexType name="ValidationResult">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="valid" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- *
- *
+ * The Class ValidationResult.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ValidationResult", propOrder = { "valid", "message" })
@@ -49,6 +31,7 @@ public class ValidationResult {
     /**
      * Gets the value of the valid property.
      *
+     * @return true, if is valid
      */
     public boolean isValid() {
         return valid;
@@ -58,6 +41,7 @@ public class ValidationResult {
     /**
      * Sets the value of the valid property.
      *
+     * @param value the new valid
      */
     public void setValid(boolean value) {
         this.valid = value;

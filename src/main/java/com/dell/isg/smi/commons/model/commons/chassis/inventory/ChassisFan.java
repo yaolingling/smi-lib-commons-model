@@ -15,45 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisFan complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisFan">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="present" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}PowerStatus"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="reading" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="units" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lc" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="uc" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lw" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="uw" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="health" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisFan.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisFan", propOrder = { "id", "name", "present", "powerStatus", "status", "reading", "units", "lc", "uc", "lw", "uw", "health" })
 public class ChassisFan {
 
+    /**
+     * Instantiates a new chassis fan.
+     */
     public ChassisFan() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -83,7 +57,8 @@ public class ChassisFan {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -92,7 +67,8 @@ public class ChassisFan {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

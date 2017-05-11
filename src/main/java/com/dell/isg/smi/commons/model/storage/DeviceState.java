@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DeviceState.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="DeviceState">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Pending Discovery"/>
- *     &lt;enumeration value="Pending Inventory"/>
- *     &lt;enumeration value="Discovered"/>
- *     &lt;enumeration value="Available"/>
- *     &lt;enumeration value="Unknown"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum DeviceState.
  */
 @XmlType(name = "DeviceState")
 @XmlEnum
@@ -48,16 +31,32 @@ public enum DeviceState {
     private final String value;
 
 
+    /**
+     * Instantiates a new device state.
+     *
+     * @param v the v
+     */
     DeviceState(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the device state
+     */
     public static DeviceState fromValue(String v) {
         for (DeviceState c : DeviceState.values()) {
             if (c.value.equals(v)) {

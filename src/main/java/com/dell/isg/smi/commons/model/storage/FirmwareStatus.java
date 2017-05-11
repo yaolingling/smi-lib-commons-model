@@ -14,22 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for FirmwareStatus.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="FirmwareStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="UpToDate"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum FirmwareStatus.
  */
 @XmlType(name = "FirmwareStatus")
 @XmlEnum
@@ -40,16 +27,32 @@ public enum FirmwareStatus {
     private final String value;
 
 
+    /**
+     * Instantiates a new firmware status.
+     *
+     * @param v the v
+     */
     FirmwareStatus(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the firmware status
+     */
     public static FirmwareStatus fromValue(String v) {
         for (FirmwareStatus c : FirmwareStatus.values()) {
             if (c.value.equals(v)) {

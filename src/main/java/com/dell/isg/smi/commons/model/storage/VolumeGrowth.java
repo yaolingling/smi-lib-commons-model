@@ -15,29 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VolumeGrowth complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="VolumeGrowth">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="estimatedFullTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="activeGrowth" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="snapshotSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="actualGrowth" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VolumeGrowth.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VolumeGrowth", propOrder = { "estimatedFullTime", "activeGrowth", "snapshotSpace", "actualGrowth" })
@@ -74,7 +54,8 @@ public class VolumeGrowth {
 
     /**
      * Gets the value of the activeGrowth property.
-     * 
+     *
+     * @return the active growth
      */
     public long getActiveGrowth() {
         return activeGrowth;
@@ -83,7 +64,8 @@ public class VolumeGrowth {
 
     /**
      * Sets the value of the activeGrowth property.
-     * 
+     *
+     * @param value the new active growth
      */
     public void setActiveGrowth(long value) {
         this.activeGrowth = value;
@@ -92,7 +74,8 @@ public class VolumeGrowth {
 
     /**
      * Gets the value of the snapshotSpace property.
-     * 
+     *
+     * @return the snapshot space
      */
     public long getSnapshotSpace() {
         return snapshotSpace;
@@ -101,7 +84,8 @@ public class VolumeGrowth {
 
     /**
      * Sets the value of the snapshotSpace property.
-     * 
+     *
+     * @param value the new snapshot space
      */
     public void setSnapshotSpace(long value) {
         this.snapshotSpace = value;
@@ -110,7 +94,8 @@ public class VolumeGrowth {
 
     /**
      * Gets the value of the actualGrowth property.
-     * 
+     *
+     * @return the actual growth
      */
     public long getActualGrowth() {
         return actualGrowth;
@@ -119,7 +104,8 @@ public class VolumeGrowth {
 
     /**
      * Sets the value of the actualGrowth property.
-     * 
+     *
+     * @param value the new actual growth
      */
     public void setActualGrowth(long value) {
         this.actualGrowth = value;

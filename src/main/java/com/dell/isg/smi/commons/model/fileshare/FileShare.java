@@ -5,6 +5,9 @@ package com.dell.isg.smi.commons.model.fileshare;
 
 import com.dell.isg.smi.commons.model.credential.PasswordCredential;
 
+/**
+ * The Class FileShare.
+ */
 public class FileShare {
 
     private FileShareTypeEnum type;
@@ -23,6 +26,8 @@ public class FileShare {
 
 
     /**
+     * Gets the type.
+     *
      * @return the type
      */
     public FileShareTypeEnum getType() {
@@ -31,6 +36,8 @@ public class FileShare {
 
 
     /**
+     * Sets the type.
+     *
      * @param type the type to set
      */
     public void setType(FileShareTypeEnum type) {
@@ -39,6 +46,8 @@ public class FileShare {
 
 
     /**
+     * Gets the name.
+     *
      * @return the name
      */
     public String getName() {
@@ -47,6 +56,8 @@ public class FileShare {
 
 
     /**
+     * Sets the name.
+     *
      * @param name the name to set
      */
     public void setName(String name) {
@@ -55,6 +66,8 @@ public class FileShare {
 
 
     /**
+     * Gets the description.
+     *
      * @return the description
      */
     public String getDescription() {
@@ -63,6 +76,8 @@ public class FileShare {
 
 
     /**
+     * Sets the description.
+     *
      * @param description the description to set
      */
     public void setDescription(String description) {
@@ -70,17 +85,29 @@ public class FileShare {
     }
 
 
+    /**
+     * Gets the address.
+     *
+     * @return the address
+     */
     public String getAddress() {
         return address;
     }
 
 
+    /**
+     * Sets the address.
+     *
+     * @param address the new address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
 
     /**
+     * Gets the path.
+     *
      * @return the path
      */
     public String getPath() {
@@ -89,6 +116,8 @@ public class FileShare {
 
 
     /**
+     * Sets the path.
+     *
      * @param path the path to set
      */
     public void setPath(String path) {
@@ -97,6 +126,8 @@ public class FileShare {
 
 
     /**
+     * Gets the file name.
+     *
      * @return the fileName
      */
     public String getFileName() {
@@ -105,6 +136,8 @@ public class FileShare {
 
 
     /**
+     * Sets the file name.
+     *
      * @param fileName the fileName to set
      */
     public void setFileName(String fileName) {
@@ -112,17 +145,29 @@ public class FileShare {
     }
 
 
+    /**
+     * Gets the password credential.
+     *
+     * @return the password credential
+     */
     public PasswordCredential getPasswordCredential() {
         return PasswordCredential;
     }
 
 
+    /**
+     * Sets the password credential.
+     *
+     * @param passwordCredential the new password credential
+     */
     public void setPasswordCredential(PasswordCredential passwordCredential) {
         PasswordCredential = passwordCredential;
     }
 
 
     /**
+     * Gets the script name.
+     *
      * @return the scriptName
      */
     public String getScriptName() {
@@ -131,6 +176,8 @@ public class FileShare {
 
 
     /**
+     * Sets the script name.
+     *
      * @param scriptName the scriptName to set
      */
     public void setScriptName(String scriptName) {
@@ -139,6 +186,8 @@ public class FileShare {
 
 
     /**
+     * Gets the script directory.
+     *
      * @return the scriptDirectory
      */
     public String getScriptDirectory() {
@@ -147,6 +196,8 @@ public class FileShare {
 
 
     /**
+     * Sets the script directory.
+     *
      * @param scriptDirectory the scriptDirectory to set
      */
     public void setScriptDirectory(String scriptDirectory) {

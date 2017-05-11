@@ -11,6 +11,9 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The Class DiscoveryDeviceConfig.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({ "discoveryConfig" })
 public class DiscoveryDeviceConfig {
@@ -20,16 +23,16 @@ public class DiscoveryDeviceConfig {
 
 
     /**
-     * No args constructor for use in serialization
-     * 
+     * No args constructor for use in serialization.
      */
     public DiscoveryDeviceConfig() {
     }
 
 
     /**
-     * 
-     * @param discoveryConfig
+     * Instantiates a new discovery device config.
+     *
+     * @param discoveryConfig the discovery config
      */
     public DiscoveryDeviceConfig(DiscoveryConfig discoveryConfig) {
         super();
@@ -37,30 +40,49 @@ public class DiscoveryDeviceConfig {
     }
 
 
+    /**
+     * Gets the discovery config.
+     *
+     * @return the discovery config
+     */
     @JsonProperty("discoveryConfig")
     public DiscoveryConfig getDiscoveryConfig() {
         return discoveryConfig;
     }
 
 
+    /**
+     * Sets the discovery config.
+     *
+     * @param discoveryConfig the new discovery config
+     */
     @JsonProperty("discoveryConfig")
     public void setDiscoveryConfig(DiscoveryConfig discoveryConfig) {
         this.discoveryConfig = discoveryConfig;
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#hashCode()
+     */
     @Override
     public int hashCode() {
         return new HashCodeBuilder().append(discoveryConfig).toHashCode();
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
     @Override
     public boolean equals(Object other) {
         if (other == this) {

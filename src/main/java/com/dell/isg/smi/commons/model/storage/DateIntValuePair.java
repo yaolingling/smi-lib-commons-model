@@ -15,27 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DateIntValuePair complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="DateIntValuePair">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DateIntValuePair.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DateIntValuePair", propOrder = { "date", "value" })
@@ -70,7 +52,8 @@ public class DateIntValuePair {
 
     /**
      * Gets the value of the value property.
-     * 
+     *
+     * @return the value
      */
     public int getValue() {
         return value;
@@ -79,7 +62,8 @@ public class DateIntValuePair {
 
     /**
      * Sets the value of the value property.
-     * 
+     *
+     * @param value the new value
      */
     public void setValue(int value) {
         this.value = value;

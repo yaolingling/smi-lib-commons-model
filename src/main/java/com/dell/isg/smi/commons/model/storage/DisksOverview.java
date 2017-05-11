@@ -14,27 +14,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DisksOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="DisksOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="internal" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="external" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DisksOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DisksOverview", propOrder = { "internal", "external" })
@@ -46,7 +28,8 @@ public class DisksOverview {
 
     /**
      * Gets the value of the internal property.
-     * 
+     *
+     * @return the internal
      */
     public int getInternal() {
         return internal;
@@ -55,7 +38,8 @@ public class DisksOverview {
 
     /**
      * Sets the value of the internal property.
-     * 
+     *
+     * @param value the new internal
      */
     public void setInternal(int value) {
         this.internal = value;
@@ -64,7 +48,8 @@ public class DisksOverview {
 
     /**
      * Gets the value of the external property.
-     * 
+     *
+     * @return the external
      */
     public int getExternal() {
         return external;
@@ -73,7 +58,8 @@ public class DisksOverview {
 
     /**
      * Sets the value of the external property.
-     * 
+     *
+     * @param value the new external
      */
     public void setExternal(int value) {
         this.external = value;

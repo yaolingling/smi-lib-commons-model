@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageAlertStatus.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="StorageAlertStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Inform"/>
- *     &lt;enumeration value="Down"/>
- *     &lt;enumeration value="Degraded"/>
- *     &lt;enumeration value="Upgraded"/>
- *     &lt;enumeration value="Deleting"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StorageAlertStatus.
  */
 @XmlType(name = "StorageAlertStatus")
 @XmlEnum
@@ -48,16 +31,32 @@ public enum StorageAlertStatus {
     private final String value;
 
 
+    /**
+     * Instantiates a new storage alert status.
+     *
+     * @param v the v
+     */
     StorageAlertStatus(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the storage alert status
+     */
     public static StorageAlertStatus fromValue(String v) {
         for (StorageAlertStatus c : StorageAlertStatus.values()) {
             if (c.value.equals(v)) {

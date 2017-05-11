@@ -3,6 +3,9 @@
  */
 package com.dell.isg.smi.commons.model.common;
 
+/**
+ * The Enum InventoryStatus.
+ */
 public enum InventoryStatus {
 
     UNKNOWN("Unknown"), FAILED("Failed"), INPROGRESS("Inprogress"), COMPLETED("Completed.");
@@ -15,11 +18,21 @@ public enum InventoryStatus {
     }
 
 
+    /**
+     * Gets the label.
+     *
+     * @return the label
+     */
     public String getLabel() {
         return _label;
     }
 
 
+    /**
+     * Gets the value.
+     *
+     * @return the value
+     */
     public String getValue() {
         return name();
     }

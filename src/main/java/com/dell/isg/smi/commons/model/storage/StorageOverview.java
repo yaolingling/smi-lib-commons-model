@@ -17,31 +17,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="StorageOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="storageUsage" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageUsageOverview"/>
- *         &lt;element name="deviceInformation" type="{http://esg.dell.com/icee/infrastructure/model/storage}DeviceInformationOverview"/>
- *         &lt;element name="volumeGrowth" type="{http://esg.dell.com/icee/infrastructure/model/storage}VolumeGrowthOverview" maxOccurs="unbounded"/>
- *         &lt;element name="volumes" type="{http://esg.dell.com/icee/infrastructure/model/storage}VolumesOverview"/>
- *         &lt;element name="disks" type="{http://esg.dell.com/icee/infrastructure/model/storage}DisksOverview"/>
- *         &lt;element name="enclosures" type="{http://esg.dell.com/icee/infrastructure/model/storage}EnclosuresOverview"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StorageOverview", propOrder = { "storageUsage", "deviceInformation", "volumeGrowth", "volumes", "disks", "enclosures" })
@@ -122,8 +100,8 @@ public class StorageOverview {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link VolumeGrowthOverview }
-     * 
-     * 
+     *
+     * @return the volume growth
      */
     public List<VolumeGrowthOverview> getVolumeGrowth() {
         if (volumeGrowth == null) {

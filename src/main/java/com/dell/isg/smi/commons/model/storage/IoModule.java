@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for IoModule complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="IoModule">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="position" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class IoModule.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "IoModule", propOrder = { "position" })
@@ -44,7 +27,8 @@ public class IoModule extends DetailBase {
 
     /**
      * Gets the value of the position property.
-     * 
+     *
+     * @return the position
      */
     public long getPosition() {
         return position;
@@ -53,7 +37,8 @@ public class IoModule extends DetailBase {
 
     /**
      * Sets the value of the position property.
-     * 
+     *
+     * @param value the new position
      */
     public void setPosition(long value) {
         this.position = value;

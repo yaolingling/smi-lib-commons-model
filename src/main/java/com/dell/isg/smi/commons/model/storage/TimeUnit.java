@@ -14,25 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for TimeUnit.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="TimeUnit">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Minutes"/>
- *     &lt;enumeration value="Hours"/>
- *     &lt;enumeration value="Days"/>
- *     &lt;enumeration value="Weeks"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum TimeUnit.
  */
 @XmlType(name = "TimeUnit")
 @XmlEnum
@@ -46,16 +30,32 @@ public enum TimeUnit {
     private final String value;
 
 
+    /**
+     * Instantiates a new time unit.
+     *
+     * @param v the v
+     */
     TimeUnit(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the time unit
+     */
     public static TimeUnit fromValue(String v) {
         for (TimeUnit c : TimeUnit.values()) {
             if (c.value.equals(v)) {

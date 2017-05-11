@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for CacheCardExpireStatus.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="CacheCardExpireStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Normal"/>
- *     &lt;enumeration value="ExpirationPending"/>
- *     &lt;enumeration value="Expired"/>
- *     &lt;enumeration value="NoBattery"/>
- *     &lt;enumeration value="AboutToExpire"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum CacheCardExpireStatus.
  */
 @XmlType(name = "CacheCardExpireStatus")
 @XmlEnum
@@ -48,16 +31,32 @@ public enum CacheCardExpireStatus {
     private final String value;
 
 
+    /**
+     * Instantiates a new cache card expire status.
+     *
+     * @param v the v
+     */
     CacheCardExpireStatus(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the cache card expire status
+     */
     public static CacheCardExpireStatus fromValue(String v) {
         for (CacheCardExpireStatus c : CacheCardExpireStatus.values()) {
             if (c.value.equals(v)) {

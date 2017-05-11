@@ -3,6 +3,9 @@
  */
 package com.dell.isg.smi.commons.model.common;
 
+/**
+ * The Interface IServiceData.
+ */
 public interface IServiceData {
 
 }

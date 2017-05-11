@@ -13,28 +13,9 @@ package com.dell.isg.smi.commons.model.storage;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DaysOfWeek.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="DaysOfWeek">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="MONDAY"/>
- *     &lt;enumeration value="TUESDAY"/>
- *     &lt;enumeration value="WEDNESDAY"/>
- *     &lt;enumeration value="THURSDAY"/>
- *     &lt;enumeration value="FRIDAY"/>
- *     &lt;enumeration value="SATURDAY"/>
- *     &lt;enumeration value="SUNDAY"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum DaysOfWeek.
  */
 @XmlType(name = "DaysOfWeek")
 @XmlEnum
@@ -42,11 +23,22 @@ public enum DaysOfWeek {
 
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the days of week
+     */
     public static DaysOfWeek fromValue(String v) {
         return valueOf(v);
     }

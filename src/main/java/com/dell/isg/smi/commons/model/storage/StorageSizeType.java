@@ -14,28 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageSizeType.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="StorageSizeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Blocks"/>
- *     &lt;enumeration value="Bytes"/>
- *     &lt;enumeration value="KB"/>
- *     &lt;enumeration value="MB"/>
- *     &lt;enumeration value="GB"/>
- *     &lt;enumeration value="TB"/>
- *     &lt;enumeration value="PB"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StorageSizeType.
  */
 @XmlType(name = "StorageSizeType")
 @XmlEnum
@@ -47,16 +28,32 @@ public enum StorageSizeType {
     private final String value;
 
 
+    /**
+     * Instantiates a new storage size type.
+     *
+     * @param v the v
+     */
     StorageSizeType(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the storage size type
+     */
     public static StorageSizeType fromValue(String v) {
         for (StorageSizeType c : StorageSizeType.values()) {
             if (c.value.equals(v)) {

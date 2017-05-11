@@ -15,6 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+/**
+ * The Class VaultItem.
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VaultItem", propOrder = { "id", "label", "payloadClassName", "payload" })
 public class VaultItem {
@@ -30,7 +33,8 @@ public class VaultItem {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -39,7 +43,8 @@ public class VaultItem {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param id the new id
      */
     public void setId(long id) {
         this.id = id;
@@ -103,9 +108,8 @@ public class VaultItem {
 
     /**
      * Sets the value of the payload property.
-     * 
-     * @param value allowed object is {@link Object }
-     * 
+     *
+     * @param object the new payload
      */
     public void setPayload(Object object) {
         this.payload = object;

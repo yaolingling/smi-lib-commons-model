@@ -3,8 +3,17 @@
  */
 package com.dell.isg.smi.commons.model.commons.chassis.inventory;
 
+/**
+ * The Class HealthEnumUtil.
+ */
 public class HealthEnumUtil {
 
+    /**
+     * Gets the health status.
+     *
+     * @param status the status
+     * @return the health status
+     */
     public static String getHealthStatus(final String status) {
 
         if (status == null) {

@@ -15,49 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisIomModel complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisIomModel">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="number" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fabric" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="firmwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hardwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="gateway" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="macAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="subnetMask" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="role" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="slot" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="present" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="dhcpEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="powerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}PowerStatus"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisIomModel.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisIomModel", propOrder = { "id", "name", "number", "fabric", "serviceTag", "firmwareVersion", "hardwareVersion", "gateway", "ipAddress", "macAddress", "subnetMask", "role", "slot", "present", "dhcpEnabled", "powerStatus" })
 public class ChassisIomModel {
 
+    /**
+     * Instantiates a new chassis iom model.
+     */
     public ChassisIomModel() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -93,7 +63,8 @@ public class ChassisIomModel {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -102,7 +73,8 @@ public class ChassisIomModel {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -375,7 +347,8 @@ public class ChassisIomModel {
 
     /**
      * Gets the value of the present property.
-     * 
+     *
+     * @return true, if is present
      */
     public boolean isPresent() {
         return present;
@@ -384,7 +357,8 @@ public class ChassisIomModel {
 
     /**
      * Sets the value of the present property.
-     * 
+     *
+     * @param value the new present
      */
     public void setPresent(boolean value) {
         this.present = value;
@@ -393,7 +367,8 @@ public class ChassisIomModel {
 
     /**
      * Gets the value of the dhcpEnabled property.
-     * 
+     *
+     * @return true, if is dhcp enabled
      */
     public boolean isDhcpEnabled() {
         return dhcpEnabled;
@@ -402,7 +377,8 @@ public class ChassisIomModel {
 
     /**
      * Sets the value of the dhcpEnabled property.
-     * 
+     *
+     * @param value the new dhcp enabled
      */
     public void setDhcpEnabled(boolean value) {
         this.dhcpEnabled = value;

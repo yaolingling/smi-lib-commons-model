@@ -15,28 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for UpdateSnapshot complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="UpdateSnapshot">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="neverExpire" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="expireTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class UpdateSnapshot.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "UpdateSnapshot", propOrder = { "description", "neverExpire", "expireTime" })
@@ -73,7 +54,8 @@ public class UpdateSnapshot {
 
     /**
      * Gets the value of the neverExpire property.
-     * 
+     *
+     * @return true, if is never expire
      */
     public boolean isNeverExpire() {
         return neverExpire;
@@ -82,7 +64,8 @@ public class UpdateSnapshot {
 
     /**
      * Sets the value of the neverExpire property.
-     * 
+     *
+     * @param value the new never expire
      */
     public void setNeverExpire(boolean value) {
         this.neverExpire = value;

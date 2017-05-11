@@ -15,41 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisIkvm complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisIkvm">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="manufacturer" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="partNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}PowerStatus"/>
- *         &lt;element name="firmwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="frontPanelEnabled" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="health" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisIkvmModel.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisIkvm", propOrder = { "id", "name", "manufacturer", "partNumber", "powerStatus", "firmwareVersion", "frontPanelEnabled", "health" })
 public class ChassisIkvmModel {
 
+    /**
+     * Instantiates a new chassis ikvm model.
+     */
     public ChassisIkvmModel() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -70,7 +48,8 @@ public class ChassisIkvmModel {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -79,7 +58,8 @@ public class ChassisIkvmModel {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -198,7 +178,8 @@ public class ChassisIkvmModel {
 
     /**
      * Gets the value of the frontPanelEnabled property.
-     * 
+     *
+     * @return the front panel enabled
      */
     public int getFrontPanelEnabled() {
         return frontPanelEnabled;
@@ -207,7 +188,8 @@ public class ChassisIkvmModel {
 
     /**
      * Sets the value of the frontPanelEnabled property.
-     * 
+     *
+     * @param value the new front panel enabled
      */
     public void setFrontPanelEnabled(int value) {
         this.frontPanelEnabled = value;

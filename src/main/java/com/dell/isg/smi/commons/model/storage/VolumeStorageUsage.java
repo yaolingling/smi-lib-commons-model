@@ -15,31 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VolumeStorageUsage complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="VolumeStorageUsage">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="percentUsed" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="allocatedSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="activeSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="snapshotSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="serviceDeployedBy" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceDeployedOn" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VolumeStorageUsage.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VolumeStorageUsage", propOrder = { "percentUsed", "allocatedSpace", "activeSpace", "snapshotSpace", "serviceDeployedBy", "serviceDeployedOn" })
@@ -57,7 +35,8 @@ public class VolumeStorageUsage {
 
     /**
      * Gets the value of the percentUsed property.
-     * 
+     *
+     * @return the percent used
      */
     public int getPercentUsed() {
         return percentUsed;
@@ -66,7 +45,8 @@ public class VolumeStorageUsage {
 
     /**
      * Sets the value of the percentUsed property.
-     * 
+     *
+     * @param value the new percent used
      */
     public void setPercentUsed(int value) {
         this.percentUsed = value;
@@ -75,7 +55,8 @@ public class VolumeStorageUsage {
 
     /**
      * Gets the value of the allocatedSpace property.
-     * 
+     *
+     * @return the allocated space
      */
     public long getAllocatedSpace() {
         return allocatedSpace;
@@ -84,7 +65,8 @@ public class VolumeStorageUsage {
 
     /**
      * Sets the value of the allocatedSpace property.
-     * 
+     *
+     * @param value the new allocated space
      */
     public void setAllocatedSpace(long value) {
         this.allocatedSpace = value;
@@ -93,7 +75,8 @@ public class VolumeStorageUsage {
 
     /**
      * Gets the value of the activeSpace property.
-     * 
+     *
+     * @return the active space
      */
     public long getActiveSpace() {
         return activeSpace;
@@ -102,7 +85,8 @@ public class VolumeStorageUsage {
 
     /**
      * Sets the value of the activeSpace property.
-     * 
+     *
+     * @param value the new active space
      */
     public void setActiveSpace(long value) {
         this.activeSpace = value;
@@ -111,7 +95,8 @@ public class VolumeStorageUsage {
 
     /**
      * Gets the value of the snapshotSpace property.
-     * 
+     *
+     * @return the snapshot space
      */
     public long getSnapshotSpace() {
         return snapshotSpace;
@@ -120,7 +105,8 @@ public class VolumeStorageUsage {
 
     /**
      * Sets the value of the snapshotSpace property.
-     * 
+     *
+     * @param value the new snapshot space
      */
     public void setSnapshotSpace(long value) {
         this.snapshotSpace = value;

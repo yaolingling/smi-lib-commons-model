@@ -14,34 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for PowerStatus.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="PowerStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="On"/>
- *     &lt;enumeration value="Off"/>
- *     &lt;enumeration value="Online"/>
- *     &lt;enumeration value="Offline"/>
- *     &lt;enumeration value="Standby"/>
- *     &lt;enumeration value="Slot Empty"/>
- *     &lt;enumeration value="Init"/>
- *     &lt;enumeration value="Diagnostics"/>
- *     &lt;enumeration value="Failed(No Input Power)"/>
- *     &lt;enumeration value="Updating"/>
- *     &lt;enumeration value="Failed"/>
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="na"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum PowerStatus.
  */
 @XmlType(name = "PowerStatus")
 @XmlEnum
@@ -64,16 +39,32 @@ public enum PowerStatus {
     private final String value;
 
 
+    /**
+     * Instantiates a new power status.
+     *
+     * @param v the v
+     */
     PowerStatus(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the power status
+     */
     public static PowerStatus fromValue(String v) {
         for (PowerStatus c : PowerStatus.values()) {
             if (c.value.equals(v)) {

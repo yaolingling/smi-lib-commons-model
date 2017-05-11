@@ -15,35 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VolumeGrowthOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="VolumeGrowthOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="activeGrowth" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="activeSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="actualGrowth" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="actualSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="configuredSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="estimatedFullTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lastUpdated" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="replayGrowth" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="replaySpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VolumeGrowthOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VolumeGrowthOverview", propOrder = { "activeGrowth", "activeSpace", "actualGrowth", "actualSpace", "configuredSpace", "estimatedFullTime", "lastUpdated", "name", "replayGrowth", "replaySpace" })
@@ -66,7 +40,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the activeGrowth property.
-     * 
+     *
+     * @return the active growth
      */
     public long getActiveGrowth() {
         return activeGrowth;
@@ -75,7 +50,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the activeGrowth property.
-     * 
+     *
+     * @param value the new active growth
      */
     public void setActiveGrowth(long value) {
         this.activeGrowth = value;
@@ -84,7 +60,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the activeSpace property.
-     * 
+     *
+     * @return the active space
      */
     public long getActiveSpace() {
         return activeSpace;
@@ -93,7 +70,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the activeSpace property.
-     * 
+     *
+     * @param value the new active space
      */
     public void setActiveSpace(long value) {
         this.activeSpace = value;
@@ -102,7 +80,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the actualGrowth property.
-     * 
+     *
+     * @return the actual growth
      */
     public long getActualGrowth() {
         return actualGrowth;
@@ -111,7 +90,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the actualGrowth property.
-     * 
+     *
+     * @param value the new actual growth
      */
     public void setActualGrowth(long value) {
         this.actualGrowth = value;
@@ -120,7 +100,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the actualSpace property.
-     * 
+     *
+     * @return the actual space
      */
     public long getActualSpace() {
         return actualSpace;
@@ -129,7 +110,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the actualSpace property.
-     * 
+     *
+     * @param value the new actual space
      */
     public void setActualSpace(long value) {
         this.actualSpace = value;
@@ -138,7 +120,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the configuredSpace property.
-     * 
+     *
+     * @return the configured space
      */
     public long getConfiguredSpace() {
         return configuredSpace;
@@ -147,7 +130,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the configuredSpace property.
-     * 
+     *
+     * @param value the new configured space
      */
     public void setConfiguredSpace(long value) {
         this.configuredSpace = value;
@@ -222,7 +206,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the replayGrowth property.
-     * 
+     *
+     * @return the replay growth
      */
     public long getReplayGrowth() {
         return replayGrowth;
@@ -231,7 +216,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the replayGrowth property.
-     * 
+     *
+     * @param value the new replay growth
      */
     public void setReplayGrowth(long value) {
         this.replayGrowth = value;
@@ -240,7 +226,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Gets the value of the replaySpace property.
-     * 
+     *
+     * @return the replay space
      */
     public long getReplaySpace() {
         return replaySpace;
@@ -249,7 +236,8 @@ public class VolumeGrowthOverview {
 
     /**
      * Sets the value of the replaySpace property.
-     * 
+     *
+     * @param value the new replay space
      */
     public void setReplaySpace(long value) {
         this.replaySpace = value;

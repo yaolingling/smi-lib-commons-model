@@ -11,6 +11,9 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The Class Identifier.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({ "text" })
 public class Identifier {
@@ -20,16 +23,16 @@ public class Identifier {
 
 
     /**
-     * No args constructor for use in serialization
-     * 
+     * No args constructor for use in serialization.
      */
     public Identifier() {
     }
 
 
     /**
-     * 
-     * @param text
+     * Instantiates a new identifier.
+     *
+     * @param text the text
      */
     public Identifier(String text) {
         super();
@@ -37,30 +40,49 @@ public class Identifier {
     }
 
 
+    /**
+     * Gets the text.
+     *
+     * @return the text
+     */
     @JsonProperty("text")
     public String getText() {
         return text;
     }
 
 
+    /**
+     * Sets the text.
+     *
+     * @param text the new text
+     */
     @JsonProperty("text")
     public void setText(String text) {
         this.text = text;
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#hashCode()
+     */
     @Override
     public int hashCode() {
         return new HashCodeBuilder().append(text).toHashCode();
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
     @Override
     public boolean equals(Object other) {
         if (other == this) {

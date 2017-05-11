@@ -16,33 +16,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="createTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="objectName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="type" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageAlertType"/>
- *         &lt;element name="alertStatus" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageAlertStatus"/>
- *         &lt;element name="acknowledged" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="alertDefinition" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="category" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageAlertCategory"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageAlert.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "createTime", "objectName", "message", "type", "alertStatus", "acknowledged", "alertDefinition", "category" })
@@ -178,7 +154,8 @@ public class StorageAlert {
 
     /**
      * Gets the value of the acknowledged property.
-     * 
+     *
+     * @return true, if is acknowledged
      */
     public boolean isAcknowledged() {
         return acknowledged;
@@ -187,7 +164,8 @@ public class StorageAlert {
 
     /**
      * Sets the value of the acknowledged property.
-     * 
+     *
+     * @param value the new acknowledged
      */
     public void setAcknowledged(boolean value) {
         this.acknowledged = value;

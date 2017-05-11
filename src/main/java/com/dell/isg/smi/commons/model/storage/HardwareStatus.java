@@ -14,24 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for HardwareStatus.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="HardwareStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Degraded"/>
- *     &lt;enumeration value="Down"/>
- *     &lt;enumeration value="Up"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum HardwareStatus.
  */
 @XmlType(name = "HardwareStatus")
 @XmlEnum
@@ -44,16 +29,32 @@ public enum HardwareStatus {
     private final String value;
 
 
+    /**
+     * Instantiates a new hardware status.
+     *
+     * @param v the v
+     */
     HardwareStatus(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the hardware status
+     */
     public static HardwareStatus fromValue(String v) {
         for (HardwareStatus c : HardwareStatus.values()) {
             if (c.value.equals(v)) {

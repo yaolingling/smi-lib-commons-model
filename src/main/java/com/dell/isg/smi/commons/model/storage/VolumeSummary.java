@@ -15,30 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VolumeSummary complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="VolumeSummary">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="serialNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="deviceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hostCacheEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="snapshotProfile" type="{http://esg.dell.com/icee/infrastructure/model/storage}VolumeSnapshotProfile"/>
- *         &lt;element name="volumeGrowth" type="{http://esg.dell.com/icee/infrastructure/model/storage}VolumeGrowth"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VolumeSummary.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VolumeSummary", propOrder = { "serialNumber", "deviceId", "hostCacheEnabled", "snapshotProfile", "volumeGrowth" })
@@ -101,7 +80,8 @@ public class VolumeSummary {
 
     /**
      * Gets the value of the hostCacheEnabled property.
-     * 
+     *
+     * @return true, if is host cache enabled
      */
     public boolean isHostCacheEnabled() {
         return hostCacheEnabled;
@@ -110,7 +90,8 @@ public class VolumeSummary {
 
     /**
      * Sets the value of the hostCacheEnabled property.
-     * 
+     *
+     * @param value the new host cache enabled
      */
     public void setHostCacheEnabled(boolean value) {
         this.hostCacheEnabled = value;

@@ -10,11 +10,13 @@
 
 package com.dell.isg.smi.commons.model.server.inventory;
 
+/**
+ * The Class HwMemory.
+ */
 public class HwMemory {
 
     public HwMemory() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -48,7 +50,8 @@ public class HwMemory {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -57,7 +60,8 @@ public class HwMemory {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -330,7 +334,8 @@ public class HwMemory {
 
     /**
      * Gets the value of the size property.
-     * 
+     *
+     * @return the size
      */
     public double getSize() {
         return size;
@@ -339,7 +344,8 @@ public class HwMemory {
 
     /**
      * Sets the value of the size property.
-     * 
+     *
+     * @param value the new size
      */
     public void setSize(double value) {
         this.size = value;
@@ -348,7 +354,8 @@ public class HwMemory {
 
     /**
      * Gets the value of the speed property.
-     * 
+     *
+     * @return the speed
      */
     public double getSpeed() {
         return speed;
@@ -357,7 +364,8 @@ public class HwMemory {
 
     /**
      * Sets the value of the speed property.
-     * 
+     *
+     * @param value the new speed
      */
     public void setSpeed(double value) {
         this.speed = value;

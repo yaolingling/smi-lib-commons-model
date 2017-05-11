@@ -15,36 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageUsageOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="StorageUsageOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="alertThresholdSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="availableSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="allocatedSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="badSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="configuredSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="freeSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="savingVsRaidTen" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="storageAlertThreshold" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="systemSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="usedSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="time" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageUsageOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StorageUsageOverview", propOrder = { "alertThresholdSpace", "availableSpace", "allocatedSpace", "badSpace", "configuredSpace", "freeSpace", "savingVsRaidTen", "storageAlertThreshold", "systemSpace", "usedSpace", "time" })
@@ -66,7 +39,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the alertThresholdSpace property.
-     * 
+     *
+     * @return the alert threshold space
      */
     public long getAlertThresholdSpace() {
         return alertThresholdSpace;
@@ -75,7 +49,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the alertThresholdSpace property.
-     * 
+     *
+     * @param value the new alert threshold space
      */
     public void setAlertThresholdSpace(long value) {
         this.alertThresholdSpace = value;
@@ -84,7 +59,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the availableSpace property.
-     * 
+     *
+     * @return the available space
      */
     public long getAvailableSpace() {
         return availableSpace;
@@ -93,7 +69,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the availableSpace property.
-     * 
+     *
+     * @param value the new available space
      */
     public void setAvailableSpace(long value) {
         this.availableSpace = value;
@@ -102,7 +79,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the allocatedSpace property.
-     * 
+     *
+     * @return the allocated space
      */
     public long getAllocatedSpace() {
         return allocatedSpace;
@@ -111,7 +89,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the allocatedSpace property.
-     * 
+     *
+     * @param value the new allocated space
      */
     public void setAllocatedSpace(long value) {
         this.allocatedSpace = value;
@@ -120,7 +99,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the badSpace property.
-     * 
+     *
+     * @return the bad space
      */
     public long getBadSpace() {
         return badSpace;
@@ -129,7 +109,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the badSpace property.
-     * 
+     *
+     * @param value the new bad space
      */
     public void setBadSpace(long value) {
         this.badSpace = value;
@@ -138,7 +119,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the configuredSpace property.
-     * 
+     *
+     * @return the configured space
      */
     public long getConfiguredSpace() {
         return configuredSpace;
@@ -147,7 +129,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the configuredSpace property.
-     * 
+     *
+     * @param value the new configured space
      */
     public void setConfiguredSpace(long value) {
         this.configuredSpace = value;
@@ -156,7 +139,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the freeSpace property.
-     * 
+     *
+     * @return the free space
      */
     public long getFreeSpace() {
         return freeSpace;
@@ -165,7 +149,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the freeSpace property.
-     * 
+     *
+     * @param value the new free space
      */
     public void setFreeSpace(long value) {
         this.freeSpace = value;
@@ -174,7 +159,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the savingVsRaidTen property.
-     * 
+     *
+     * @return the saving vs raid ten
      */
     public long getSavingVsRaidTen() {
         return savingVsRaidTen;
@@ -183,7 +169,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the savingVsRaidTen property.
-     * 
+     *
+     * @param value the new saving vs raid ten
      */
     public void setSavingVsRaidTen(long value) {
         this.savingVsRaidTen = value;
@@ -192,7 +179,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the storageAlertThreshold property.
-     * 
+     *
+     * @return the storage alert threshold
      */
     public long getStorageAlertThreshold() {
         return storageAlertThreshold;
@@ -201,7 +189,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the storageAlertThreshold property.
-     * 
+     *
+     * @param value the new storage alert threshold
      */
     public void setStorageAlertThreshold(long value) {
         this.storageAlertThreshold = value;
@@ -210,7 +199,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the systemSpace property.
-     * 
+     *
+     * @return the system space
      */
     public long getSystemSpace() {
         return systemSpace;
@@ -219,7 +209,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the systemSpace property.
-     * 
+     *
+     * @param value the new system space
      */
     public void setSystemSpace(long value) {
         this.systemSpace = value;
@@ -228,7 +219,8 @@ public class StorageUsageOverview {
 
     /**
      * Gets the value of the usedSpace property.
-     * 
+     *
+     * @return the used space
      */
     public long getUsedSpace() {
         return usedSpace;
@@ -237,7 +229,8 @@ public class StorageUsageOverview {
 
     /**
      * Sets the value of the usedSpace property.
-     * 
+     *
+     * @param value the new used space
      */
     public void setUsedSpace(long value) {
         this.usedSpace = value;

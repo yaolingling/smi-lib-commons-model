@@ -6,6 +6,9 @@ package com.dell.isg.smi.commons.model.osdeployment;
 import com.dell.isg.smi.commons.model.credential.PasswordCredential;
 import com.dell.isg.smi.commons.model.fileshare.FileShare;
 
+/**
+ * The Class OSDeploymentPayload.
+ */
 public class OSDeploymentPayload {
     protected String oobIp;
     protected PasswordCredential oobCredentials;
@@ -15,6 +18,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Gets the oob ip.
+     *
      * @return the oobIp
      */
     public String getOobIp() {
@@ -23,6 +28,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Sets the oob ip.
+     *
      * @param oobIp the oobIp to set
      */
     public void setOobIp(String oobIp) {
@@ -31,6 +38,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Gets the oob credentials.
+     *
      * @return the oobCredentials
      */
     public PasswordCredential getOobCredentials() {
@@ -39,6 +48,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Sets the oob credentials.
+     *
      * @param oobCredentials the oobCredentials to set
      */
     public void setOobCredentials(PasswordCredential oobCredentials) {
@@ -47,6 +58,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Gets the iso file share.
+     *
      * @return the isoFileShare
      */
     public FileShare getIsoFileShare() {
@@ -55,6 +68,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Sets the iso file share.
+     *
      * @param isoFileShare the isoFileShare to set
      */
     public void setIsoFileShare(FileShare isoFileShare) {
@@ -63,6 +78,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Gets the hypervisor type.
+     *
      * @return the hypervisorType
      */
     public HypervisorEnum getHypervisorType() {
@@ -71,6 +88,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Sets the hypervisor type.
+     *
      * @param hypervisorType the hypervisorType to set
      */
     public void setHypervisorType(HypervisorEnum hypervisorType) {
@@ -79,6 +98,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Gets the hypervisor version.
+     *
      * @return the hypervisorVersion
      */
     public String getHypervisorVersion() {
@@ -87,6 +108,8 @@ public class OSDeploymentPayload {
 
 
     /**
+     * Sets the hypervisor version.
+     *
      * @param hypervisorVersion the hypervisorVersion to set
      */
     public void setHypervisorVersion(String hypervisorVersion) {

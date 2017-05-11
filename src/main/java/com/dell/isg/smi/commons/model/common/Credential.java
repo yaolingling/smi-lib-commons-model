@@ -10,6 +10,9 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+/**
+ * The Class Credential.
+ */
 @ApiModel(value = "Credential", description = "Device access credential. ")
 public class Credential {
 
@@ -23,6 +26,13 @@ public class Credential {
     private String password;
 
 
+    /**
+     * Instantiates a new credential.
+     *
+     * @param address the address
+     * @param user the user
+     * @param password the password
+     */
     public Credential(String address, String user, String password) {
         super();
         this.address = address;
@@ -31,46 +41,89 @@ public class Credential {
     }
 
 
+    /**
+     * Instantiates a new credential.
+     */
     public Credential() {
         super();
     }
 
 
+    /**
+     * Gets the address.
+     *
+     * @return the address
+     */
     public String getAddress() {
         return address;
     }
 
 
+    /**
+     * Sets the address.
+     *
+     * @param address the new address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
 
+    /**
+     * Gets the user name.
+     *
+     * @return the user name
+     */
     public String getUserName() {
         return userName;
     }
 
 
+    /**
+     * Sets the user name.
+     *
+     * @param userName the new user name
+     */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
 
+    /**
+     * Gets the password.
+     *
+     * @return the password
+     */
     public String getPassword() {
         return password;
     }
 
 
+    /**
+     * Sets the password.
+     *
+     * @param password the new password
+     */
     public void setPassword(String password) {
         this.password = password;
     }
 
 
+    /**
+     * Gets the identifier.
+     *
+     * @return the identifier
+     */
     public String getIdentifier() {
         return identifier;
     }
 
 
+    /**
+     * Sets the identifier.
+     *
+     * @param identifier the new identifier
+     */
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
@@ -120,11 +173,12 @@ public class Credential {
         return true;
     }
 
-
+    @Override
     public String toString() {
         return (new ReflectionToStringBuilder(this) {
+            @Override
             protected boolean accept(Field f) {
-                return super.accept(f) && !f.getName().equals("password");
+                return super.accept(f) && !"password".equals(f.getName());
             }
         }).toString();
     }

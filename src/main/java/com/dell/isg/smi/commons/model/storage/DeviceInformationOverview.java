@@ -15,32 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DeviceInformationOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="DeviceInformationOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="firwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="diskAlerts" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="hardwareAlerts" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="systemAlerts" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="connectivityAlerts" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="licensedFor" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DeviceInformationOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DeviceInformationOverview", propOrder = { "name", "firwareVersion", "diskAlerts", "hardwareAlerts", "systemAlerts", "connectivityAlerts", "licensedFor" })
@@ -104,7 +81,8 @@ public class DeviceInformationOverview {
 
     /**
      * Gets the value of the diskAlerts property.
-     * 
+     *
+     * @return the disk alerts
      */
     public int getDiskAlerts() {
         return diskAlerts;
@@ -113,7 +91,8 @@ public class DeviceInformationOverview {
 
     /**
      * Sets the value of the diskAlerts property.
-     * 
+     *
+     * @param value the new disk alerts
      */
     public void setDiskAlerts(int value) {
         this.diskAlerts = value;
@@ -122,7 +101,8 @@ public class DeviceInformationOverview {
 
     /**
      * Gets the value of the hardwareAlerts property.
-     * 
+     *
+     * @return the hardware alerts
      */
     public int getHardwareAlerts() {
         return hardwareAlerts;
@@ -131,7 +111,8 @@ public class DeviceInformationOverview {
 
     /**
      * Sets the value of the hardwareAlerts property.
-     * 
+     *
+     * @param value the new hardware alerts
      */
     public void setHardwareAlerts(int value) {
         this.hardwareAlerts = value;
@@ -140,7 +121,8 @@ public class DeviceInformationOverview {
 
     /**
      * Gets the value of the systemAlerts property.
-     * 
+     *
+     * @return the system alerts
      */
     public int getSystemAlerts() {
         return systemAlerts;
@@ -149,7 +131,8 @@ public class DeviceInformationOverview {
 
     /**
      * Sets the value of the systemAlerts property.
-     * 
+     *
+     * @param value the new system alerts
      */
     public void setSystemAlerts(int value) {
         this.systemAlerts = value;
@@ -158,7 +141,8 @@ public class DeviceInformationOverview {
 
     /**
      * Gets the value of the connectivityAlerts property.
-     * 
+     *
+     * @return the connectivity alerts
      */
     public int getConnectivityAlerts() {
         return connectivityAlerts;
@@ -167,7 +151,8 @@ public class DeviceInformationOverview {
 
     /**
      * Sets the value of the connectivityAlerts property.
-     * 
+     *
+     * @param value the new connectivity alerts
      */
     public void setConnectivityAlerts(int value) {
         this.connectivityAlerts = value;

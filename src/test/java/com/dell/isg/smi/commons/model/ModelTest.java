@@ -4,9 +4,15 @@
 package com.dell.isg.smi.commons.model;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
+/**
+ * The Class ModelTest.
+ */
 public class ModelTest {
+    
+    /**
+     * Can construct A person with A name.
+     */
     @Test
     public void canConstructAPersonWithAName() {
 
