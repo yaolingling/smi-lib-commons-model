@@ -105,8 +105,8 @@ uploadArchives {
 	        pom.project {
 				artifactId = "commons-model"
 				packaging 'jar'
-				url 'https://www.github.com/rackhd/smi-lib-model'
-				name 'SMI Commons ELM'
+				url 'https://www.github.com/rackhd/smi-lib-commons-model'
+				name 'SMI Commons Model'
 				description 'Commons model jar library for the System Management Integration (SMI) projects.'
 				inceptionYear '2017'
 				
