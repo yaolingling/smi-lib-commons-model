@@ -14,28 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DevicePowerState.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="DevicePowerState">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="On"/>
- *     &lt;enumeration value="Off"/>
- *     &lt;enumeration value="Power Off Soft"/>
- *     &lt;enumeration value="Power Cycle Soft"/>
- *     &lt;enumeration value="Master Bus Reset"/>
- *     &lt;enumeration value="Diagnostic Interrupt"/>
- *     &lt;enumeration value="Unknown"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum DevicePowerState.
  */
 @XmlType(name = "DevicePowerState")
 @XmlEnum
@@ -52,16 +33,32 @@ public enum DevicePowerState {
     private final String value;
 
 
+    /**
+     * Instantiates a new device power state.
+     *
+     * @param v the v
+     */
     DevicePowerState(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the device power state
+     */
     public static DevicePowerState fromValue(String v) {
         for (DevicePowerState c : DevicePowerState.values()) {
             if (c.value.equals(v)) {

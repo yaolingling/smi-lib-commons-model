@@ -15,28 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for IpAddress complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="IpAddress">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ip" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="gateway" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="subnetMask" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class IpAddress.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "IpAddress", propOrder = { "ip", "gateway", "subnetMask" })

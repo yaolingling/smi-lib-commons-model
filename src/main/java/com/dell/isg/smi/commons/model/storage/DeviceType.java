@@ -14,24 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DeviceType.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="DeviceType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Storage"/>
- *     &lt;enumeration value="Network"/>
- *     &lt;enumeration value="Server"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum DeviceType.
  */
 @XmlType(name = "DeviceType")
 @XmlEnum
@@ -44,16 +29,32 @@ public enum DeviceType {
     private final String value;
 
 
+    /**
+     * Instantiates a new device type.
+     *
+     * @param v the v
+     */
     DeviceType(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the device type
+     */
     public static DeviceType fromValue(String v) {
         for (DeviceType c : DeviceType.values()) {
             if (c.value.equals(v)) {

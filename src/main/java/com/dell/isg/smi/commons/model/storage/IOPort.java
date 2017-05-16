@@ -18,27 +18,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
- * Java class for IOPort complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="IOPort">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ioModules" type="{http://esg.dell.com/icee/infrastructure/model/storage}IoModule" maxOccurs="unbounded"/>
- *         &lt;element name="IscsiDetails" type="{http://esg.dell.com/icee/infrastructure/model/storage}IscsiDetail" maxOccurs="unbounded"/>
- *         &lt;element name="SasDetail" type="{http://esg.dell.com/icee/infrastructure/model/storage}SasDetail" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class IOPort.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "IOPort", propOrder = { "ioModules", "iscsiDetails", "sasDetail" })
@@ -69,8 +49,8 @@ public class IOPort {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link IoModule }
-     * 
-     * 
+     *
+     * @return the io modules
      */
     public List<IoModule> getIoModules() {
         if (ioModules == null) {
@@ -97,8 +77,8 @@ public class IOPort {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link IscsiDetail }
-     * 
-     * 
+     *
+     * @return the iscsi details
      */
     public List<IscsiDetail> getIscsiDetails() {
         if (iscsiDetails == null) {
@@ -125,8 +105,8 @@ public class IOPort {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link SasDetail }
-     * 
-     * 
+     *
+     * @return the sas detail
      */
     public List<SasDetail> getSasDetail() {
         if (sasDetail == null) {

@@ -12,13 +12,9 @@ package com.dell.isg.smi.commons.model.vcenter;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
+
 /**
- * This object contains factory methods for each Java content interface and Java element interface generated in the com.dell.esg.icee.common.pojo.model.vcenter package.
- * <p>
- * An ObjectFactory allows you to programatically construct new instances of the Java representation for XML content. The Java representation of XML content can consist of schema
- * derived interfaces and classes representing the binding of schema type definitions, element declarations and model groups. Factory methods for each of these are provided in this
- * class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -32,8 +28,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Network }
-     * 
+     * Create an instance of {@link Network }.
+     *
+     * @return the network
      */
     public Network createNetwork() {
         return new Network();
@@ -41,8 +38,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link HostSystem }
-     * 
+     * Create an instance of {@link HostSystem }.
+     *
+     * @return the host system
      */
     public HostSystem createHostSystem() {
         return new HostSystem();
@@ -50,8 +48,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Datacenter }
-     * 
+     * Create an instance of {@link Datacenter }.
+     *
+     * @return the datacenter
      */
     public Datacenter createDatacenter() {
         return new Datacenter();
@@ -59,8 +58,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Cluster }
-     * 
+     * Create an instance of {@link Cluster }.
+     *
+     * @return the cluster
      */
     public Cluster createCluster() {
         return new Cluster();
@@ -68,8 +68,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link ResourcePool }
-     * 
+     * Create an instance of {@link ResourcePool }.
+     *
+     * @return the resource pool
      */
     public ResourcePool createResourcePool() {
         return new ResourcePool();
@@ -77,8 +78,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Folder }
-     * 
+     * Create an instance of {@link Folder }.
+     *
+     * @return the folder
      */
     public Folder createFolder() {
         return new Folder();
@@ -86,8 +88,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VirtualMachine }
-     * 
+     * Create an instance of {@link VirtualMachine }.
+     *
+     * @return the virtual machine
      */
     public VirtualMachine createVirtualMachine() {
         return new VirtualMachine();
@@ -95,8 +98,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VCenterDetails }
-     * 
+     * Create an instance of {@link VCenterDetails }.
+     *
+     * @return the v center details
      */
     public VCenterDetails createVCenterDetails() {
         return new VCenterDetails();
@@ -104,8 +108,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VCenterSummary }
-     * 
+     * Create an instance of {@link VCenterSummary }.
+     *
+     * @return the v center summary
      */
     public VCenterSummary createVCenterSummary() {
         return new VCenterSummary();

@@ -10,11 +10,13 @@
 
 package com.dell.isg.smi.commons.model.server.inventory;
 
+/**
+ * The Class HwEnclosure.
+ */
 public class HwEnclosure {
 
     public HwEnclosure() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -55,7 +57,8 @@ public class HwEnclosure {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -64,7 +67,8 @@ public class HwEnclosure {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -139,7 +143,8 @@ public class HwEnclosure {
 
     /**
      * Gets the value of the emmCount property.
-     * 
+     *
+     * @return the emm count
      */
     public int getEmmCount() {
         return emmCount;
@@ -148,7 +153,8 @@ public class HwEnclosure {
 
     /**
      * Sets the value of the emmCount property.
-     * 
+     *
+     * @param value the new emm count
      */
     public void setEmmCount(int value) {
         this.emmCount = value;
@@ -157,7 +163,8 @@ public class HwEnclosure {
 
     /**
      * Gets the value of the fanCount property.
-     * 
+     *
+     * @return the fan count
      */
     public int getFanCount() {
         return fanCount;
@@ -166,7 +173,8 @@ public class HwEnclosure {
 
     /**
      * Sets the value of the fanCount property.
-     * 
+     *
+     * @param value the new fan count
      */
     public void setFanCount(int value) {
         this.fanCount = value;
@@ -241,7 +249,8 @@ public class HwEnclosure {
 
     /**
      * Gets the value of the psuCount property.
-     * 
+     *
+     * @return the psu count
      */
     public int getPsuCount() {
         return psuCount;
@@ -250,7 +259,8 @@ public class HwEnclosure {
 
     /**
      * Sets the value of the psuCount property.
-     * 
+     *
+     * @param value the new psu count
      */
     public void setPsuCount(int value) {
         this.psuCount = value;
@@ -347,7 +357,8 @@ public class HwEnclosure {
 
     /**
      * Gets the value of the slotCount property.
-     * 
+     *
+     * @return the slot count
      */
     public int getSlotCount() {
         return slotCount;
@@ -356,7 +367,8 @@ public class HwEnclosure {
 
     /**
      * Sets the value of the slotCount property.
-     * 
+     *
+     * @param value the new slot count
      */
     public void setSlotCount(int value) {
         this.slotCount = value;
@@ -365,7 +377,8 @@ public class HwEnclosure {
 
     /**
      * Gets the value of the tempProbeCount property.
-     * 
+     *
+     * @return the temp probe count
      */
     public int getTempProbeCount() {
         return tempProbeCount;
@@ -374,7 +387,8 @@ public class HwEnclosure {
 
     /**
      * Sets the value of the tempProbeCount property.
-     * 
+     *
+     * @param value the new temp probe count
      */
     public void setTempProbeCount(int value) {
         this.tempProbeCount = value;
@@ -447,11 +461,21 @@ public class HwEnclosure {
     }
 
 
+    /**
+     * Gets the state.
+     *
+     * @return the state
+     */
     public String getState() {
         return state;
     }
 
 
+    /**
+     * Sets the state.
+     *
+     * @param state the new state
+     */
     public void setState(String state) {
         this.state = state;
     }

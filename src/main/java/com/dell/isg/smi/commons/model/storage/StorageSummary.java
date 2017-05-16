@@ -16,41 +16,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageSummary complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="StorageSummary">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="statusMessage" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="storageHardwareStatus" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="deviceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="manufacturer" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="model" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="registrationStatus" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="deviceType" type="{http://esg.dell.com/icee/infrastructure/model/storage}DeviceType"/>
- *         &lt;element name="deviceState" type="{http://esg.dell.com/icee/infrastructure/model/storage}DeviceState"/>
- *         &lt;element name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="firmwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="overallHealth" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageSummary.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StorageSummary", propOrder = { "id", "name", "status", "statusMessage", "storageHardwareStatus", "deviceId", "manufacturer", "model", "registrationStatus", "deviceType", "deviceState", "ipAddress", "firmwareVersion", "location", "serviceTag", "overallHealth" })
@@ -91,7 +59,8 @@ public class StorageSummary {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -100,7 +69,8 @@ public class StorageSummary {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -263,7 +233,8 @@ public class StorageSummary {
 
     /**
      * Gets the value of the registrationStatus property.
-     * 
+     *
+     * @return true, if is registration status
      */
     public boolean isRegistrationStatus() {
         return registrationStatus;
@@ -272,7 +243,8 @@ public class StorageSummary {
 
     /**
      * Sets the value of the registrationStatus property.
-     * 
+     *
+     * @param value the new registration status
      */
     public void setRegistrationStatus(boolean value) {
         this.registrationStatus = value;

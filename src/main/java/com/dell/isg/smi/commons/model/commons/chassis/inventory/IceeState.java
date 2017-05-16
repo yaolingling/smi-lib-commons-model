@@ -14,29 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for IceeState.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="IceeState">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Pending Discovery"/>
- *     &lt;enumeration value="Pending Inventory"/>
- *     &lt;enumeration value="OnBoarding"/>
- *     &lt;enumeration value="Discovered"/>
- *     &lt;enumeration value="Available"/>
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Ejected"/>
- *     &lt;enumeration value="Non Compliant"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum IceeState.
  */
 @XmlType(name = "IceeState")
 @XmlEnum
@@ -54,16 +34,32 @@ public enum IceeState {
     private final String value;
 
 
+    /**
+     * Instantiates a new icee state.
+     *
+     * @param v the v
+     */
     IceeState(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the icee state
+     */
     public static IceeState fromValue(String v) {
         for (IceeState c : IceeState.values()) {
             if (c.value.equals(v)) {

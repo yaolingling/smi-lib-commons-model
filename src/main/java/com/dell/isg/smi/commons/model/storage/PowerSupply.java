@@ -14,32 +14,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for PowerSupply complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="PowerSupply">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="swapDetected" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="acFailure" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="dcFailure" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="dcOvervolt" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="dcUndervolt" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="highTempWarning" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="highTempFailure" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PowerSupply.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PowerSupply", propOrder = { "swapDetected", "acFailure", "dcFailure", "dcOvervolt", "dcUndervolt", "highTempWarning", "highTempFailure" })
@@ -56,7 +33,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the swapDetected property.
-     * 
+     *
+     * @return true, if is swap detected
      */
     public boolean isSwapDetected() {
         return swapDetected;
@@ -65,7 +43,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the swapDetected property.
-     * 
+     *
+     * @param value the new swap detected
      */
     public void setSwapDetected(boolean value) {
         this.swapDetected = value;
@@ -74,7 +53,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the acFailure property.
-     * 
+     *
+     * @return true, if is ac failure
      */
     public boolean isAcFailure() {
         return acFailure;
@@ -83,7 +63,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the acFailure property.
-     * 
+     *
+     * @param value the new ac failure
      */
     public void setAcFailure(boolean value) {
         this.acFailure = value;
@@ -92,7 +73,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the dcFailure property.
-     * 
+     *
+     * @return true, if is dc failure
      */
     public boolean isDcFailure() {
         return dcFailure;
@@ -101,7 +83,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the dcFailure property.
-     * 
+     *
+     * @param value the new dc failure
      */
     public void setDcFailure(boolean value) {
         this.dcFailure = value;
@@ -110,7 +93,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the dcOvervolt property.
-     * 
+     *
+     * @return true, if is dc overvolt
      */
     public boolean isDcOvervolt() {
         return dcOvervolt;
@@ -119,7 +103,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the dcOvervolt property.
-     * 
+     *
+     * @param value the new dc overvolt
      */
     public void setDcOvervolt(boolean value) {
         this.dcOvervolt = value;
@@ -128,7 +113,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the dcUndervolt property.
-     * 
+     *
+     * @return true, if is dc undervolt
      */
     public boolean isDcUndervolt() {
         return dcUndervolt;
@@ -137,7 +123,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the dcUndervolt property.
-     * 
+     *
+     * @param value the new dc undervolt
      */
     public void setDcUndervolt(boolean value) {
         this.dcUndervolt = value;
@@ -146,7 +133,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the highTempWarning property.
-     * 
+     *
+     * @return true, if is high temp warning
      */
     public boolean isHighTempWarning() {
         return highTempWarning;
@@ -155,7 +143,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the highTempWarning property.
-     * 
+     *
+     * @param value the new high temp warning
      */
     public void setHighTempWarning(boolean value) {
         this.highTempWarning = value;
@@ -164,7 +153,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Gets the value of the highTempFailure property.
-     * 
+     *
+     * @return true, if is high temp failure
      */
     public boolean isHighTempFailure() {
         return highTempFailure;
@@ -173,7 +163,8 @@ public class PowerSupply extends DetailBase {
 
     /**
      * Sets the value of the highTempFailure property.
-     * 
+     *
+     * @param value the new high temp failure
      */
     public void setHighTempFailure(boolean value) {
         this.highTempFailure = value;

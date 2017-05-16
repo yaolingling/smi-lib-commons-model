@@ -15,38 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisPowerSupply complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisPowerSupply">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="present" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}PowerStatus"/>
- *         &lt;element name="capacity" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisPowerSupply.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisPowerSupply", propOrder = { "id", "name", "present", "powerStatus", "capacity" })
 public class ChassisPowerSupply {
 
+    /**
+     * Instantiates a new chassis power supply.
+     */
     public ChassisPowerSupply() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -62,7 +43,8 @@ public class ChassisPowerSupply {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -71,7 +53,8 @@ public class ChassisPowerSupply {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

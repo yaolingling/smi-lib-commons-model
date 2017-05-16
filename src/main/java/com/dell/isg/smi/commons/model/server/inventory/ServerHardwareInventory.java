@@ -6,11 +6,13 @@ package com.dell.isg.smi.commons.model.server.inventory;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Class ServerHardwareInventory.
+ */
 public class ServerHardwareInventory {
 
     public ServerHardwareInventory() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     private String id;
@@ -36,6 +38,11 @@ public class ServerHardwareInventory {
     }
 
 
+    /**
+     * Gets the id.
+     *
+     * @return the id
+     */
     public String getId() {
         return id;
     }
@@ -80,8 +87,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwBattery }
-     * 
-     * 
+     *
+     * @return the batteries
      */
     public List<HwBattery> getBatteries() {
         if (batteries == null) {
@@ -108,8 +115,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwCpu }
-     * 
-     * 
+     *
+     * @return the cpus
      */
     public List<HwCpu> getCpus() {
         if (cpus == null) {
@@ -136,8 +143,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwFan }
-     * 
-     * 
+     *
+     * @return the fans
      */
     public List<HwFan> getFans() {
         if (fans == null) {
@@ -164,8 +171,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwLed }
-     * 
-     * 
+     *
+     * @return the leds
      */
     public List<HwLed> getLeds() {
         if (leds == null) {
@@ -192,8 +199,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwIntrusion }
-     * 
-     * 
+     *
+     * @return the intrusions
      */
     public List<HwIntrusion> getIntrusions() {
         if (intrusions == null) {
@@ -220,8 +227,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwMemory }
-     * 
-     * 
+     *
+     * @return the memories
      */
     public List<HwMemory> getMemories() {
         if (memories == null) {
@@ -248,8 +255,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwNic }
-     * 
-     * 
+     *
+     * @return the nics
      */
     public List<HwNic> getNics() {
         if (nics == null) {
@@ -276,8 +283,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwPsu }
-     * 
-     * 
+     *
+     * @return the power supply units
      */
     public List<HwPsu> getPowerSupplyUnits() {
         if (powerSupplyUnits == null) {
@@ -304,8 +311,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwSDCard }
-     * 
-     * 
+     *
+     * @return the sd cards
      */
     public List<HwSDCard> getSdCards() {
         if (sdCards == null) {
@@ -332,8 +339,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwTemperature }
-     * 
-     * 
+     *
+     * @return the temperatures
      */
     public List<HwTemperature> getTemperatures() {
         if (temperatures == null) {
@@ -360,8 +367,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwVoltage }
-     * 
-     * 
+     *
+     * @return the voltages
      */
     public List<HwVoltage> getVoltages() {
         if (voltages == null) {
@@ -388,8 +395,8 @@ public class ServerHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwNote }
-     * 
-     * 
+     *
+     * @return the notes
      */
     public List<HwNote> getNotes() {
         if (notes == null) {

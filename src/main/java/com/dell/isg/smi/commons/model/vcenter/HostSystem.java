@@ -16,26 +16,9 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/vcenter}ManagedObject">
- *       &lt;attribute name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="manufacturer" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="model" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class HostSystem.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")

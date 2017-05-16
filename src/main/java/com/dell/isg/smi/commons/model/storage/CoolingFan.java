@@ -15,28 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for CoolingFan complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="CoolingFan">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="swapDetected" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="speed" type="{http://esg.dell.com/icee/infrastructure/model/storage}CoolingFanSpeed"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CoolingFan.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CoolingFan", propOrder = { "swapDetected", "location", "speed" })
@@ -51,7 +32,8 @@ public class CoolingFan extends DetailBase {
 
     /**
      * Gets the value of the swapDetected property.
-     * 
+     *
+     * @return true, if is swap detected
      */
     public boolean isSwapDetected() {
         return swapDetected;
@@ -60,7 +42,8 @@ public class CoolingFan extends DetailBase {
 
     /**
      * Sets the value of the swapDetected property.
-     * 
+     *
+     * @param value the new swap detected
      */
     public void setSwapDetected(boolean value) {
         this.swapDetected = value;

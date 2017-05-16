@@ -15,29 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for CreateSnapshot complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="CreateSnapshot">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="neverExpire" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="expireTime" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="timeUnit" type="{http://esg.dell.com/icee/infrastructure/model/storage}TimeUnit"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CreateSnapshot.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CreateSnapshot", propOrder = { "description", "neverExpire", "expireTime", "timeUnit" })
@@ -75,7 +55,8 @@ public class CreateSnapshot {
 
     /**
      * Gets the value of the neverExpire property.
-     * 
+     *
+     * @return true, if is never expire
      */
     public boolean isNeverExpire() {
         return neverExpire;
@@ -84,7 +65,8 @@ public class CreateSnapshot {
 
     /**
      * Sets the value of the neverExpire property.
-     * 
+     *
+     * @param value the new never expire
      */
     public void setNeverExpire(boolean value) {
         this.neverExpire = value;
@@ -93,7 +75,8 @@ public class CreateSnapshot {
 
     /**
      * Gets the value of the expireTime property.
-     * 
+     *
+     * @return the expire time
      */
     public int getExpireTime() {
         return expireTime;
@@ -102,7 +85,8 @@ public class CreateSnapshot {
 
     /**
      * Sets the value of the expireTime property.
-     * 
+     *
+     * @param value the new expire time
      */
     public void setExpireTime(int value) {
         this.expireTime = value;

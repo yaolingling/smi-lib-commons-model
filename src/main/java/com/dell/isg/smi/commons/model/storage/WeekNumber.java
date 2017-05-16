@@ -13,26 +13,9 @@ package com.dell.isg.smi.commons.model.storage;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for WeekNumber.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="WeekNumber">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="FIRST"/>
- *     &lt;enumeration value="SECOND"/>
- *     &lt;enumeration value="THIRD"/>
- *     &lt;enumeration value="FOURTH"/>
- *     &lt;enumeration value="LAST"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum WeekNumber.
  */
 @XmlType(name = "WeekNumber")
 @XmlEnum
@@ -40,11 +23,22 @@ public enum WeekNumber {
 
     FIRST, SECOND, THIRD, FOURTH, LAST;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the week number
+     */
     public static WeekNumber fromValue(String v) {
         return valueOf(v);
     }

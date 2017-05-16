@@ -10,11 +10,13 @@
 
 package com.dell.isg.smi.commons.model.server.inventory;
 
+/**
+ * The Class HwPsu.
+ */
 public class HwPsu {
 
     public HwPsu() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -48,7 +50,8 @@ public class HwPsu {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -57,7 +60,8 @@ public class HwPsu {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

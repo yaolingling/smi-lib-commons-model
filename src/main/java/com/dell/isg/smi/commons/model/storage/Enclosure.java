@@ -18,35 +18,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
- * Java class for Enclosure complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Enclosure">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="shelfID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="statusMessage" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="indicator" type="{http://esg.dell.com/icee/infrastructure/model/storage}Indicator"/>
- *         &lt;element name="logicalID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="model" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="coolingFans" type="{http://esg.dell.com/icee/infrastructure/model/storage}CoolingFan" maxOccurs="unbounded"/>
- *         &lt;element name="disks" type="{http://esg.dell.com/icee/infrastructure/model/storage}Disk" maxOccurs="unbounded"/>
- *         &lt;element name="ioModules" type="{http://esg.dell.com/icee/infrastructure/model/storage}IoModule" maxOccurs="unbounded"/>
- *         &lt;element name="powerSupplies" type="{http://esg.dell.com/icee/infrastructure/model/storage}PowerSupply" maxOccurs="unbounded"/>
- *         &lt;element name="temperatures" type="{http://esg.dell.com/icee/infrastructure/model/storage}Temperature" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Enclosure.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Enclosure", propOrder = { "shelfID", "statusMessage", "indicator", "logicalID", "model", "type", "coolingFans", "disks", "ioModules", "powerSupplies", "temperatures" })
@@ -77,7 +49,8 @@ public class Enclosure extends DetailBase {
 
     /**
      * Gets the value of the shelfID property.
-     * 
+     *
+     * @return the shelf ID
      */
     public long getShelfID() {
         return shelfID;
@@ -86,7 +59,8 @@ public class Enclosure extends DetailBase {
 
     /**
      * Sets the value of the shelfID property.
-     * 
+     *
+     * @param value the new shelf ID
      */
     public void setShelfID(long value) {
         this.shelfID = value;
@@ -220,8 +194,8 @@ public class Enclosure extends DetailBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link CoolingFan }
-     * 
-     * 
+     *
+     * @return the cooling fans
      */
     public List<CoolingFan> getCoolingFans() {
         if (coolingFans == null) {
@@ -248,8 +222,8 @@ public class Enclosure extends DetailBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Disk }
-     * 
-     * 
+     *
+     * @return the disks
      */
     public List<Disk> getDisks() {
         if (disks == null) {
@@ -276,8 +250,8 @@ public class Enclosure extends DetailBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link IoModule }
-     * 
-     * 
+     *
+     * @return the io modules
      */
     public List<IoModule> getIoModules() {
         if (ioModules == null) {
@@ -304,8 +278,8 @@ public class Enclosure extends DetailBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link PowerSupply }
-     * 
-     * 
+     *
+     * @return the power supplies
      */
     public List<PowerSupply> getPowerSupplies() {
         if (powerSupplies == null) {
@@ -332,8 +306,8 @@ public class Enclosure extends DetailBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Temperature }
-     * 
-     * 
+     *
+     * @return the temperatures
      */
     public List<Temperature> getTemperatures() {
         if (temperatures == null) {

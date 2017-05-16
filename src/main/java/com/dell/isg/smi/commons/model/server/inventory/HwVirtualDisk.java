@@ -12,11 +12,13 @@ package com.dell.isg.smi.commons.model.server.inventory;
 
 import java.util.List;
 
+/**
+ * The Class HwVirtualDisk.
+ */
 public class HwVirtualDisk {
 
     public HwVirtualDisk() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -86,7 +88,8 @@ public class HwVirtualDisk {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -95,7 +98,8 @@ public class HwVirtualDisk {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -586,91 +590,181 @@ public class HwVirtualDisk {
     }
 
 
+    /**
+     * Gets the block size in bytes.
+     *
+     * @return the block size in bytes
+     */
     public String getBlockSizeInBytes() {
         return blockSizeInBytes;
     }
 
 
+    /**
+     * Sets the block size in bytes.
+     *
+     * @param blockSizeInBytes the new block size in bytes
+     */
     public void setBlockSizeInBytes(String blockSizeInBytes) {
         this.blockSizeInBytes = blockSizeInBytes;
     }
 
 
+    /**
+     * Gets the operation name.
+     *
+     * @return the operation name
+     */
     public String getOperationName() {
         return operationName;
     }
 
 
+    /**
+     * Sets the operation name.
+     *
+     * @param operationName the new operation name
+     */
     public void setOperationName(String operationName) {
         this.operationName = operationName;
     }
 
 
+    /**
+     * Gets the operation percent complete.
+     *
+     * @return the operation percent complete
+     */
     public String getOperationPercentComplete() {
         return operationPercentComplete;
     }
 
 
+    /**
+     * Sets the operation percent complete.
+     *
+     * @param operationPercentComplete the new operation percent complete
+     */
     public void setOperationPercentComplete(String operationPercentComplete) {
         this.operationPercentComplete = operationPercentComplete;
     }
 
 
+    /**
+     * Gets the pending operations.
+     *
+     * @return the pending operations
+     */
     public String getPendingOperations() {
         return pendingOperations;
     }
 
 
+    /**
+     * Sets the pending operations.
+     *
+     * @param pendingOperations the new pending operations
+     */
     public void setPendingOperations(String pendingOperations) {
         this.pendingOperations = pendingOperations;
     }
 
 
+    /**
+     * Gets the rollup status.
+     *
+     * @return the rollup status
+     */
     public String getRollupStatus() {
         return rollupStatus;
     }
 
 
+    /**
+     * Sets the rollup status.
+     *
+     * @param rollupStatus the new rollup status
+     */
     public void setRollupStatus(String rollupStatus) {
         this.rollupStatus = rollupStatus;
     }
 
 
+    /**
+     * Gets the instance id.
+     *
+     * @return the instance id
+     */
     public String getInstanceId() {
         return instanceId;
     }
 
 
+    /**
+     * Sets the instance id.
+     *
+     * @param instanceId the new instance id
+     */
     public void setInstanceId(String instanceId) {
         this.instanceId = instanceId;
     }
 
 
+    /**
+     * Gets the last system inventory time.
+     *
+     * @return the last system inventory time
+     */
     public String getLastSystemInventoryTime() {
         return lastSystemInventoryTime;
     }
 
 
+    /**
+     * Sets the last system inventory time.
+     *
+     * @param lastSystemInventoryTime the new last system inventory time
+     */
     public void setLastSystemInventoryTime(String lastSystemInventoryTime) {
         this.lastSystemInventoryTime = lastSystemInventoryTime;
     }
 
 
+    /**
+     * Gets the last update time.
+     *
+     * @return the last update time
+     */
     public String getLastUpdateTime() {
         return lastUpdateTime;
     }
 
 
+    /**
+     * Sets the last update time.
+     *
+     * @param lastUpdateTime the new last update time
+     */
     public void setLastUpdateTime(String lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
 
 
+    /**
+     * Gets the physical disk ids.
+     *
+     * @return the physical disk ids
+     */
     public List<String> getPhysicalDiskIds() {
         return physicalDiskIds;
     }
 
 
+    /**
+     * Sets the physical disk ids.
+     *
+     * @param physicalDiskIds the new physical disk ids
+     */
     public void setPhysicalDiskIds(List<String> physicalDiskIds) {
         this.physicalDiskIds = physicalDiskIds;
     }

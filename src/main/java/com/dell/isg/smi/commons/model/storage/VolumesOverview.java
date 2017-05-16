@@ -14,28 +14,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VolumesOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="VolumesOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="totalVolumes" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="up" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="snapshots" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VolumesOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VolumesOverview", propOrder = { "totalVolumes", "up", "snapshots" })
@@ -48,7 +29,8 @@ public class VolumesOverview {
 
     /**
      * Gets the value of the totalVolumes property.
-     * 
+     *
+     * @return the total volumes
      */
     public int getTotalVolumes() {
         return totalVolumes;
@@ -57,7 +39,8 @@ public class VolumesOverview {
 
     /**
      * Sets the value of the totalVolumes property.
-     * 
+     *
+     * @param value the new total volumes
      */
     public void setTotalVolumes(int value) {
         this.totalVolumes = value;
@@ -66,7 +49,8 @@ public class VolumesOverview {
 
     /**
      * Gets the value of the up property.
-     * 
+     *
+     * @return the up
      */
     public int getUp() {
         return up;
@@ -75,7 +59,8 @@ public class VolumesOverview {
 
     /**
      * Sets the value of the up property.
-     * 
+     *
+     * @param value the new up
      */
     public void setUp(int value) {
         this.up = value;
@@ -84,7 +69,8 @@ public class VolumesOverview {
 
     /**
      * Gets the value of the snapshots property.
-     * 
+     *
+     * @return the snapshots
      */
     public int getSnapshots() {
         return snapshots;
@@ -93,7 +79,8 @@ public class VolumesOverview {
 
     /**
      * Sets the value of the snapshots property.
-     * 
+     *
+     * @param value the new snapshots
      */
     public void setSnapshots(int value) {
         this.snapshots = value;

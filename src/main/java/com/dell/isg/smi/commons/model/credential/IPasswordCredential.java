@@ -3,52 +3,55 @@
  */
 package com.dell.isg.smi.commons.model.credential;
 
+/**
+ * The Interface IPasswordCredential.
+ */
 public interface IPasswordCredential extends ICredential {
 
     /**
-     * Gets the username
-     * 
+     * Gets the username.
+     *
      * @return String - the username
      */
     public String getUsername();
 
 
     /**
-     * Sets the username
-     * 
-     * @param value - the username
+     * Sets the username.
+     *
+     * @param username the new username
      */
     public void setUsername(String username);
 
 
     /**
-     * Gets the password
-     * 
+     * Gets the password.
+     *
      * @return String - the password
      */
     public String getPassword();
 
 
     /**
-     * Sets the password
-     * 
-     * @param value - the password
+     * Sets the password.
+     *
+     * @param password the new password
      */
     public void setPassword(String password);
 
 
     /**
-     * Gets the Domain
-     * 
+     * Gets the Domain.
+     *
      * @return String - the domain
      */
     public String getDomain();
 
 
     /**
-     * Sets the domain
-     * 
-     * @param value - the value
+     * Sets the domain.
+     *
+     * @param domain the new domain
      */
     public void setDomain(String domain);
 }

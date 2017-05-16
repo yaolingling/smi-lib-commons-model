@@ -17,46 +17,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+// TODO: Auto-generated Javadoc
 /**
- * <p>
- * Java class for Controller complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Controller">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="deviceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="assetTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="model" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="version" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="availableMemory" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="leader" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="lastBootTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="dateInstalled" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="dateUpdated" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="updatedBy" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="health" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="cacheCard" type="{http://esg.dell.com/icee/infrastructure/model/storage}CacheCard"/>
- *         &lt;element name="coolingFans" type="{http://esg.dell.com/icee/infrastructure/model/storage}CoolingFan" maxOccurs="unbounded"/>
- *         &lt;element name="powerSupplies" type="{http://esg.dell.com/icee/infrastructure/model/storage}PowerSupply" maxOccurs="unbounded"/>
- *         &lt;element name="temperatures" type="{http://esg.dell.com/icee/infrastructure/model/storage}Temperature" maxOccurs="unbounded"/>
- *         &lt;element name="iscsiDetails" type="{http://esg.dell.com/icee/infrastructure/model/storage}IscsiDetail" maxOccurs="unbounded"/>
- *         &lt;element name="sasDetails" type="{http://esg.dell.com/icee/infrastructure/model/storage}SasDetail" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Controller.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Controller", propOrder = { "id", "deviceId", "status", "name", "assetTag", "serviceTag", "model", "version", "availableMemory", "leader", "lastBootTime", "dateInstalled", "dateUpdated", "updatedBy", "health", "cacheCard", "coolingFans", "powerSupplies", "temperatures", "iscsiDetails", "sasDetails" })
@@ -105,7 +68,8 @@ public class Controller {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -114,7 +78,8 @@ public class Controller {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -277,7 +242,8 @@ public class Controller {
 
     /**
      * Gets the value of the availableMemory property.
-     * 
+     *
+     * @return the available memory
      */
     public long getAvailableMemory() {
         return availableMemory;
@@ -286,7 +252,8 @@ public class Controller {
 
     /**
      * Sets the value of the availableMemory property.
-     * 
+     *
+     * @param value the new available memory
      */
     public void setAvailableMemory(long value) {
         this.availableMemory = value;
@@ -295,7 +262,8 @@ public class Controller {
 
     /**
      * Gets the value of the leader property.
-     * 
+     *
+     * @return true, if is leader
      */
     public boolean isLeader() {
         return leader;
@@ -304,7 +272,8 @@ public class Controller {
 
     /**
      * Sets the value of the leader property.
-     * 
+     *
+     * @param value the new leader
      */
     public void setLeader(boolean value) {
         this.leader = value;
@@ -460,8 +429,8 @@ public class Controller {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link CoolingFan }
-     * 
-     * 
+     *
+     * @return the cooling fans
      */
     public List<CoolingFan> getCoolingFans() {
         if (coolingFans == null) {
@@ -488,8 +457,8 @@ public class Controller {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link PowerSupply }
-     * 
-     * 
+     *
+     * @return the power supplies
      */
     public List<PowerSupply> getPowerSupplies() {
         if (powerSupplies == null) {
@@ -516,8 +485,8 @@ public class Controller {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Temperature }
-     * 
-     * 
+     *
+     * @return the temperatures
      */
     public List<Temperature> getTemperatures() {
         if (temperatures == null) {
@@ -544,8 +513,8 @@ public class Controller {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link IscsiDetail }
-     * 
-     * 
+     *
+     * @return the iscsi details
      */
     public List<IscsiDetail> getIscsiDetails() {
         if (iscsiDetails == null) {
@@ -572,8 +541,8 @@ public class Controller {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link SasDetail }
-     * 
-     * 
+     *
+     * @return the sas details
      */
     public List<SasDetail> getSasDetails() {
         if (sasDetails == null) {

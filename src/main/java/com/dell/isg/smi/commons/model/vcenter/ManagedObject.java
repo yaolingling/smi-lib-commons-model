@@ -19,29 +19,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ManagedObject complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ManagedObject">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="managedObjectType" type="{http://esg.dell.com/icee/infrastructure/model/vcenter}ManagedObjectType"/>
- *         &lt;element name="managedObjectId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="children" type="{http://esg.dell.com/icee/infrastructure/model/vcenter}ManagedObject" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ManagedObject.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ManagedObject", propOrder = { "managedObjectType", "managedObjectId", "name", "children" })
@@ -141,8 +121,8 @@ public abstract class ManagedObject {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ManagedObject }
-     * 
-     * 
+     *
+     * @return the children
      */
     public List<ManagedObject> getChildren() {
         if (children == null) {

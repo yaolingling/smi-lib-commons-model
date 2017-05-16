@@ -17,29 +17,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
+// TODO: Auto-generated Javadoc
 /**
- * <p>
- * Java class for ControllerHealth complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ControllerHealth">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode">
- *       &lt;sequence>
- *         &lt;element name="coolingFans" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="powerSupplies" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="temperatures" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="sasDetails" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ControllerHealth.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ControllerHealth", propOrder = { "coolingFans", "powerSupplies", "temperatures", "sasDetails" })
@@ -72,8 +53,8 @@ public class ControllerHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the cooling fans
      */
     public List<HealthNode> getCoolingFans() {
         if (coolingFans == null) {
@@ -100,8 +81,8 @@ public class ControllerHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the power supplies
      */
     public List<HealthNode> getPowerSupplies() {
         if (powerSupplies == null) {
@@ -128,8 +109,8 @@ public class ControllerHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the temperatures
      */
     public List<HealthNode> getTemperatures() {
         if (temperatures == null) {
@@ -156,8 +137,8 @@ public class ControllerHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the sas details
      */
     public List<HealthNode> getSasDetails() {
         if (sasDetails == null) {

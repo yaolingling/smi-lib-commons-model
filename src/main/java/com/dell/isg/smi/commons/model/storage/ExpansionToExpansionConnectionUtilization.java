@@ -15,34 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ExpansionToExpansionConnectionUtilization complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ExpansionToExpansionConnectionUtilization">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="connectionHealth" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="srouceStorageEnclosure" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="srouceStorageEnclosureController" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageEnclosureController"/>
- *         &lt;element name="srouceStorageEnclosurePort" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageEnclosurePort"/>
- *         &lt;element name="bandwidthUsed" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="bandwidthAllocated" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="destinationStorageEnclosure" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="destinationStorageEnclosureController" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageEnclosureController"/>
- *         &lt;element name="destinationStorageEnclosurePort" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageEnclosurePort"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ExpansionToExpansionConnectionUtilization.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ExpansionToExpansionConnectionUtilization", propOrder = { "connectionHealth", "srouceStorageEnclosure", "srouceStorageEnclosureController", "srouceStorageEnclosurePort", "bandwidthUsed", "bandwidthAllocated", "destinationStorageEnclosure", "destinationStorageEnclosureController", "destinationStorageEnclosurePort" })
@@ -67,7 +42,8 @@ public class ExpansionToExpansionConnectionUtilization {
 
     /**
      * Gets the value of the connectionHealth property.
-     * 
+     *
+     * @return true, if is connection health
      */
     public boolean isConnectionHealth() {
         return connectionHealth;
@@ -76,7 +52,8 @@ public class ExpansionToExpansionConnectionUtilization {
 
     /**
      * Sets the value of the connectionHealth property.
-     * 
+     *
+     * @param value the new connection health
      */
     public void setConnectionHealth(boolean value) {
         this.connectionHealth = value;
@@ -151,7 +128,8 @@ public class ExpansionToExpansionConnectionUtilization {
 
     /**
      * Gets the value of the bandwidthUsed property.
-     * 
+     *
+     * @return the bandwidth used
      */
     public long getBandwidthUsed() {
         return bandwidthUsed;
@@ -160,7 +138,8 @@ public class ExpansionToExpansionConnectionUtilization {
 
     /**
      * Sets the value of the bandwidthUsed property.
-     * 
+     *
+     * @param value the new bandwidth used
      */
     public void setBandwidthUsed(long value) {
         this.bandwidthUsed = value;
@@ -169,7 +148,8 @@ public class ExpansionToExpansionConnectionUtilization {
 
     /**
      * Gets the value of the bandwidthAllocated property.
-     * 
+     *
+     * @return the bandwidth allocated
      */
     public long getBandwidthAllocated() {
         return bandwidthAllocated;
@@ -178,7 +158,8 @@ public class ExpansionToExpansionConnectionUtilization {
 
     /**
      * Sets the value of the bandwidthAllocated property.
-     * 
+     *
+     * @param value the new bandwidth allocated
      */
     public void setBandwidthAllocated(long value) {
         this.bandwidthAllocated = value;

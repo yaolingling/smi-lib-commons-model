@@ -11,52 +11,77 @@ import com.dell.isg.smi.commons.model.validation.ValidationResult;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * The Class WSManPasswordCredential.
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "WSManPasswordCredential")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WSManPasswordCredential extends PasswordCredential {
 
-    // ********************** IDRAC Username Requirements ********************************
-    // between 1 and 16 characters long
-    // no non-printable characters, so start at x20 (space) in the ascii table
-    // invalid characters: " / \ ~ ` .
-    public static final String IDRAC_USERNAME_REGEX = "^(?![\\x20.]+$)([^\\\\/\"@~`.]{1,16})$";;
+    /** ********************** IDRAC Username Requirements ********************************
+    *  between 1 and 16 characters long
+    *  no non-printable characters, so start at x20 (space) in the ascii table
+    *  invalid characters: " / \ ~ ` .
+    */
+    public static final String IDRAC_USERNAME_REGEX = "^(?![\\x20.]+$)([^\\\\/\"@~`.]{1,16})$";
 
-    // ********************** IDRAC Password Requirements ********************************
-    // Non-printable characters are not allowed - ascii x20(space) and above allowed;
-    // characters `,^ and space are not allowed;
-    // from 1 thru 20 characters in length
-    public static final String IDRAC_PASSWORD_REGEX = "^(?![\\x20]+$)([^`^ ]{1,20})$";
+    /** ********************** IDRAC Password Requirements ********************************
+    *  Non-printable characters are not allowed - ascii x20(space) and above allowed;
+    *  characters `,^ and space are not allowed;
+    *  from 1 thru 20 characters in length
+    */
+    public static final String IDRAC_ZASSWORD_REGEX = "^(?![\\x20]+$)([^`^ ]{1,20})$";
 
     private boolean cnCheck = false;
 
     private boolean caCheck = false;
 
 
+    /**
+     * Checks if is cn check.
+     *
+     * @return true, if is cn check
+     */
     @JsonProperty("cnCheck")
     public boolean isCnCheck() {
         return cnCheck;
     }
 
 
+    /**
+     * Sets the cn check.
+     *
+     * @param cnCheck the new cn check
+     */
     public void setCnCheck(boolean cnCheck) {
         this.cnCheck = cnCheck;
     }
 
 
+    /**
+     * Checks if is ca check.
+     *
+     * @return true, if is ca check
+     */
     @JsonProperty("caCheck")
     public boolean isCaCheck() {
         return caCheck;
     }
 
 
+    /**
+     * Sets the ca check.
+     *
+     * @param caCheck the new ca check
+     */
     public void setCaCheck(boolean caCheck) {
         this.caCheck = caCheck;
     }
 
 
-    /**
-     * @see ICredential.validate()
+    /* (non-Javadoc)
+     * @see com.dell.isg.smi.commons.model.credential.PasswordCredential#validate()
      */
     @Override
     public ValidationResult validate() {
@@ -122,10 +147,10 @@ public class WSManPasswordCredential extends PasswordCredential {
         if (null == value) {
             return "Password cannot be null.";
         }
-        if (!value.matches(IDRAC_PASSWORD_REGEX)) {
+        if (!value.matches(IDRAC_ZASSWORD_REGEX)) {
             return "password does not meet iDRAC requirements";
         }
-        if (!value.matches(WINDOWS_PASSWORD_REGEX)) {
+        if (!value.matches(WINDOWS_ZASSWORD_REGEX)) {
             return "password does not meet Windows requirements";
         }
         return "";

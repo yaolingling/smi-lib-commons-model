@@ -13,11 +13,13 @@ package com.dell.isg.smi.commons.model.server.inventory;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Class HwStorage.
+ */
 public class HwStorage {
 
     public HwStorage() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected List<HwController> controllers;
@@ -46,8 +48,8 @@ public class HwStorage {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwController }
-     * 
-     * 
+     *
+     * @return the controllers
      */
     public List<HwController> getControllers() {
         if (controllers == null) {
@@ -74,8 +76,8 @@ public class HwStorage {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwEnclosure }
-     * 
-     * 
+     *
+     * @return the enclosures
      */
     public List<HwEnclosure> getEnclosures() {
         if (enclosures == null) {
@@ -102,8 +104,8 @@ public class HwStorage {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwPhysicalDisk }
-     * 
-     * 
+     *
+     * @return the physical disks
      */
     public List<HwPhysicalDisk> getPhysicalDisks() {
         if (physicalDisks == null) {
@@ -130,8 +132,8 @@ public class HwStorage {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HwVirtualDisk }
-     * 
-     * 
+     *
+     * @return the virtual disks
      */
     public List<HwVirtualDisk> getVirtualDisks() {
         if (virtualDisks == null) {

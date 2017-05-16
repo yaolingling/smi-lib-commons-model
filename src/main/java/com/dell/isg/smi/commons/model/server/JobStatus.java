@@ -7,8 +7,9 @@
 package com.dell.isg.smi.commons.model.server;
 
 /**
- * @author Rahman.Muhammad
+ * The Class JobStatus.
  *
+ * @author Rahman.Muhammad
  */
 public class JobStatus {
 
@@ -20,6 +21,8 @@ public class JobStatus {
 
 
     /**
+     * Gets the job id.
+     *
      * @return the jobId
      */
     public String getJobId() {
@@ -28,6 +31,8 @@ public class JobStatus {
 
 
     /**
+     * Sets the job id.
+     *
      * @param jobId the jobId to set
      */
     public void setJobId(String jobId) {
@@ -36,6 +41,8 @@ public class JobStatus {
 
 
     /**
+     * Gets the status.
+     *
      * @return the status
      */
     public String getStatus() {
@@ -52,6 +59,8 @@ public class JobStatus {
 
 
     /**
+     * Gets the message.
+     *
      * @return the message
      */
     public String getMessage() {
@@ -60,6 +69,8 @@ public class JobStatus {
 
 
     /**
+     * Sets the message.
+     *
      * @param message the message to set
      */
     public void setMessage(String message) {
@@ -68,6 +79,8 @@ public class JobStatus {
 
 
     /**
+     * Gets the description.
+     *
      * @return the description
      */
     public String getDescription() {
@@ -76,6 +89,8 @@ public class JobStatus {
 
 
     /**
+     * Sets the description.
+     *
      * @param description the description to set
      */
     public void setDescription(String description) {
@@ -84,6 +99,8 @@ public class JobStatus {
 
 
     /**
+     * Gets the server address.
+     *
      * @return the serverAddress
      */
     public String getServerAddress() {
@@ -92,6 +109,8 @@ public class JobStatus {
 
 
     /**
+     * Sets the server address.
+     *
      * @param serverAddress the serverAddress to set
      */
     public void setServerAddress(String serverAddress) {

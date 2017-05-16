@@ -14,22 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ControllerLocalPortConnection.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="ControllerLocalPortConnection">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Balanced"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ControllerLocalPortConnection.
  */
 @XmlType(name = "ControllerLocalPortConnection")
 @XmlEnum
@@ -40,16 +27,32 @@ public enum ControllerLocalPortConnection {
     private final String value;
 
 
+    /**
+     * Instantiates a new controller local port connection.
+     *
+     * @param v the v
+     */
     ControllerLocalPortConnection(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the controller local port connection
+     */
     public static ControllerLocalPortConnection fromValue(String v) {
         for (ControllerLocalPortConnection c : ControllerLocalPortConnection.values()) {
             if (c.value.equals(v)) {

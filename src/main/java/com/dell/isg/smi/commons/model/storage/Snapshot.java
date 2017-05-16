@@ -15,33 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Snapshot complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Snapshot">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="instanceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="expireTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="freezeTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="storageSize" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *         &lt;element name="storageSizeType" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageSizeType"/>
- *         &lt;element name="percentOfActual" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Snapshot.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Snapshot", propOrder = { "id", "instanceId", "description", "expireTime", "freezeTime", "storageSize", "storageSizeType", "percentOfActual" })
@@ -64,7 +40,8 @@ public class Snapshot {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -73,7 +50,8 @@ public class Snapshot {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -170,7 +148,8 @@ public class Snapshot {
 
     /**
      * Gets the value of the storageSize property.
-     * 
+     *
+     * @return the storage size
      */
     public double getStorageSize() {
         return storageSize;
@@ -179,7 +158,8 @@ public class Snapshot {
 
     /**
      * Sets the value of the storageSize property.
-     * 
+     *
+     * @param value the new storage size
      */
     public void setStorageSize(double value) {
         this.storageSize = value;
@@ -210,7 +190,8 @@ public class Snapshot {
 
     /**
      * Gets the value of the percentOfActual property.
-     * 
+     *
+     * @return the percent of actual
      */
     public int getPercentOfActual() {
         return percentOfActual;
@@ -219,7 +200,8 @@ public class Snapshot {
 
     /**
      * Sets the value of the percentOfActual property.
-     * 
+     *
+     * @param value the new percent of actual
      */
     public void setPercentOfActual(int value) {
         this.percentOfActual = value;

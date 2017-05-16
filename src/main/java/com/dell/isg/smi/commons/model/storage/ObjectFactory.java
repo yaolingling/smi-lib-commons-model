@@ -12,13 +12,9 @@ package com.dell.isg.smi.commons.model.storage;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
+
 /**
- * This object contains factory methods for each Java content interface and Java element interface generated in the com.dell.esg.icee.common.pojo.model.storage package.
- * <p>
- * An ObjectFactory allows you to programatically construct new instances of the Java representation for XML content. The Java representation of XML content can consist of schema
- * derived interfaces and classes representing the binding of schema type definitions, element declarations and model groups. Factory methods for each of these are provided in this
- * class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -32,8 +28,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageFirmware }
-     * 
+     * Create an instance of {@link StorageFirmware }.
+     *
+     * @return the storage firmware
      */
     public StorageFirmware createStorageFirmware() {
         return new StorageFirmware();
@@ -41,8 +38,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StoragePerformance }
-     * 
+     * Create an instance of {@link StoragePerformance }.
+     *
+     * @return the storage performance
      */
     public StoragePerformance createStoragePerformance() {
         return new StoragePerformance();
@@ -50,8 +48,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link DateIntValuePair }
-     * 
+     * Create an instance of {@link DateIntValuePair }.
+     *
+     * @return the date int value pair
      */
     public DateIntValuePair createDateIntValuePair() {
         return new DateIntValuePair();
@@ -59,8 +58,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link DateLongValuePair }
-     * 
+     * Create an instance of {@link DateLongValuePair }.
+     *
+     * @return the date long value pair
      */
     public DateLongValuePair createDateLongValuePair() {
         return new DateLongValuePair();
@@ -68,8 +68,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageTopology }
-     * 
+     * Create an instance of {@link StorageTopology }.
+     *
+     * @return the storage topology
      */
     public StorageTopology createStorageTopology() {
         return new StorageTopology();
@@ -77,8 +78,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link ArrayToExpansionConnectionUtilization }
-     * 
+     * Create an instance of {@link ArrayToExpansionConnectionUtilization }.
+     *
+     * @return the array to expansion connection utilization
      */
     public ArrayToExpansionConnectionUtilization createArrayToExpansionConnectionUtilization() {
         return new ArrayToExpansionConnectionUtilization();
@@ -86,8 +88,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link ExpansionToExpansionConnectionUtilization }
-     * 
+     * Create an instance of {@link ExpansionToExpansionConnectionUtilization }.
+     *
+     * @return the expansion to expansion connection utilization
      */
     public ExpansionToExpansionConnectionUtilization createExpansionToExpansionConnectionUtilization() {
         return new ExpansionToExpansionConnectionUtilization();
@@ -95,8 +98,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageConsumption }
-     * 
+     * Create an instance of {@link StorageConsumption }.
+     *
+     * @return the storage consumption
      */
     public StorageConsumption createStorageConsumption() {
         return new StorageConsumption();
@@ -104,8 +108,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link SpaceBreakdown }
-     * 
+     * Create an instance of {@link SpaceBreakdown }.
+     *
+     * @return the space breakdown
      */
     public SpaceBreakdown createSpaceBreakdown() {
         return new SpaceBreakdown();
@@ -113,8 +118,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link FastestGrowningVolume }
-     * 
+     * Create an instance of {@link FastestGrowningVolume }.
+     *
+     * @return the fastest growning volume
      */
     public FastestGrowningVolume createFastestGrowningVolume() {
         return new FastestGrowningVolume();
@@ -122,8 +128,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageAlert }
-     * 
+     * Create an instance of {@link StorageAlert }.
+     *
+     * @return the storage alert
      */
     public StorageAlert createStorageAlert() {
         return new StorageAlert();
@@ -131,8 +138,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageDetail }
-     * 
+     * Create an instance of {@link StorageDetail }.
+     *
+     * @return the storage detail
      */
     public StorageDetail createStorageDetail() {
         return new StorageDetail();
@@ -140,8 +148,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageSummary }
-     * 
+     * Create an instance of {@link StorageSummary }.
+     *
+     * @return the storage summary
      */
     public StorageSummary createStorageSummary() {
         return new StorageSummary();
@@ -149,8 +158,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Detail }
-     * 
+     * Create an instance of {@link Detail }.
+     *
+     * @return the detail
      */
     public Detail createDetail() {
         return new Detail();
@@ -158,8 +168,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Controllers }
-     * 
+     * Create an instance of {@link Controllers }.
+     *
+     * @return the controllers
      */
     public Controllers createControllers() {
         return new Controllers();
@@ -167,8 +178,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link HealthBase }
-     * 
+     * Create an instance of {@link HealthBase }.
+     *
+     * @return the health base
      */
     public HealthBase createHealthBase() {
         return new HealthBase();
@@ -176,8 +188,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageUsageOverview }
-     * 
+     * Create an instance of {@link StorageUsageOverview }.
+     *
+     * @return the storage usage overview
      */
     public StorageUsageOverview createStorageUsageOverview() {
         return new StorageUsageOverview();
@@ -185,8 +198,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Enclosure }
-     * 
+     * Create an instance of {@link Enclosure }.
+     *
+     * @return the enclosure
      */
     public Enclosure createEnclosure() {
         return new Enclosure();
@@ -194,8 +208,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VolumeStorageUsage }
-     * 
+     * Create an instance of {@link VolumeStorageUsage }.
+     *
+     * @return the volume storage usage
      */
     public VolumeStorageUsage createVolumeStorageUsage() {
         return new VolumeStorageUsage();
@@ -203,8 +218,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VolumeSummary }
-     * 
+     * Create an instance of {@link VolumeSummary }.
+     *
+     * @return the volume summary
      */
     public VolumeSummary createVolumeSummary() {
         return new VolumeSummary();
@@ -212,8 +228,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Disk }
-     * 
+     * Create an instance of {@link Disk }.
+     *
+     * @return the disk
      */
     public Disk createDisk() {
         return new Disk();
@@ -221,8 +238,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link DisksOverview }
-     * 
+     * Create an instance of {@link DisksOverview }.
+     *
+     * @return the disks overview
      */
     public DisksOverview createDisksOverview() {
         return new DisksOverview();
@@ -230,8 +248,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link ControllerHealth }
-     * 
+     * Create an instance of {@link ControllerHealth }.
+     *
+     * @return the controller health
      */
     public ControllerHealth createControllerHealth() {
         return new ControllerHealth();
@@ -239,8 +258,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link IscsiDetail }
-     * 
+     * Create an instance of {@link IscsiDetail }.
+     *
+     * @return the iscsi detail
      */
     public IscsiDetail createIscsiDetail() {
         return new IscsiDetail();
@@ -248,8 +268,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Snapshot }
-     * 
+     * Create an instance of {@link Snapshot }.
+     *
+     * @return the snapshot
      */
     public Snapshot createSnapshot() {
         return new Snapshot();
@@ -257,8 +278,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageLog }
-     * 
+     * Create an instance of {@link StorageLog }.
+     *
+     * @return the storage log
      */
     public StorageLog createStorageLog() {
         return new StorageLog();
@@ -266,8 +288,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Volume }
-     * 
+     * Create an instance of {@link Volume }.
+     *
+     * @return the volume
      */
     public Volume createVolume() {
         return new Volume();
@@ -275,8 +298,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link NetworkStorageProfile }
-     * 
+     * Create an instance of {@link NetworkStorageProfile }.
+     *
+     * @return the network storage profile
      */
     public NetworkStorageProfile createNetworkStorageProfile() {
         return new NetworkStorageProfile();
@@ -284,8 +308,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link CreateSnapshot }
-     * 
+     * Create an instance of {@link CreateSnapshot }.
+     *
+     * @return the creates the snapshot
      */
     public CreateSnapshot createCreateSnapshot() {
         return new CreateSnapshot();
@@ -293,8 +318,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageOverview }
-     * 
+     * Create an instance of {@link StorageOverview }.
+     *
+     * @return the storage overview
      */
     public StorageOverview createStorageOverview() {
         return new StorageOverview();
@@ -302,8 +328,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Temperature }
-     * 
+     * Create an instance of {@link Temperature }.
+     *
+     * @return the temperature
      */
     public Temperature createTemperature() {
         return new Temperature();
@@ -311,8 +338,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageHardwareInventory }
-     * 
+     * Create an instance of {@link StorageHardwareInventory }.
+     *
+     * @return the storage hardware inventory
      */
     public StorageHardwareInventory createStorageHardwareInventory() {
         return new StorageHardwareInventory();
@@ -320,8 +348,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link DeviceInformationOverview }
-     * 
+     * Create an instance of {@link DeviceInformationOverview }.
+     *
+     * @return the device information overview
      */
     public DeviceInformationOverview createDeviceInformationOverview() {
         return new DeviceInformationOverview();
@@ -329,8 +358,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link SasDetail }
-     * 
+     * Create an instance of {@link SasDetail }.
+     *
+     * @return the sas detail
      */
     public SasDetail createSasDetail() {
         return new SasDetail();
@@ -338,8 +368,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VolumeGrowth }
-     * 
+     * Create an instance of {@link VolumeGrowth }.
+     *
+     * @return the volume growth
      */
     public VolumeGrowth createVolumeGrowth() {
         return new VolumeGrowth();
@@ -347,8 +378,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link UpdateSnapshot }
-     * 
+     * Create an instance of {@link UpdateSnapshot }.
+     *
+     * @return the update snapshot
      */
     public UpdateSnapshot createUpdateSnapshot() {
         return new UpdateSnapshot();
@@ -356,8 +388,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link IOPort }
-     * 
+     * Create an instance of {@link IOPort }.
+     *
+     * @return the IO port
      */
     public IOPort createIOPort() {
         return new IOPort();
@@ -365,8 +398,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link NetworkStorageProfileController }
-     * 
+     * Create an instance of {@link NetworkStorageProfileController }.
+     *
+     * @return the network storage profile controller
      */
     public NetworkStorageProfileController createNetworkStorageProfileController() {
         return new NetworkStorageProfileController();
@@ -374,8 +408,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageHealth }
-     * 
+     * Create an instance of {@link StorageHealth }.
+     *
+     * @return the storage health
      */
     public StorageHealth createStorageHealth() {
         return new StorageHealth();
@@ -383,8 +418,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link SnapshotSchedule }
-     * 
+     * Create an instance of {@link SnapshotSchedule }.
+     *
+     * @return the snapshot schedule
      */
     public SnapshotSchedule createSnapshotSchedule() {
         return new SnapshotSchedule();
@@ -392,8 +428,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link StorageActivity }
-     * 
+     * Create an instance of {@link StorageActivity }.
+     *
+     * @return the storage activity
      */
     public StorageActivity createStorageActivity() {
         return new StorageActivity();
@@ -401,8 +438,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link DetailBase }
-     * 
+     * Create an instance of {@link DetailBase }.
+     *
+     * @return the detail base
      */
     public DetailBase createDetailBase() {
         return new DetailBase();
@@ -410,8 +448,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link IoModule }
-     * 
+     * Create an instance of {@link IoModule }.
+     *
+     * @return the io module
      */
     public IoModule createIoModule() {
         return new IoModule();
@@ -419,8 +458,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link CoolingFan }
-     * 
+     * Create an instance of {@link CoolingFan }.
+     *
+     * @return the cooling fan
      */
     public CoolingFan createCoolingFan() {
         return new CoolingFan();
@@ -428,8 +468,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VolumeGrowthOverview }
-     * 
+     * Create an instance of {@link VolumeGrowthOverview }.
+     *
+     * @return the volume growth overview
      */
     public VolumeGrowthOverview createVolumeGrowthOverview() {
         return new VolumeGrowthOverview();
@@ -437,8 +478,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link Controller }
-     * 
+     * Create an instance of {@link Controller }.
+     *
+     * @return the controller
      */
     public Controller createController() {
         return new Controller();
@@ -446,8 +488,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link ControllersHealth }
-     * 
+     * Create an instance of {@link ControllersHealth }.
+     *
+     * @return the controllers health
      */
     public ControllersHealth createControllersHealth() {
         return new ControllersHealth();
@@ -455,8 +498,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link VolumesOverview }
-     * 
+     * Create an instance of {@link VolumesOverview }.
+     *
+     * @return the volumes overview
      */
     public VolumesOverview createVolumesOverview() {
         return new VolumesOverview();
@@ -464,8 +508,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link PowerSupply }
-     * 
+     * Create an instance of {@link PowerSupply }.
+     *
+     * @return the power supply
      */
     public PowerSupply createPowerSupply() {
         return new PowerSupply();
@@ -473,8 +518,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link HealthNode }
-     * 
+     * Create an instance of {@link HealthNode }.
+     *
+     * @return the health node
      */
     public HealthNode createHealthNode() {
         return new HealthNode();
@@ -482,8 +528,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link EnclosuresOverview }
-     * 
+     * Create an instance of {@link EnclosuresOverview }.
+     *
+     * @return the enclosures overview
      */
     public EnclosuresOverview createEnclosuresOverview() {
         return new EnclosuresOverview();
@@ -491,8 +538,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link CacheCard }
-     * 
+     * Create an instance of {@link CacheCard }.
+     *
+     * @return the cache card
      */
     public CacheCard createCacheCard() {
         return new CacheCard();
@@ -500,8 +548,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link IpAddress }
-     * 
+     * Create an instance of {@link IpAddress }.
+     *
+     * @return the ip address
      */
     public IpAddress createIpAddress() {
         return new IpAddress();
@@ -509,8 +558,9 @@ public class ObjectFactory {
 
 
     /**
-     * Create an instance of {@link EnclosureHealth }
-     * 
+     * Create an instance of {@link EnclosureHealth }.
+     *
+     * @return the enclosure health
      */
     public EnclosureHealth createEnclosureHealth() {
         return new EnclosureHealth();

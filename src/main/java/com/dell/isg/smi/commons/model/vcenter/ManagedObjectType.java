@@ -13,29 +13,9 @@ package com.dell.isg.smi.commons.model.vcenter;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ManagedObjectType.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="ManagedObjectType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="VCENTER"/>
- *     &lt;enumeration value="FOLDER"/>
- *     &lt;enumeration value="HOST_SYSTEM"/>
- *     &lt;enumeration value="RESOURCE_POOL"/>
- *     &lt;enumeration value="DATACENTER"/>
- *     &lt;enumeration value="CLUSTER"/>
- *     &lt;enumeration value="VIRTUAL_MACHINE"/>
- *     &lt;enumeration value="NETWORK"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ManagedObjectType.
  */
 @XmlType(name = "ManagedObjectType")
 @XmlEnum

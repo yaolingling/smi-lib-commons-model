@@ -15,29 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageLog complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="StorageLog">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="time" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="level" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageLogLevel"/>
- *         &lt;element name="subsystem" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageLogSubSystem"/>
- *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageLog.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StorageLog", propOrder = { "time", "level", "subsystem", "message" })

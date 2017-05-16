@@ -15,41 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisControllers complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisControllers">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="firmwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hardwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="midplaneVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lastFirmwareUpdateTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="controllerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ControllerStatus"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisControllers.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisControllers", propOrder = { "id", "name", "location", "firmwareVersion", "hardwareVersion", "midplaneVersion", "lastFirmwareUpdateTime", "controllerStatus" })
 public class ChassisControllers {
 
+    /**
+     * Instantiates a new chassis controllers.
+     */
     public ChassisControllers() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -71,7 +49,8 @@ public class ChassisControllers {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -80,7 +59,8 @@ public class ChassisControllers {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

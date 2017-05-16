@@ -17,42 +17,19 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisDetail complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisDetail">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisSummary">
- *       &lt;sequence>
- *         &lt;element name="chassisPowerSupply" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisPowerSupply" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisIkvm" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisIkvm" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisControllers" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisControllers" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="servers" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisServerModel" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisIoms" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisIomModel" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisStashStorages" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisStashStorage" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisFans" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisFan" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisPcis" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisPci" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="chassisTemperatureSensors" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ChassisTemperatureSensor" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisDetail.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisDetail", propOrder = { "chassisPowerSupply", "chassisIkvm", "chassisControllers", "servers", "chassisIoms", "chassisStashStorages", "chassisFans", "chassisPcis", "chassisTemperatureSensors" })
 public class ChassisDetail extends ChassisSummary {
 
+    /**
+     * Instantiates a new chassis detail.
+     */
     public ChassisDetail() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected List<ChassisPowerSupply> chassisPowerSupply;
@@ -66,25 +43,11 @@ public class ChassisDetail extends ChassisSummary {
     protected List<ChassisTemperatureSensor> chassisTemperatureSensors;
 
 
+
     /**
-     * Gets the value of the chassisPowerSupply property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisPowerSupply property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisPowerSupply().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisPowerSupply }
-     * 
-     * 
+     * Gets the chassis power supply.
+     *
+     * @return the chassis power supply
      */
     public List<ChassisPowerSupply> getChassisPowerSupply() {
         if (chassisPowerSupply == null) {
@@ -95,24 +58,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the chassisIkvm property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisIkvm property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisIkvm().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisIkvmModel }
-     * 
-     * 
+     * Gets the chassis ikvm.
+     *
+     * @return the chassis ikvm
      */
     public List<ChassisIkvmModel> getChassisIkvm() {
         if (chassisIkvm == null) {
@@ -122,25 +70,11 @@ public class ChassisDetail extends ChassisSummary {
     }
 
 
+
     /**
-     * Gets the value of the chassisControllers property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisControllers property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisControllers().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisControllers }
-     * 
-     * 
+     * Gets the chassis controllers.
+     *
+     * @return the chassis controllers
      */
     public List<ChassisControllers> getChassisControllers() {
         if (chassisControllers == null) {
@@ -151,24 +85,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the servers property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the servers property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getServers().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisServerModel }
-     * 
-     * 
+     * Gets the servers.
+     *
+     * @return the servers
      */
     public List<ChassisServerModel> getServers() {
         if (servers == null) {
@@ -179,24 +98,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the chassisIoms property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisIoms property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisIoms().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisIomModel }
-     * 
-     * 
+     * Gets the chassis ioms.
+     *
+     * @return the chassis ioms
      */
     public List<ChassisIomModel> getChassisIoms() {
         if (chassisIoms == null) {
@@ -207,24 +111,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the chassisStashStorages property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisStashStorages property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisStashStorages().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisStashStorage }
-     * 
-     * 
+     * Gets the chassis stash storages.
+     *
+     * @return the chassis stash storages
      */
     public List<ChassisStashStorage> getChassisStashStorages() {
         if (chassisStashStorages == null) {
@@ -235,24 +124,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the chassisFans property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisFans property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisFans().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisFan }
-     * 
-     * 
+     * Gets the chassis fans.
+     *
+     * @return the chassis fans
      */
     public List<ChassisFan> getChassisFans() {
         if (chassisFans == null) {
@@ -263,24 +137,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the chassisPcis property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisPcis property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisPcis().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisPci }
-     * 
-     * 
+     * Gets the chassis pcis.
+     *
+     * @return the chassis pcis
      */
     public List<ChassisPci> getChassisPcis() {
         if (chassisPcis == null) {
@@ -291,24 +150,9 @@ public class ChassisDetail extends ChassisSummary {
 
 
     /**
-     * Gets the value of the chassisTemperatureSensors property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the chassisTemperatureSensors property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * 
-     * <pre>
-     * getChassisTemperatureSensors().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list {@link ChassisTemperatureSensor }
-     * 
-     * 
+     * Gets the chassis temperature sensors.
+     *
+     * @return the chassis temperature sensors
      */
     public List<ChassisTemperatureSensor> getChassisTemperatureSensors() {
         if (chassisTemperatureSensors == null) {

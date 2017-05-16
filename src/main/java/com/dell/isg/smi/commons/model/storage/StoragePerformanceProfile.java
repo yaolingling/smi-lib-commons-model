@@ -13,25 +13,9 @@ package com.dell.isg.smi.commons.model.storage;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StoragePerformanceProfile.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="StoragePerformanceProfile">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ALL"/>
- *     &lt;enumeration value="HIGH"/>
- *     &lt;enumeration value="MEDIUM"/>
- *     &lt;enumeration value="LOW"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StoragePerformanceProfile.
  */
 @XmlType(name = "StoragePerformanceProfile")
 @XmlEnum
@@ -39,11 +23,22 @@ public enum StoragePerformanceProfile {
 
     ALL, HIGH, MEDIUM, LOW;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the storage performance profile
+     */
     public static StoragePerformanceProfile fromValue(String v) {
         return valueOf(v);
     }

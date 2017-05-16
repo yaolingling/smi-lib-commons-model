@@ -10,24 +10,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author rahman.muhammad
+ * The Class ApplicableUpdate.
  *
+ * @author rahman.muhammad
  */
 public class ApplicableUpdate {
     private String deviceId;
     private List<Update> updates;
 
 
+    /**
+     * Gets the device id.
+     *
+     * @return the device id
+     */
     public String getDeviceId() {
         return deviceId;
     }
 
 
+    /**
+     * Sets the device id.
+     *
+     * @param deviceId the new device id
+     */
     public void setDeviceId(String deviceId) {
         this.deviceId = deviceId;
     }
 
 
+    /**
+     * Gets the updates.
+     *
+     * @return the updates
+     */
     public List<Update> getUpdates() {
         if (updates == null)
             updates = new ArrayList<Update>();
@@ -36,6 +52,11 @@ public class ApplicableUpdate {
     }
 
 
+    /**
+     * Sets the updates.
+     *
+     * @param updates the new updates
+     */
     public void setUpdates(List<Update> updates) {
         this.updates = updates;
     }

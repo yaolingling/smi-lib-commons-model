@@ -11,6 +11,9 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The Class DiscoveryDeviceType.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({ "discoveryDeviceName", "discoveryRules" })
 public class DiscoveryDeviceType {
@@ -22,17 +25,17 @@ public class DiscoveryDeviceType {
 
 
     /**
-     * No args constructor for use in serialization
-     * 
+     * No args constructor for use in serialization.
      */
     public DiscoveryDeviceType() {
     }
 
 
     /**
-     * 
-     * @param discoveryDeviceName
-     * @param discoveryRules
+     * Instantiates a new discovery device type.
+     *
+     * @param discoveryDeviceName the discovery device name
+     * @param discoveryRules the discovery rules
      */
     public DiscoveryDeviceType(String discoveryDeviceName, DiscoveryRules discoveryRules) {
         super();
@@ -41,42 +44,71 @@ public class DiscoveryDeviceType {
     }
 
 
+    /**
+     * Gets the discovery device name.
+     *
+     * @return the discovery device name
+     */
     @JsonProperty("discoveryDeviceName")
     public String getDiscoveryDeviceName() {
         return discoveryDeviceName;
     }
 
 
+    /**
+     * Sets the discovery device name.
+     *
+     * @param discoveryDeviceName the new discovery device name
+     */
     @JsonProperty("discoveryDeviceName")
     public void setDiscoveryDeviceName(String discoveryDeviceName) {
         this.discoveryDeviceName = discoveryDeviceName;
     }
 
 
+    /**
+     * Gets the discovery rules.
+     *
+     * @return the discovery rules
+     */
     @JsonProperty("discoveryRules")
     public DiscoveryRules getDiscoveryRules() {
         return discoveryRules;
     }
 
 
+    /**
+     * Sets the discovery rules.
+     *
+     * @param discoveryRules the new discovery rules
+     */
     @JsonProperty("discoveryRules")
     public void setDiscoveryRules(DiscoveryRules discoveryRules) {
         this.discoveryRules = discoveryRules;
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#hashCode()
+     */
     @Override
     public int hashCode() {
         return new HashCodeBuilder().append(discoveryDeviceName).append(discoveryRules).toHashCode();
     }
 
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
     @Override
     public boolean equals(Object other) {
         if (other == this) {

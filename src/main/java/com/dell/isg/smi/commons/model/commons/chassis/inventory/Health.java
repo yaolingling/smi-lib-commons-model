@@ -13,25 +13,9 @@ package com.dell.isg.smi.commons.model.commons.chassis.inventory;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Health.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="Health">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="OK"/>
- *     &lt;enumeration value="WARNING"/>
- *     &lt;enumeration value="CRITICAL"/>
- *     &lt;enumeration value="UNKNOWN"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum Health.
  */
 @XmlType(name = "Health")
 @XmlEnum
@@ -39,11 +23,22 @@ public enum Health {
 
     OK, WARNING, CRITICAL, UNKNOWN;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the health
+     */
     public static Health fromValue(String v) {
         return valueOf(v);
     }

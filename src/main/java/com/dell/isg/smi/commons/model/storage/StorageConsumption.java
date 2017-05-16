@@ -18,33 +18,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="actualStorageGrowth" type="{http://esg.dell.com/icee/infrastructure/model/storage}DateLongValuePair" maxOccurs="unbounded"/>
- *         &lt;element name="freeSpaceLoss" type="{http://esg.dell.com/icee/infrastructure/model/storage}DateLongValuePair" maxOccurs="unbounded"/>
- *         &lt;element name="allocatedVSUsedStorage" type="{http://esg.dell.com/icee/infrastructure/model/storage}DateLongValuePair" maxOccurs="unbounded"/>
- *         &lt;element name="activeVSReplay" type="{http://esg.dell.com/icee/infrastructure/model/storage}DateLongValuePair" maxOccurs="unbounded"/>
- *         &lt;element name="spaceBreakdown" type="{http://esg.dell.com/icee/infrastructure/model/storage}SpaceBreakdown"/>
- *         &lt;element name="top10FastestGrowningVolumesByActiveSize" type="{http://esg.dell.com/icee/infrastructure/model/storage}FastestGrowningVolume" maxOccurs="10"/>
- *         &lt;element name="top10FastestGrowningVolumesByReplaySize" type="{http://esg.dell.com/icee/infrastructure/model/storage}FastestGrowningVolume" maxOccurs="10"/>
- *         &lt;element name="top10FastestGrowningVolumesByActualSize" type="{http://esg.dell.com/icee/infrastructure/model/storage}FastestGrowningVolume" maxOccurs="10"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageConsumption.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "actualStorageGrowth", "freeSpaceLoss", "allocatedVSUsedStorage", "activeVSReplay", "spaceBreakdown", "top10FastestGrowningVolumesByActiveSize", "top10FastestGrowningVolumesByReplaySize", "top10FastestGrowningVolumesByActualSize" })
@@ -86,8 +62,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link DateLongValuePair }
-     * 
-     * 
+     *
+     * @return the actual storage growth
      */
     public List<DateLongValuePair> getActualStorageGrowth() {
         if (actualStorageGrowth == null) {
@@ -114,8 +90,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link DateLongValuePair }
-     * 
-     * 
+     *
+     * @return the free space loss
      */
     public List<DateLongValuePair> getFreeSpaceLoss() {
         if (freeSpaceLoss == null) {
@@ -142,8 +118,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link DateLongValuePair }
-     * 
-     * 
+     *
+     * @return the allocated VS used storage
      */
     public List<DateLongValuePair> getAllocatedVSUsedStorage() {
         if (allocatedVSUsedStorage == null) {
@@ -170,8 +146,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link DateLongValuePair }
-     * 
-     * 
+     *
+     * @return the active VS replay
      */
     public List<DateLongValuePair> getActiveVSReplay() {
         if (activeVSReplay == null) {
@@ -220,8 +196,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link FastestGrowningVolume }
-     * 
-     * 
+     *
+     * @return the top 10 fastest growning volumes by active size
      */
     public List<FastestGrowningVolume> getTop10FastestGrowningVolumesByActiveSize() {
         if (top10FastestGrowningVolumesByActiveSize == null) {
@@ -248,8 +224,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link FastestGrowningVolume }
-     * 
-     * 
+     *
+     * @return the top 10 fastest growning volumes by replay size
      */
     public List<FastestGrowningVolume> getTop10FastestGrowningVolumesByReplaySize() {
         if (top10FastestGrowningVolumesByReplaySize == null) {
@@ -276,8 +252,8 @@ public class StorageConsumption {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link FastestGrowningVolume }
-     * 
-     * 
+     *
+     * @return the top 10 fastest growning volumes by actual size
      */
     public List<FastestGrowningVolume> getTop10FastestGrowningVolumesByActualSize() {
         if (top10FastestGrowningVolumesByActualSize == null) {

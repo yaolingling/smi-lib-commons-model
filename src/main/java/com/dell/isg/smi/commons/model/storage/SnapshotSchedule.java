@@ -17,37 +17,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for SnapshotSchedule complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="SnapshotSchedule">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="instanceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="scheduleType" type="{http://esg.dell.com/icee/infrastructure/model/storage}SnapshotScheduleType"/>
- *         &lt;element name="startTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="runDaysOfWeek" type="{http://esg.dell.com/icee/infrastructure/model/storage}DaysOfWeek" maxOccurs="unbounded"/>
- *         &lt;element name="runWeeksOfMonth" type="{http://esg.dell.com/icee/infrastructure/model/storage}WeekNumber" maxOccurs="unbounded"/>
- *         &lt;element name="runDatesOfMonth" type="{http://www.w3.org/2001/XMLSchema}int" maxOccurs="unbounded"/>
- *         &lt;element name="runMonths" type="{http://esg.dell.com/icee/infrastructure/model/storage}Months" maxOccurs="unbounded"/>
- *         &lt;element name="expiry" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="expiryTimeUnit" type="{http://esg.dell.com/icee/infrastructure/model/storage}ExpiryTimeUnit"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SnapshotSchedule.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SnapshotSchedule", propOrder = { "id", "name", "description", "instanceId", "scheduleType", "startTime", "runDaysOfWeek", "runWeeksOfMonth", "runDatesOfMonth", "runMonths", "expiry", "expiryTimeUnit" })
@@ -79,7 +51,8 @@ public class SnapshotSchedule {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -88,7 +61,8 @@ public class SnapshotSchedule {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -222,8 +196,8 @@ public class SnapshotSchedule {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link DaysOfWeek }
-     * 
-     * 
+     *
+     * @return the run days of week
      */
     public List<DaysOfWeek> getRunDaysOfWeek() {
         if (runDaysOfWeek == null) {
@@ -250,8 +224,8 @@ public class SnapshotSchedule {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link WeekNumber }
-     * 
-     * 
+     *
+     * @return the run weeks of month
      */
     public List<WeekNumber> getRunWeeksOfMonth() {
         if (runWeeksOfMonth == null) {
@@ -278,8 +252,8 @@ public class SnapshotSchedule {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Integer }
-     * 
-     * 
+     *
+     * @return the run dates of month
      */
     public List<Integer> getRunDatesOfMonth() {
         if (runDatesOfMonth == null) {
@@ -306,8 +280,8 @@ public class SnapshotSchedule {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Months }
-     * 
-     * 
+     *
+     * @return the run months
      */
     public List<Months> getRunMonths() {
         if (runMonths == null) {
@@ -319,7 +293,8 @@ public class SnapshotSchedule {
 
     /**
      * Gets the value of the expiry property.
-     * 
+     *
+     * @return the expiry
      */
     public int getExpiry() {
         return expiry;
@@ -328,7 +303,8 @@ public class SnapshotSchedule {
 
     /**
      * Sets the value of the expiry property.
-     * 
+     *
+     * @param value the new expiry
      */
     public void setExpiry(int value) {
         this.expiry = value;

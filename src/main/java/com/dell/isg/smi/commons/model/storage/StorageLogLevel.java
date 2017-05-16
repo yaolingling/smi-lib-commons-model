@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageLogLevel.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="StorageLogLevel">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Debug"/>
- *     &lt;enumeration value="Config"/>
- *     &lt;enumeration value="Info"/>
- *     &lt;enumeration value="Warning"/>
- *     &lt;enumeration value="Error"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StorageLogLevel.
  */
 @XmlType(name = "StorageLogLevel")
 @XmlEnum
@@ -48,16 +31,32 @@ public enum StorageLogLevel {
     private final String value;
 
 
+    /**
+     * Instantiates a new storage log level.
+     *
+     * @param v the v
+     */
     StorageLogLevel(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the storage log level
+     */
     public static StorageLogLevel fromValue(String v) {
         for (StorageLogLevel c : StorageLogLevel.values()) {
             if (c.value.equals(v)) {

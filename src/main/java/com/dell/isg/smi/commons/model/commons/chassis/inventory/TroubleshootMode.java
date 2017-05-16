@@ -13,24 +13,9 @@ package com.dell.isg.smi.commons.model.commons.chassis.inventory;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for TroubleshootMode.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="TroubleshootMode">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ENABLED"/>
- *     &lt;enumeration value="DISABLED"/>
- *     &lt;enumeration value="UNKNOWN"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum TroubleshootMode.
  */
 @XmlType(name = "TroubleshootMode")
 @XmlEnum
@@ -38,11 +23,22 @@ public enum TroubleshootMode {
 
     ENABLED, DISABLED, UNKNOWN;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the troubleshoot mode
+     */
     public static TroubleshootMode fromValue(String v) {
         return valueOf(v);
     }
