@@ -1,6 +1,3 @@
-/**
- * Copyright © 2017 DELL Inc. or its subsidiaries.  All Rights Reserved.
- */
 
 package com.dell.isg.smi.commons.model.device.discovery.config;
 
@@ -12,12 +9,13 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "text" })
+@JsonPropertyOrder({
+    "text"
+})
 public class Identifier {
 
     @JsonProperty("text")
     private String text;
-
 
     /**
      * No args constructor for use in serialization
@@ -25,7 +23,6 @@ public class Identifier {
      */
     public Identifier() {
     }
-
 
     /**
      * 
@@ -36,30 +33,25 @@ public class Identifier {
         this.text = text;
     }
 
-
     @JsonProperty("text")
     public String getText() {
         return text;
     }
-
 
     @JsonProperty("text")
     public void setText(String text) {
         this.text = text;
     }
 
-
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
 
-
     @Override
     public int hashCode() {
         return new HashCodeBuilder().append(text).toHashCode();
     }
-
 
     @Override
     public boolean equals(Object other) {

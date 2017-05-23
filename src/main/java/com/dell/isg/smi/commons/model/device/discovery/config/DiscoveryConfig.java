@@ -1,6 +1,3 @@
-/**
- * Copyright © 2017 DELL Inc. or its subsidiaries.  All Rights Reserved.
- */
 
 package com.dell.isg.smi.commons.model.device.discovery.config;
 
@@ -13,12 +10,13 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "discoveryDevice" })
+@JsonPropertyOrder({
+    "deviceGroup"
+})
 public class DiscoveryConfig {
 
-    @JsonProperty("discoveryDevice")
-    private List<DiscoveryDevice> discoveryDevice = null;
-
+    @JsonProperty("deviceGroup")
+    private List<DeviceGroup> deviceGroup = null;
 
     /**
      * No args constructor for use in serialization
@@ -27,40 +25,34 @@ public class DiscoveryConfig {
     public DiscoveryConfig() {
     }
 
-
     /**
      * 
-     * @param discoveryDevice
+     * @param deviceGroup
      */
-    public DiscoveryConfig(List<DiscoveryDevice> discoveryDevice) {
+    public DiscoveryConfig(List<DeviceGroup> deviceGroup) {
         super();
-        this.discoveryDevice = discoveryDevice;
+        this.deviceGroup = deviceGroup;
     }
 
-
-    @JsonProperty("discoveryDevice")
-    public List<DiscoveryDevice> getDiscoveryDevice() {
-        return discoveryDevice;
+    @JsonProperty("deviceGroup")
+    public List<DeviceGroup> getDeviceGroup() {
+        return deviceGroup;
     }
 
-
-    @JsonProperty("discoveryDevice")
-    public void setDiscoveryDevice(List<DiscoveryDevice> discoveryDevice) {
-        this.discoveryDevice = discoveryDevice;
+    @JsonProperty("deviceGroup")
+    public void setDeviceGroup(List<DeviceGroup> deviceGroup) {
+        this.deviceGroup = deviceGroup;
     }
-
 
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
 
-
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(discoveryDevice).toHashCode();
+        return new HashCodeBuilder().append(deviceGroup).toHashCode();
     }
-
 
     @Override
     public boolean equals(Object other) {
@@ -71,7 +63,7 @@ public class DiscoveryConfig {
             return false;
         }
         DiscoveryConfig rhs = ((DiscoveryConfig) other);
-        return new EqualsBuilder().append(discoveryDevice, rhs.discoveryDevice).isEquals();
+        return new EqualsBuilder().append(deviceGroup, rhs.deviceGroup).isEquals();
     }
 
 }

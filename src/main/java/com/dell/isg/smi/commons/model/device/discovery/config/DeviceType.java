@@ -1,6 +1,3 @@
-/**
- * Copyright © 2017 DELL Inc. or its subsidiaries.  All Rights Reserved.
- */
 
 package com.dell.isg.smi.commons.model.device.discovery.config;
 
@@ -13,128 +10,120 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "protocol", "command", "identifyBy", "identifier", "deviceDefaultCredential" })
-public class DiscoveryRules {
+@JsonPropertyOrder({
+    "name",
+    "identifyBy",
+    "identifier",
+    "deviceDefaultCredential",
+    "enabled"
+})
+public class DeviceType {
 
-    @JsonProperty("protocol")
-    private String protocol;
-    @JsonProperty("command")
-    private String command;
+    @JsonProperty("name")
+    private String name;
     @JsonProperty("identifyBy")
     private String identifyBy;
     @JsonProperty("identifier")
     private List<Identifier> identifier = null;
     @JsonProperty("deviceDefaultCredential")
     private DeviceDefaultCredential deviceDefaultCredential;
-
+    @JsonProperty("enabled")
+    private Boolean enabled;
 
     /**
      * No args constructor for use in serialization
      * 
      */
-    public DiscoveryRules() {
+    public DeviceType() {
     }
-
 
     /**
      * 
-     * @param protocol
+     * @param enabled
+     * @param identifyBy
      * @param deviceDefaultCredential
-     * @param command
+     * @param name
      * @param identifier
      */
-    public DiscoveryRules(String protocol, String command, String identifyBy, List<Identifier> identifier, DeviceDefaultCredential deviceDefaultCredential) {
+    public DeviceType(String name, String identifyBy, List<Identifier> identifier, DeviceDefaultCredential deviceDefaultCredential, Boolean enabled) {
         super();
-        this.protocol = protocol;
-        this.command = command;
-        this.identifier = identifier;
+        this.name = name;
         this.identifyBy = identifyBy;
+        this.identifier = identifier;
         this.deviceDefaultCredential = deviceDefaultCredential;
+        this.enabled = enabled;
     }
 
-
-    @JsonProperty("protocol")
-    public String getProtocol() {
-        return protocol;
+    @JsonProperty("name")
+    public String getName() {
+        return name;
     }
 
-
-    @JsonProperty("protocol")
-    public void setProtocol(String protocol) {
-        this.protocol = protocol;
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
-
-
-    @JsonProperty("command")
-    public String getCommand() {
-        return command;
-    }
-
-
-    @JsonProperty("command")
-    public void setCommand(String command) {
-        this.command = command;
-    }
-
 
     @JsonProperty("identifyBy")
     public String getIdentifyBy() {
         return identifyBy;
     }
 
-
     @JsonProperty("identifyBy")
     public void setIdentifyBy(String identifyBy) {
         this.identifyBy = identifyBy;
     }
-
 
     @JsonProperty("identifier")
     public List<Identifier> getIdentifier() {
         return identifier;
     }
 
-
     @JsonProperty("identifier")
     public void setIdentifier(List<Identifier> identifier) {
         this.identifier = identifier;
     }
-
 
     @JsonProperty("deviceDefaultCredential")
     public DeviceDefaultCredential getDeviceDefaultCredential() {
         return deviceDefaultCredential;
     }
 
-
     @JsonProperty("deviceDefaultCredential")
     public void setDeviceDefaultCredential(DeviceDefaultCredential deviceDefaultCredential) {
         this.deviceDefaultCredential = deviceDefaultCredential;
     }
 
+    @JsonProperty("enabled")
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    @JsonProperty("enabled")
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
 
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
 
-
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(protocol).append(command).append(identifyBy).append(identifier).append(deviceDefaultCredential).toHashCode();
+        return new HashCodeBuilder().append(name).append(identifyBy).append(identifier).append(deviceDefaultCredential).append(enabled).toHashCode();
     }
-
 
     @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
         }
-        if ((other instanceof DiscoveryRules) == false) {
+        if ((other instanceof DeviceType) == false) {
             return false;
         }
-        DiscoveryRules rhs = ((DiscoveryRules) other);
-        return new EqualsBuilder().append(protocol, rhs.protocol).append(command, rhs.command).append(identifier, rhs.identifier).append(identifyBy, rhs.identifyBy).append(deviceDefaultCredential, rhs.deviceDefaultCredential).isEquals();
+        DeviceType rhs = ((DeviceType) other);
+        return new EqualsBuilder().append(name, rhs.name).append(identifyBy, rhs.identifyBy).append(identifier, rhs.identifier).append(deviceDefaultCredential, rhs.deviceDefaultCredential).append(enabled, rhs.enabled).isEquals();
     }
 
 }
