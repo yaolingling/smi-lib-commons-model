@@ -15,43 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisTemperatureSensor complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisTemperatureSensor">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="sensorUnits" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="sensorName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="reading" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lc" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="uc" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lw" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="uw" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="number" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisTemperatureSensor.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisTemperatureSensor", propOrder = { "id", "sensorUnits", "sensorName", "status", "reading", "lc", "uc", "lw", "uw", "number" })
 public class ChassisTemperatureSensor {
 
+    /**
+     * Instantiates a new chassis temperature sensor.
+     */
     public ChassisTemperatureSensor() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -77,7 +53,8 @@ public class ChassisTemperatureSensor {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -86,7 +63,8 @@ public class ChassisTemperatureSensor {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

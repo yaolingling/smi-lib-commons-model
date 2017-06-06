@@ -10,11 +10,13 @@
 
 package com.dell.isg.smi.commons.model.server.inventory;
 
+/**
+ * The Class HwBattery.
+ */
 public class HwBattery {
 
     public HwBattery() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -30,7 +32,8 @@ public class HwBattery {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -39,7 +42,8 @@ public class HwBattery {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

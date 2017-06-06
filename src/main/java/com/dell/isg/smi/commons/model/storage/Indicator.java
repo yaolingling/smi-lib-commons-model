@@ -14,23 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Indicator.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="Indicator">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="On"/>
- *     &lt;enumeration value="Off"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum Indicator.
  */
 @XmlType(name = "Indicator")
 @XmlEnum
@@ -42,16 +28,32 @@ public enum Indicator {
     private final String value;
 
 
+    /**
+     * Instantiates a new indicator.
+     *
+     * @param v the v
+     */
     Indicator(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the indicator
+     */
     public static Indicator fromValue(String v) {
         for (Indicator c : Indicator.values()) {
             if (c.value.equals(v)) {

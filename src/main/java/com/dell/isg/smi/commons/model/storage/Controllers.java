@@ -15,27 +15,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
+// TODO: Auto-generated Javadoc
 /**
- * <p>
- * Java class for Controllers complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Controllers">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="bottom" type="{http://esg.dell.com/icee/infrastructure/model/storage}Controller"/>
- *         &lt;element name="top" type="{http://esg.dell.com/icee/infrastructure/model/storage}Controller"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Controllers.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Controllers", propOrder = { "bottom", "top" })

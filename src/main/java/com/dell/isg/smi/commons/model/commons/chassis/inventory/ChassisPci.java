@@ -15,46 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisPci complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisPci">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="slotNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="slotName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fabric" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serverMapping" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serverSlot" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}PowerStatus"/>
- *         &lt;element name="adapterPresent" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="assignmentStatus" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="allocatedSlotPower" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="slotType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="pciDeviceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="pciVendorId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisPci.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisPci", propOrder = { "id", "slotNumber", "slotName", "fabric", "serverMapping", "serverSlot", "powerStatus", "adapterPresent", "assignmentStatus", "allocatedSlotPower", "slotType", "pciDeviceId", "pciVendorId" })
 public class ChassisPci {
 
+    /**
+     * Instantiates a new chassis pci.
+     */
     public ChassisPci() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -86,7 +59,8 @@ public class ChassisPci {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -95,7 +69,8 @@ public class ChassisPci {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

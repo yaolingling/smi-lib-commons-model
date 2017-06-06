@@ -14,23 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VolumeSnapshotProfile.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="VolumeSnapshotProfile">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Daily"/>
- *     &lt;enumeration value="Weekly"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum VolumeSnapshotProfile.
  */
 @XmlType(name = "VolumeSnapshotProfile")
 @XmlEnum
@@ -42,16 +28,32 @@ public enum VolumeSnapshotProfile {
     private final String value;
 
 
+    /**
+     * Instantiates a new volume snapshot profile.
+     *
+     * @param v the v
+     */
     VolumeSnapshotProfile(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the volume snapshot profile
+     */
     public static VolumeSnapshotProfile fromValue(String v) {
         for (VolumeSnapshotProfile c : VolumeSnapshotProfile.values()) {
             if (c.value.equals(v)) {

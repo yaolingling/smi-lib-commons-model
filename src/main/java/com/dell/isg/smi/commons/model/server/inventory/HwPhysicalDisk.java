@@ -10,11 +10,13 @@
 
 package com.dell.isg.smi.commons.model.server.inventory;
 
+/**
+ * The Class HwPhysicalDisk.
+ */
 public class HwPhysicalDisk {
 
     public HwPhysicalDisk() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected String BlockSizeInBytes;
@@ -54,351 +56,701 @@ public class HwPhysicalDisk {
     protected String UsedSizeInBytes;
 
 
+    /**
+     * Gets the block size in bytes.
+     *
+     * @return the block size in bytes
+     */
     public String getBlockSizeInBytes() {
         return BlockSizeInBytes;
     }
 
 
+    /**
+     * Sets the block size in bytes.
+     *
+     * @param blockSizeInBytes the new block size in bytes
+     */
     public void setBlockSizeInBytes(String blockSizeInBytes) {
         BlockSizeInBytes = blockSizeInBytes;
     }
 
 
+    /**
+     * Gets the bus protocol.
+     *
+     * @return the bus protocol
+     */
     public String getBusProtocol() {
         return BusProtocol;
     }
 
 
+    /**
+     * Sets the bus protocol.
+     *
+     * @param busProtocol the new bus protocol
+     */
     public void setBusProtocol(String busProtocol) {
         BusProtocol = busProtocol;
     }
 
 
+    /**
+     * Gets the connector.
+     *
+     * @return the connector
+     */
     public String getConnector() {
         return Connector;
     }
 
 
+    /**
+     * Sets the connector.
+     *
+     * @param connector the new connector
+     */
     public void setConnector(String connector) {
         Connector = connector;
     }
 
 
+    /**
+     * Gets the device description.
+     *
+     * @return the device description
+     */
     public String getDeviceDescription() {
         return DeviceDescription;
     }
 
 
+    /**
+     * Sets the device description.
+     *
+     * @param deviceDescription the new device description
+     */
     public void setDeviceDescription(String deviceDescription) {
         DeviceDescription = deviceDescription;
     }
 
 
+    /**
+     * Gets the drive form factor.
+     *
+     * @return the drive form factor
+     */
     public String getDriveFormFactor() {
         return DriveFormFactor;
     }
 
 
+    /**
+     * Sets the drive form factor.
+     *
+     * @param driveFormFactor the new drive form factor
+     */
     public void setDriveFormFactor(String driveFormFactor) {
         DriveFormFactor = driveFormFactor;
     }
 
 
+    /**
+     * Gets the fqdd.
+     *
+     * @return the fqdd
+     */
     public String getFQDD() {
         return FQDD;
     }
 
 
+    /**
+     * Sets the fqdd.
+     *
+     * @param FQDD the new fqdd
+     */
     public void setFQDD(String FQDD) {
         this.FQDD = FQDD;
     }
 
 
+    /**
+     * Gets the free size in bytes.
+     *
+     * @return the free size in bytes
+     */
     public String getFreeSizeInBytes() {
         return FreeSizeInBytes;
     }
 
 
+    /**
+     * Sets the free size in bytes.
+     *
+     * @param freeSizeInBytes the new free size in bytes
+     */
     public void setFreeSizeInBytes(String freeSizeInBytes) {
         FreeSizeInBytes = freeSizeInBytes;
     }
 
 
+    /**
+     * Gets the hot spare status.
+     *
+     * @return the hot spare status
+     */
     public String getHotSpareStatus() {
         return HotSpareStatus;
     }
 
 
+    /**
+     * Sets the hot spare status.
+     *
+     * @param hotSpareStatus the new hot spare status
+     */
     public void setHotSpareStatus(String hotSpareStatus) {
         HotSpareStatus = hotSpareStatus;
     }
 
 
+    /**
+     * Gets the instance ID.
+     *
+     * @return the instance ID
+     */
     public String getInstanceID() {
         return InstanceID;
     }
 
 
+    /**
+     * Sets the instance ID.
+     *
+     * @param instanceID the new instance ID
+     */
     public void setInstanceID(String instanceID) {
         InstanceID = instanceID;
     }
 
 
+    /**
+     * Gets the last system inventory time.
+     *
+     * @return the last system inventory time
+     */
     public String getLastSystemInventoryTime() {
         return LastSystemInventoryTime;
     }
 
 
+    /**
+     * Sets the last system inventory time.
+     *
+     * @param lastSystemInventoryTime the new last system inventory time
+     */
     public void setLastSystemInventoryTime(String lastSystemInventoryTime) {
         LastSystemInventoryTime = lastSystemInventoryTime;
     }
 
 
+    /**
+     * Gets the last update time.
+     *
+     * @return the last update time
+     */
     public String getLastUpdateTime() {
         return LastUpdateTime;
     }
 
 
+    /**
+     * Sets the last update time.
+     *
+     * @param lastUpdateTime the new last update time
+     */
     public void setLastUpdateTime(String lastUpdateTime) {
         LastUpdateTime = lastUpdateTime;
     }
 
 
+    /**
+     * Gets the manufacturer.
+     *
+     * @return the manufacturer
+     */
     public String getManufacturer() {
         return Manufacturer;
     }
 
 
+    /**
+     * Sets the manufacturer.
+     *
+     * @param manufacturer the new manufacturer
+     */
     public void setManufacturer(String manufacturer) {
         Manufacturer = manufacturer;
     }
 
 
+    /**
+     * Gets the manufacturing day.
+     *
+     * @return the manufacturing day
+     */
     public String getManufacturingDay() {
         return ManufacturingDay;
     }
 
 
+    /**
+     * Sets the manufacturing day.
+     *
+     * @param manufacturingDay the new manufacturing day
+     */
     public void setManufacturingDay(String manufacturingDay) {
         ManufacturingDay = manufacturingDay;
     }
 
 
+    /**
+     * Gets the manufacturing week.
+     *
+     * @return the manufacturing week
+     */
     public String getManufacturingWeek() {
         return ManufacturingWeek;
     }
 
 
+    /**
+     * Sets the manufacturing week.
+     *
+     * @param manufacturingWeek the new manufacturing week
+     */
     public void setManufacturingWeek(String manufacturingWeek) {
         ManufacturingWeek = manufacturingWeek;
     }
 
 
+    /**
+     * Gets the manufacturing year.
+     *
+     * @return the manufacturing year
+     */
     public String getManufacturingYear() {
         return ManufacturingYear;
     }
 
 
+    /**
+     * Sets the manufacturing year.
+     *
+     * @param manufacturingYear the new manufacturing year
+     */
     public void setManufacturingYear(String manufacturingYear) {
         ManufacturingYear = manufacturingYear;
     }
 
 
+    /**
+     * Gets the max capable speed.
+     *
+     * @return the max capable speed
+     */
     public String getMaxCapableSpeed() {
         return MaxCapableSpeed;
     }
 
 
+    /**
+     * Sets the max capable speed.
+     *
+     * @param maxCapableSpeed the new max capable speed
+     */
     public void setMaxCapableSpeed(String maxCapableSpeed) {
         MaxCapableSpeed = maxCapableSpeed;
     }
 
 
+    /**
+     * Gets the media type.
+     *
+     * @return the media type
+     */
     public String getMediaType() {
         return MediaType;
     }
 
 
+    /**
+     * Sets the media type.
+     *
+     * @param mediaType the new media type
+     */
     public void setMediaType(String mediaType) {
         MediaType = mediaType;
     }
 
 
+    /**
+     * Gets the model.
+     *
+     * @return the model
+     */
     public String getModel() {
         return Model;
     }
 
 
+    /**
+     * Sets the model.
+     *
+     * @param model the new model
+     */
     public void setModel(String model) {
         Model = model;
     }
 
 
+    /**
+     * Gets the operation name.
+     *
+     * @return the operation name
+     */
     public String getOperationName() {
         return OperationName;
     }
 
 
+    /**
+     * Sets the operation name.
+     *
+     * @param operationName the new operation name
+     */
     public void setOperationName(String operationName) {
         OperationName = operationName;
     }
 
 
+    /**
+     * Gets the operation percent complete.
+     *
+     * @return the operation percent complete
+     */
     public String getOperationPercentComplete() {
         return OperationPercentComplete;
     }
 
 
+    /**
+     * Sets the operation percent complete.
+     *
+     * @param operationPercentComplete the new operation percent complete
+     */
     public void setOperationPercentComplete(String operationPercentComplete) {
         OperationPercentComplete = operationPercentComplete;
     }
 
 
+    /**
+     * Gets the ppid.
+     *
+     * @return the ppid
+     */
     public String getPPID() {
         return PPID;
     }
 
 
+    /**
+     * Sets the ppid.
+     *
+     * @param PPID the new ppid
+     */
     public void setPPID(String PPID) {
         this.PPID = PPID;
     }
 
 
+    /**
+     * Gets the predictive failure state.
+     *
+     * @return the predictive failure state
+     */
     public String getPredictiveFailureState() {
         return PredictiveFailureState;
     }
 
 
+    /**
+     * Sets the predictive failure state.
+     *
+     * @param predictiveFailureState the new predictive failure state
+     */
     public void setPredictiveFailureState(String predictiveFailureState) {
         PredictiveFailureState = predictiveFailureState;
     }
 
 
+    /**
+     * Gets the primary status.
+     *
+     * @return the primary status
+     */
     public String getPrimaryStatus() {
         return PrimaryStatus;
     }
 
 
+    /**
+     * Sets the primary status.
+     *
+     * @param primaryStatus the new primary status
+     */
     public void setPrimaryStatus(String primaryStatus) {
         PrimaryStatus = primaryStatus;
     }
 
 
+    /**
+     * Gets the raid status.
+     *
+     * @return the raid status
+     */
     public String getRaidStatus() {
         return RaidStatus;
     }
 
 
+    /**
+     * Sets the raid status.
+     *
+     * @param raidStatus the new raid status
+     */
     public void setRaidStatus(String raidStatus) {
         RaidStatus = raidStatus;
     }
 
 
+    /**
+     * Gets the remaining rated write endurance.
+     *
+     * @return the remaining rated write endurance
+     */
     public String getRemainingRatedWriteEndurance() {
         return RemainingRatedWriteEndurance;
     }
 
 
+    /**
+     * Sets the remaining rated write endurance.
+     *
+     * @param remainingRatedWriteEndurance the new remaining rated write endurance
+     */
     public void setRemainingRatedWriteEndurance(String remainingRatedWriteEndurance) {
         RemainingRatedWriteEndurance = remainingRatedWriteEndurance;
     }
 
 
+    /**
+     * Gets the revision.
+     *
+     * @return the revision
+     */
     public String getRevision() {
         return Revision;
     }
 
 
+    /**
+     * Sets the revision.
+     *
+     * @param revision the new revision
+     */
     public void setRevision(String revision) {
         Revision = revision;
     }
 
 
+    /**
+     * Gets the rollup status.
+     *
+     * @return the rollup status
+     */
     public String getRollupStatus() {
         return RollupStatus;
     }
 
 
+    /**
+     * Sets the rollup status.
+     *
+     * @param rollupStatus the new rollup status
+     */
     public void setRollupStatus(String rollupStatus) {
         RollupStatus = rollupStatus;
     }
 
 
+    /**
+     * Gets the SAS address.
+     *
+     * @return the SAS address
+     */
     public String getSASAddress() {
         return SASAddress;
     }
 
 
+    /**
+     * Sets the SAS address.
+     *
+     * @param SASAddress the new SAS address
+     */
     public void setSASAddress(String SASAddress) {
         this.SASAddress = SASAddress;
     }
 
 
+    /**
+     * Gets the security state.
+     *
+     * @return the security state
+     */
     public String getSecurityState() {
         return SecurityState;
     }
 
 
+    /**
+     * Sets the security state.
+     *
+     * @param securityState the new security state
+     */
     public void setSecurityState(String securityState) {
         SecurityState = securityState;
     }
 
 
+    /**
+     * Gets the serial number.
+     *
+     * @return the serial number
+     */
     public String getSerialNumber() {
         return SerialNumber;
     }
 
 
+    /**
+     * Sets the serial number.
+     *
+     * @param serialNumber the new serial number
+     */
     public void setSerialNumber(String serialNumber) {
         SerialNumber = serialNumber;
     }
 
 
+    /**
+     * Gets the size in bytes.
+     *
+     * @return the size in bytes
+     */
     public String getSizeInBytes() {
         return SizeInBytes;
     }
 
 
+    /**
+     * Sets the size in bytes.
+     *
+     * @param sizeInBytes the new size in bytes
+     */
     public void setSizeInBytes(String sizeInBytes) {
         SizeInBytes = sizeInBytes;
     }
 
 
+    /**
+     * Gets the slot.
+     *
+     * @return the slot
+     */
     public String getSlot() {
         return Slot;
     }
 
 
+    /**
+     * Sets the slot.
+     *
+     * @param slot the new slot
+     */
     public void setSlot(String slot) {
         Slot = slot;
     }
 
 
+    /**
+     * Gets the supported encryption types.
+     *
+     * @return the supported encryption types
+     */
     public String getSupportedEncryptionTypes() {
         return SupportedEncryptionTypes;
     }
 
 
+    /**
+     * Sets the supported encryption types.
+     *
+     * @param supportedEncryptionTypes the new supported encryption types
+     */
     public void setSupportedEncryptionTypes(String supportedEncryptionTypes) {
         SupportedEncryptionTypes = supportedEncryptionTypes;
     }
 
 
+    /**
+     * Gets the t 10 PI capability.
+     *
+     * @return the t 10 PI capability
+     */
     public String getT10PICapability() {
         return T10PICapability;
     }
 
 
+    /**
+     * Sets the t 10 PI capability.
+     *
+     * @param t10PICapability the new t 10 PI capability
+     */
     public void setT10PICapability(String t10PICapability) {
         T10PICapability = t10PICapability;
     }
 
 
+    /**
+     * Gets the used size in bytes.
+     *
+     * @return the used size in bytes
+     */
     public String getUsedSizeInBytes() {
         return UsedSizeInBytes;
     }
 
 
+    /**
+     * Sets the used size in bytes.
+     *
+     * @param usedSizeInBytes the new used size in bytes
+     */
     public void setUsedSizeInBytes(String usedSizeInBytes) {
         UsedSizeInBytes = usedSizeInBytes;
     }

@@ -15,29 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for NetworkStorageProfile complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="NetworkStorageProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serialNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="leadController" type="{http://esg.dell.com/icee/infrastructure/model/storage}NetworkStorageProfileController"/>
- *         &lt;element name="peerController" type="{http://esg.dell.com/icee/infrastructure/model/storage}NetworkStorageProfileController"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class NetworkStorageProfile.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NetworkStorageProfile", propOrder = { "serviceTag", "serialNumber", "leadController", "peerController" })

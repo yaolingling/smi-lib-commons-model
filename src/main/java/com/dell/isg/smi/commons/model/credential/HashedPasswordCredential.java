@@ -5,6 +5,9 @@ package com.dell.isg.smi.commons.model.credential;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * The Class HashedPasswordCredential.
+ */
 @XmlRootElement(name = "HashedPasswordCredential")
 public class HashedPasswordCredential extends PasswordCredential {
 

@@ -17,28 +17,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageHardwareInventory complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="StorageHardwareInventory">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="controllers" type="{http://esg.dell.com/icee/infrastructure/model/storage}Controllers"/>
- *         &lt;element name="enclosures" type="{http://esg.dell.com/icee/infrastructure/model/storage}Enclosure" maxOccurs="unbounded"/>
- *         &lt;element name="volumes" type="{http://esg.dell.com/icee/infrastructure/model/storage}Volume" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageHardwareInventory.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StorageHardwareInventory", propOrder = { "controllers", "enclosures", "volumes" })
@@ -91,8 +72,8 @@ public class StorageHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Enclosure }
-     * 
-     * 
+     *
+     * @return the enclosures
      */
     public List<Enclosure> getEnclosures() {
         if (enclosures == null) {
@@ -119,8 +100,8 @@ public class StorageHardwareInventory {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Volume }
-     * 
-     * 
+     *
+     * @return the volumes
      */
     public List<Volume> getVolumes() {
         if (volumes == null) {

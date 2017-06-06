@@ -15,22 +15,7 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>
- * Java class for ControllerStatus.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="ControllerStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Online"/>
- *     &lt;enumeration value="Offline"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ControllerStatus.
  */
 @XmlType(name = "ControllerStatus")
 @XmlEnum
@@ -42,16 +27,32 @@ public enum ControllerStatus {
     private final String value;
 
 
+    /**
+     * Instantiates a new controller status.
+     *
+     * @param v the v
+     */
     ControllerStatus(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the controller status
+     */
     public static ControllerStatus fromValue(String v) {
         for (ControllerStatus c : ControllerStatus.values()) {
             if (c.value.equals(v)) {

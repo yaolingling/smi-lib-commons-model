@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for EnclosuresOverview complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="EnclosuresOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="connected" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnclosuresOverview.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EnclosuresOverview", propOrder = { "connected" })
@@ -44,7 +27,8 @@ public class EnclosuresOverview {
 
     /**
      * Gets the value of the connected property.
-     * 
+     *
+     * @return the connected
      */
     public int getConnected() {
         return connected;
@@ -53,7 +37,8 @@ public class EnclosuresOverview {
 
     /**
      * Sets the value of the connected property.
-     * 
+     *
+     * @param value the new connected
      */
     public void setConnected(int value) {
         this.connected = value;

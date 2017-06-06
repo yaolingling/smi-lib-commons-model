@@ -18,31 +18,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlList;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Temperature complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Temperature">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="currentTemperature" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="thresholds">
- *           &lt;simpleType>
- *             &lt;list itemType="{http://www.w3.org/2001/XMLSchema}int" />
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Temperature.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Temperature", propOrder = { "currentTemperature", "thresholds" })
@@ -56,7 +34,8 @@ public class Temperature extends DetailBase {
 
     /**
      * Gets the value of the currentTemperature property.
-     * 
+     *
+     * @return the current temperature
      */
     public int getCurrentTemperature() {
         return currentTemperature;
@@ -65,7 +44,8 @@ public class Temperature extends DetailBase {
 
     /**
      * Sets the value of the currentTemperature property.
-     * 
+     *
+     * @param value the new current temperature
      */
     public void setCurrentTemperature(int value) {
         this.currentTemperature = value;
@@ -89,8 +69,8 @@ public class Temperature extends DetailBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link Integer }
-     * 
-     * 
+     *
+     * @return the thresholds
      */
     public List<Integer> getThresholds() {
         if (thresholds == null) {

@@ -17,28 +17,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageHealth complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="StorageHealth">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}HealthBase">
- *       &lt;sequence>
- *         &lt;element name="overallHealth" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="controllers" type="{http://esg.dell.com/icee/infrastructure/model/storage}ControllersHealth"/>
- *         &lt;element name="enclosures" type="{http://esg.dell.com/icee/infrastructure/model/storage}EnclosureHealth" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StorageHealth.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StorageHealth", propOrder = { "overallHealth", "controllers", "enclosures" })
@@ -113,8 +94,8 @@ public class StorageHealth extends HealthBase {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link EnclosureHealth }
-     * 
-     * 
+     *
+     * @return the enclosures
      */
     public List<EnclosureHealth> getEnclosures() {
         if (enclosures == null) {

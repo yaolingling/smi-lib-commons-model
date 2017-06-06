@@ -3,6 +3,9 @@
  */
 package com.dell.isg.smi.commons.model.common;
 
+/**
+ * The Class WsmanCredentials.
+ */
 public class WsmanCredentials {
 
 }

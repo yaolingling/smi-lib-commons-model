@@ -13,24 +13,9 @@ package com.dell.isg.smi.commons.model.storage;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ExpiryTimeUnit.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="ExpiryTimeUnit">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="DAYS"/>
- *     &lt;enumeration value="WEEKS"/>
- *     &lt;enumeration value="MONTHS"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ExpiryTimeUnit.
  */
 @XmlType(name = "ExpiryTimeUnit")
 @XmlEnum
@@ -38,11 +23,22 @@ public enum ExpiryTimeUnit {
 
     DAYS, WEEKS, MONTHS;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the expiry time unit
+     */
     public static ExpiryTimeUnit fromValue(String v) {
         return valueOf(v);
     }

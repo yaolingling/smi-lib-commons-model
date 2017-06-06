@@ -15,32 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for SpaceBreakdown complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="SpaceBreakdown">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="availableSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="allocatedSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="usedSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="freeSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="savingVSRAID10" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="storageThreshold" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="time" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SpaceBreakdown.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SpaceBreakdown", propOrder = { "availableSpace", "allocatedSpace", "usedSpace", "freeSpace", "savingVSRAID10", "storageThreshold", "time" })
@@ -58,7 +35,8 @@ public class SpaceBreakdown {
 
     /**
      * Gets the value of the availableSpace property.
-     * 
+     *
+     * @return the available space
      */
     public long getAvailableSpace() {
         return availableSpace;
@@ -67,7 +45,8 @@ public class SpaceBreakdown {
 
     /**
      * Sets the value of the availableSpace property.
-     * 
+     *
+     * @param value the new available space
      */
     public void setAvailableSpace(long value) {
         this.availableSpace = value;
@@ -76,7 +55,8 @@ public class SpaceBreakdown {
 
     /**
      * Gets the value of the allocatedSpace property.
-     * 
+     *
+     * @return the allocated space
      */
     public long getAllocatedSpace() {
         return allocatedSpace;
@@ -85,7 +65,8 @@ public class SpaceBreakdown {
 
     /**
      * Sets the value of the allocatedSpace property.
-     * 
+     *
+     * @param value the new allocated space
      */
     public void setAllocatedSpace(long value) {
         this.allocatedSpace = value;
@@ -94,7 +75,8 @@ public class SpaceBreakdown {
 
     /**
      * Gets the value of the usedSpace property.
-     * 
+     *
+     * @return the used space
      */
     public long getUsedSpace() {
         return usedSpace;
@@ -103,7 +85,8 @@ public class SpaceBreakdown {
 
     /**
      * Sets the value of the usedSpace property.
-     * 
+     *
+     * @param value the new used space
      */
     public void setUsedSpace(long value) {
         this.usedSpace = value;
@@ -112,7 +95,8 @@ public class SpaceBreakdown {
 
     /**
      * Gets the value of the freeSpace property.
-     * 
+     *
+     * @return the free space
      */
     public long getFreeSpace() {
         return freeSpace;
@@ -121,7 +105,8 @@ public class SpaceBreakdown {
 
     /**
      * Sets the value of the freeSpace property.
-     * 
+     *
+     * @param value the new free space
      */
     public void setFreeSpace(long value) {
         this.freeSpace = value;
@@ -130,7 +115,8 @@ public class SpaceBreakdown {
 
     /**
      * Gets the value of the savingVSRAID10 property.
-     * 
+     *
+     * @return the saving VSRAID 10
      */
     public long getSavingVSRAID10() {
         return savingVSRAID10;
@@ -139,7 +125,8 @@ public class SpaceBreakdown {
 
     /**
      * Sets the value of the savingVSRAID10 property.
-     * 
+     *
+     * @param value the new saving VSRAID 10
      */
     public void setSavingVSRAID10(long value) {
         this.savingVSRAID10 = value;
@@ -148,7 +135,8 @@ public class SpaceBreakdown {
 
     /**
      * Gets the value of the storageThreshold property.
-     * 
+     *
+     * @return the storage threshold
      */
     public int getStorageThreshold() {
         return storageThreshold;
@@ -157,7 +145,8 @@ public class SpaceBreakdown {
 
     /**
      * Sets the value of the storageThreshold property.
-     * 
+     *
+     * @param value the new storage threshold
      */
     public void setStorageThreshold(int value) {
         this.storageThreshold = value;

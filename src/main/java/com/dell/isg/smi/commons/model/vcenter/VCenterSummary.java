@@ -16,27 +16,9 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VCenterSummary complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="VCenterSummary">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/vcenter}ManagedObject">
- *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}long" />
- *       &lt;attribute name="manufacturer" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="version" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VCenterSummary.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VCenterSummary")

@@ -5,6 +5,9 @@ package com.dell.isg.smi.commons.model.credential;
 
 import com.dell.isg.smi.commons.model.validation.ValidationResult;
 
+/**
+ * The Interface ICredential.
+ */
 public interface ICredential {
 
     /**

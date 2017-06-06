@@ -16,47 +16,20 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisSummary complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisSummary">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="model" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="dnsName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="overallHealth" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="iceeState" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerState" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="totalSlots" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="freeSlots" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="statusMessage" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisSummary.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisSummary", propOrder = { "id", "name", "serviceTag", "model", "dnsName", "location", "overallHealth", "iceeState", "powerState", "totalSlots", "freeSlots", "status", "statusMessage" })
 @XmlSeeAlso({ ChassisDetail.class })
 public class ChassisSummary {
 
+    /**
+     * Instantiates a new chassis summary.
+     */
     public ChassisSummary() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected String id;
@@ -86,7 +59,8 @@ public class ChassisSummary {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public String getId() {
         return id;
@@ -95,7 +69,8 @@ public class ChassisSummary {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(String value) {
         this.id = value;
@@ -280,7 +255,8 @@ public class ChassisSummary {
 
     /**
      * Gets the value of the totalSlots property.
-     * 
+     *
+     * @return the total slots
      */
     public int getTotalSlots() {
         return totalSlots;
@@ -289,7 +265,8 @@ public class ChassisSummary {
 
     /**
      * Sets the value of the totalSlots property.
-     * 
+     *
+     * @param value the new total slots
      */
     public void setTotalSlots(int value) {
         this.totalSlots = value;
@@ -298,7 +275,8 @@ public class ChassisSummary {
 
     /**
      * Gets the value of the freeSlots property.
-     * 
+     *
+     * @return the free slots
      */
     public int getFreeSlots() {
         return freeSlots;
@@ -307,7 +285,8 @@ public class ChassisSummary {
 
     /**
      * Sets the value of the freeSlots property.
-     * 
+     *
+     * @param value the new free slots
      */
     public void setFreeSlots(int value) {
         this.freeSlots = value;

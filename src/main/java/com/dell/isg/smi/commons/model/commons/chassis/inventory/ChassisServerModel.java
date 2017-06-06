@@ -15,39 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisServerModel complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisServerModel">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="chassisSlotName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="healthStatus" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerStatus" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="presence" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisServerModel.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisServerModel", propOrder = { "id", "serviceTag", "chassisSlotName", "healthStatus", "powerStatus", "presence" })
 public class ChassisServerModel {
 
+    /**
+     * Instantiates a new chassis server model.
+     */
     public ChassisServerModel() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -65,7 +45,8 @@ public class ChassisServerModel {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -74,7 +55,8 @@ public class ChassisServerModel {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

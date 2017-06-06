@@ -15,31 +15,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
+// TODO: Auto-generated Javadoc
 /**
- * <p>
- * Java class for CacheCard complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="CacheCard">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="model" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="cacheSize" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="firmwareVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="batteryVoltagePercent" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="expireStatus" type="{http://esg.dell.com/icee/infrastructure/model/storage}CacheCardExpireStatus"/>
- *         &lt;element name="statusDescription" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CacheCard.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CacheCard", propOrder = { "model", "cacheSize", "firmwareVersion", "batteryVoltagePercent", "expireStatus", "statusDescription" })
@@ -81,7 +60,8 @@ public class CacheCard extends DetailBase {
 
     /**
      * Gets the value of the cacheSize property.
-     * 
+     *
+     * @return the cache size
      */
     public long getCacheSize() {
         return cacheSize;
@@ -90,7 +70,8 @@ public class CacheCard extends DetailBase {
 
     /**
      * Sets the value of the cacheSize property.
-     * 
+     *
+     * @param value the new cache size
      */
     public void setCacheSize(long value) {
         this.cacheSize = value;
@@ -121,7 +102,8 @@ public class CacheCard extends DetailBase {
 
     /**
      * Gets the value of the batteryVoltagePercent property.
-     * 
+     *
+     * @return the battery voltage percent
      */
     public int getBatteryVoltagePercent() {
         return batteryVoltagePercent;
@@ -130,7 +112,8 @@ public class CacheCard extends DetailBase {
 
     /**
      * Sets the value of the batteryVoltagePercent property.
-     * 
+     *
+     * @param value the new battery voltage percent
      */
     public void setBatteryVoltagePercent(int value) {
         this.batteryVoltagePercent = value;

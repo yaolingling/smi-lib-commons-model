@@ -18,45 +18,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisHealth complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisHealth">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="overallHealth" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="mainBoards" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="storages" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="fans" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="blowers" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="powerSupplies" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="cmcs" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="switches" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="servers" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="dvds" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="ioCables" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *         &lt;element name="fpcCables" type="{http://esg.dell.com/icee/infrastructure/model/chassis}ComponentHealth" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisHealth.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisHealth", propOrder = { "overallHealth", "mainBoards", "storages", "fans", "blowers", "powerSupplies", "cmcs", "switches", "servers", "dvds", "ioCables", "fpcCables" })
 public class ChassisHealth {
 
+    /**
+     * Instantiates a new chassis health.
+     */
     public ChassisHealth() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     @XmlElement(required = true)
@@ -124,8 +98,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the main boards
      */
     public List<ComponentHealth> getMainBoards() {
         if (mainBoards == null) {
@@ -152,8 +126,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the storages
      */
     public List<ComponentHealth> getStorages() {
         if (storages == null) {
@@ -180,8 +154,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the fans
      */
     public List<ComponentHealth> getFans() {
         if (fans == null) {
@@ -208,8 +182,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the blowers
      */
     public List<ComponentHealth> getBlowers() {
         if (blowers == null) {
@@ -236,8 +210,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the power supplies
      */
     public List<ComponentHealth> getPowerSupplies() {
         if (powerSupplies == null) {
@@ -264,8 +238,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the cmcs
      */
     public List<ComponentHealth> getCmcs() {
         if (cmcs == null) {
@@ -292,8 +266,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the switches
      */
     public List<ComponentHealth> getSwitches() {
         if (switches == null) {
@@ -320,8 +294,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the servers
      */
     public List<ComponentHealth> getServers() {
         if (servers == null) {
@@ -348,8 +322,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the dvds
      */
     public List<ComponentHealth> getDvds() {
         if (dvds == null) {
@@ -376,8 +350,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the io cables
      */
     public List<ComponentHealth> getIoCables() {
         if (ioCables == null) {
@@ -404,8 +378,8 @@ public class ChassisHealth {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ComponentHealth }
-     * 
-     * 
+     *
+     * @return the fpc cables
      */
     public List<ComponentHealth> getFpcCables() {
         if (fpcCables == null) {

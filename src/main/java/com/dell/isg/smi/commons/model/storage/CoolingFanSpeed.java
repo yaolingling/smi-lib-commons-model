@@ -14,26 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for CoolingFanSpeed.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="CoolingFanSpeed">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Off"/>
- *     &lt;enumeration value="Low"/>
- *     &lt;enumeration value="Medium"/>
- *     &lt;enumeration value="High"/>
- *     &lt;enumeration value="Unknown"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum CoolingFanSpeed.
  */
 @XmlType(name = "CoolingFanSpeed")
 @XmlEnum
@@ -48,16 +31,32 @@ public enum CoolingFanSpeed {
     private final String value;
 
 
+    /**
+     * Instantiates a new cooling fan speed.
+     *
+     * @param v the v
+     */
     CoolingFanSpeed(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the cooling fan speed
+     */
     public static CoolingFanSpeed fromValue(String v) {
         for (CoolingFanSpeed c : CoolingFanSpeed.values()) {
             if (c.value.equals(v)) {

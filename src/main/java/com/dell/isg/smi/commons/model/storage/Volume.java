@@ -15,39 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Volume complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Volume">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="instanceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="active" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="mapped" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="storageSize" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *         &lt;element name="snapshotScheduleId" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="storageSizeType" type="{http://esg.dell.com/icee/infrastructure/model/storage}StorageSizeType"/>
- *         &lt;element name="snapshotScheduleType" type="{http://esg.dell.com/icee/infrastructure/model/storage}SnapshotScheduleType"/>
- *         &lt;element name="performanceProfile" type="{http://esg.dell.com/icee/infrastructure/model/storage}StoragePerformanceProfile"/>
- *         &lt;element name="health" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fullIn" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="used" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *         &lt;element name="free" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Volume.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Volume", propOrder = { "id", "instanceId", "name", "active", "mapped", "storageSize", "snapshotScheduleId", "storageSizeType", "snapshotScheduleType", "performanceProfile", "health", "fullIn", "used", "free" })
@@ -77,7 +47,8 @@ public class Volume {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -86,7 +57,8 @@ public class Volume {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -139,7 +111,8 @@ public class Volume {
 
     /**
      * Gets the value of the active property.
-     * 
+     *
+     * @return true, if is active
      */
     public boolean isActive() {
         return active;
@@ -148,7 +121,8 @@ public class Volume {
 
     /**
      * Sets the value of the active property.
-     * 
+     *
+     * @param value the new active
      */
     public void setActive(boolean value) {
         this.active = value;
@@ -157,7 +131,8 @@ public class Volume {
 
     /**
      * Gets the value of the mapped property.
-     * 
+     *
+     * @return true, if is mapped
      */
     public boolean isMapped() {
         return mapped;
@@ -166,7 +141,8 @@ public class Volume {
 
     /**
      * Sets the value of the mapped property.
-     * 
+     *
+     * @param value the new mapped
      */
     public void setMapped(boolean value) {
         this.mapped = value;
@@ -175,7 +151,8 @@ public class Volume {
 
     /**
      * Gets the value of the storageSize property.
-     * 
+     *
+     * @return the storage size
      */
     public double getStorageSize() {
         return storageSize;
@@ -184,7 +161,8 @@ public class Volume {
 
     /**
      * Sets the value of the storageSize property.
-     * 
+     *
+     * @param value the new storage size
      */
     public void setStorageSize(double value) {
         this.storageSize = value;
@@ -193,7 +171,8 @@ public class Volume {
 
     /**
      * Gets the value of the snapshotScheduleId property.
-     * 
+     *
+     * @return the snapshot schedule id
      */
     public long getSnapshotScheduleId() {
         return snapshotScheduleId;
@@ -202,7 +181,8 @@ public class Volume {
 
     /**
      * Sets the value of the snapshotScheduleId property.
-     * 
+     *
+     * @param value the new snapshot schedule id
      */
     public void setSnapshotScheduleId(long value) {
         this.snapshotScheduleId = value;
@@ -299,7 +279,8 @@ public class Volume {
 
     /**
      * Gets the value of the fullIn property.
-     * 
+     *
+     * @return the full in
      */
     public int getFullIn() {
         return fullIn;
@@ -308,7 +289,8 @@ public class Volume {
 
     /**
      * Sets the value of the fullIn property.
-     * 
+     *
+     * @param value the new full in
      */
     public void setFullIn(int value) {
         this.fullIn = value;
@@ -317,7 +299,8 @@ public class Volume {
 
     /**
      * Gets the value of the used property.
-     * 
+     *
+     * @return the used
      */
     public double getUsed() {
         return used;
@@ -326,7 +309,8 @@ public class Volume {
 
     /**
      * Sets the value of the used property.
-     * 
+     *
+     * @param value the new used
      */
     public void setUsed(double value) {
         this.used = value;
@@ -335,7 +319,8 @@ public class Volume {
 
     /**
      * Gets the value of the free property.
-     * 
+     *
+     * @return the free
      */
     public double getFree() {
         return free;
@@ -344,7 +329,8 @@ public class Volume {
 
     /**
      * Sets the value of the free property.
-     * 
+     *
+     * @param value the new free
      */
     public void setFree(double value) {
         this.free = value;

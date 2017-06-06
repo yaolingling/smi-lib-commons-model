@@ -15,32 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Disk complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="Disk">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}DetailBase">
- *       &lt;sequence>
- *         &lt;element name="health" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="diskClass" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="totalSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="percentFull" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="allocatedSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="freeSpace" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="controlType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class Disk.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Disk", propOrder = { "health", "diskClass", "totalSpace", "percentFull", "allocatedSpace", "freeSpace", "controlType" })
@@ -59,7 +36,8 @@ public class Disk extends DetailBase {
 
     /**
      * Gets the value of the health property.
-     * 
+     *
+     * @return true, if is health
      */
     public boolean isHealth() {
         return health;
@@ -68,7 +46,8 @@ public class Disk extends DetailBase {
 
     /**
      * Sets the value of the health property.
-     * 
+     *
+     * @param value the new health
      */
     public void setHealth(boolean value) {
         this.health = value;
@@ -99,7 +78,8 @@ public class Disk extends DetailBase {
 
     /**
      * Gets the value of the totalSpace property.
-     * 
+     *
+     * @return the total space
      */
     public long getTotalSpace() {
         return totalSpace;
@@ -108,7 +88,8 @@ public class Disk extends DetailBase {
 
     /**
      * Sets the value of the totalSpace property.
-     * 
+     *
+     * @param value the new total space
      */
     public void setTotalSpace(long value) {
         this.totalSpace = value;
@@ -117,7 +98,8 @@ public class Disk extends DetailBase {
 
     /**
      * Gets the value of the percentFull property.
-     * 
+     *
+     * @return the percent full
      */
     public int getPercentFull() {
         return percentFull;
@@ -126,7 +108,8 @@ public class Disk extends DetailBase {
 
     /**
      * Sets the value of the percentFull property.
-     * 
+     *
+     * @param value the new percent full
      */
     public void setPercentFull(int value) {
         this.percentFull = value;
@@ -135,7 +118,8 @@ public class Disk extends DetailBase {
 
     /**
      * Gets the value of the allocatedSpace property.
-     * 
+     *
+     * @return the allocated space
      */
     public long getAllocatedSpace() {
         return allocatedSpace;
@@ -144,7 +128,8 @@ public class Disk extends DetailBase {
 
     /**
      * Sets the value of the allocatedSpace property.
-     * 
+     *
+     * @param value the new allocated space
      */
     public void setAllocatedSpace(long value) {
         this.allocatedSpace = value;
@@ -153,7 +138,8 @@ public class Disk extends DetailBase {
 
     /**
      * Gets the value of the freeSpace property.
-     * 
+     *
+     * @return the free space
      */
     public long getFreeSpace() {
         return freeSpace;
@@ -162,7 +148,8 @@ public class Disk extends DetailBase {
 
     /**
      * Sets the value of the freeSpace property.
-     * 
+     *
+     * @param value the new free space
      */
     public void setFreeSpace(long value) {
         this.freeSpace = value;

@@ -15,45 +15,19 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ChassisStashStorage complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ChassisStashStorage">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="slotNumber" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="slotName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="health" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="model" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="assetTag" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="numberOfControllers" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="storageMode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="intrusionState" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="presence" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="powerStatus" type="{http://esg.dell.com/icee/infrastructure/model/chassis}PowerStatus"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChassisStashStorage.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ChassisStashStorage", propOrder = { "id", "slotNumber", "slotName", "health", "model", "serviceTag", "assetTag", "numberOfControllers", "storageMode", "intrusionState", "presence", "powerStatus" })
 public class ChassisStashStorage {
 
+    /**
+     * Instantiates a new chassis stash storage.
+     */
     public ChassisStashStorage() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -81,7 +55,8 @@ public class ChassisStashStorage {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -90,7 +65,8 @@ public class ChassisStashStorage {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -99,7 +75,8 @@ public class ChassisStashStorage {
 
     /**
      * Gets the value of the slotNumber property.
-     * 
+     *
+     * @return the slot number
      */
     public int getSlotNumber() {
         return slotNumber;
@@ -108,7 +85,8 @@ public class ChassisStashStorage {
 
     /**
      * Sets the value of the slotNumber property.
-     * 
+     *
+     * @param value the new slot number
      */
     public void setSlotNumber(int value) {
         this.slotNumber = value;
@@ -227,7 +205,8 @@ public class ChassisStashStorage {
 
     /**
      * Gets the value of the numberOfControllers property.
-     * 
+     *
+     * @return the number of controllers
      */
     public int getNumberOfControllers() {
         return numberOfControllers;
@@ -236,7 +215,8 @@ public class ChassisStashStorage {
 
     /**
      * Sets the value of the numberOfControllers property.
-     * 
+     *
+     * @param value the new number of controllers
      */
     public void setNumberOfControllers(int value) {
         this.numberOfControllers = value;

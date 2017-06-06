@@ -15,35 +15,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for FastestGrowningVolume complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="FastestGrowningVolume">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="healthy" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="mappedService" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="configured" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="size" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="growth" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="percentFull" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="estimatedFullTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lastUpdated" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class FastestGrowningVolume.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FastestGrowningVolume", propOrder = { "id", "name", "healthy", "mappedService", "configured", "size", "growth", "percentFull", "estimatedFullTime", "lastUpdated" })
@@ -67,7 +41,8 @@ public class FastestGrowningVolume {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -76,7 +51,8 @@ public class FastestGrowningVolume {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;
@@ -107,7 +83,8 @@ public class FastestGrowningVolume {
 
     /**
      * Gets the value of the healthy property.
-     * 
+     *
+     * @return true, if is healthy
      */
     public boolean isHealthy() {
         return healthy;
@@ -116,7 +93,8 @@ public class FastestGrowningVolume {
 
     /**
      * Sets the value of the healthy property.
-     * 
+     *
+     * @param value the new healthy
      */
     public void setHealthy(boolean value) {
         this.healthy = value;
@@ -147,7 +125,8 @@ public class FastestGrowningVolume {
 
     /**
      * Gets the value of the configured property.
-     * 
+     *
+     * @return true, if is configured
      */
     public boolean isConfigured() {
         return configured;
@@ -156,7 +135,8 @@ public class FastestGrowningVolume {
 
     /**
      * Sets the value of the configured property.
-     * 
+     *
+     * @param value the new configured
      */
     public void setConfigured(boolean value) {
         this.configured = value;
@@ -165,7 +145,8 @@ public class FastestGrowningVolume {
 
     /**
      * Gets the value of the size property.
-     * 
+     *
+     * @return the size
      */
     public long getSize() {
         return size;
@@ -174,7 +155,8 @@ public class FastestGrowningVolume {
 
     /**
      * Sets the value of the size property.
-     * 
+     *
+     * @param value the new size
      */
     public void setSize(long value) {
         this.size = value;
@@ -183,7 +165,8 @@ public class FastestGrowningVolume {
 
     /**
      * Gets the value of the growth property.
-     * 
+     *
+     * @return the growth
      */
     public long getGrowth() {
         return growth;
@@ -192,7 +175,8 @@ public class FastestGrowningVolume {
 
     /**
      * Sets the value of the growth property.
-     * 
+     *
+     * @param value the new growth
      */
     public void setGrowth(long value) {
         this.growth = value;
@@ -201,7 +185,8 @@ public class FastestGrowningVolume {
 
     /**
      * Gets the value of the percentFull property.
-     * 
+     *
+     * @return the percent full
      */
     public float getPercentFull() {
         return percentFull;
@@ -210,7 +195,8 @@ public class FastestGrowningVolume {
 
     /**
      * Sets the value of the percentFull property.
-     * 
+     *
+     * @param value the new percent full
      */
     public void setPercentFull(float value) {
         this.percentFull = value;

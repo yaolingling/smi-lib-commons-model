@@ -17,30 +17,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for EnclosureHealth complex type.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="EnclosureHealth">
- *   &lt;complexContent>
- *     &lt;extension base="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode">
- *       &lt;sequence>
- *         &lt;element name="coolingFans" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="powerSupplies" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="temperatures" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="disks" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *         &lt;element name="ioModules" type="{http://esg.dell.com/icee/infrastructure/model/storage}HealthNode" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnclosureHealth.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EnclosureHealth", propOrder = { "coolingFans", "powerSupplies", "temperatures", "disks", "ioModules" })
@@ -75,8 +54,8 @@ public class EnclosureHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the cooling fans
      */
     public List<HealthNode> getCoolingFans() {
         if (coolingFans == null) {
@@ -103,8 +82,8 @@ public class EnclosureHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the power supplies
      */
     public List<HealthNode> getPowerSupplies() {
         if (powerSupplies == null) {
@@ -131,8 +110,8 @@ public class EnclosureHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the temperatures
      */
     public List<HealthNode> getTemperatures() {
         if (temperatures == null) {
@@ -159,8 +138,8 @@ public class EnclosureHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the disks
      */
     public List<HealthNode> getDisks() {
         if (disks == null) {
@@ -187,8 +166,8 @@ public class EnclosureHealth extends HealthNode {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link HealthNode }
-     * 
-     * 
+     *
+     * @return the io modules
      */
     public List<HealthNode> getIoModules() {
         if (ioModules == null) {

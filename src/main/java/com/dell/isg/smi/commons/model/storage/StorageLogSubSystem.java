@@ -14,24 +14,9 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageLogSubSystem.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="StorageLogSubSystem">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="BSD"/>
- *     &lt;enumeration value="NET"/>
- *     &lt;enumeration value="System"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StorageLogSubSystem.
  */
 @XmlType(name = "StorageLogSubSystem")
 @XmlEnum
@@ -42,16 +27,32 @@ public enum StorageLogSubSystem {
     private final String value;
 
 
+    /**
+     * Instantiates a new storage log sub system.
+     *
+     * @param v the v
+     */
     StorageLogSubSystem(String v) {
         value = v;
     }
 
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the storage log sub system
+     */
     public static StorageLogSubSystem fromValue(String v) {
         for (StorageLogSubSystem c : StorageLogSubSystem.values()) {
             if (c.value.equals(v)) {

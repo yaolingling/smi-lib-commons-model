@@ -10,11 +10,13 @@
 
 package com.dell.isg.smi.commons.model.server.inventory;
 
+/**
+ * The Class HwCpu.
+ */
 public class HwCpu {
 
     public HwCpu() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected long id;
@@ -118,7 +120,8 @@ public class HwCpu {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
+     * @return the id
      */
     public long getId() {
         return id;
@@ -127,7 +130,8 @@ public class HwCpu {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
+     * @param value the new id
      */
     public void setId(long value) {
         this.id = value;

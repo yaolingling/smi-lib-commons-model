@@ -13,23 +13,9 @@ package com.dell.isg.smi.commons.model.storage;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for StorageEnclosurePort.
- * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
- * <pre>
- * &lt;simpleType name="StorageEnclosurePort">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="A"/>
- *     &lt;enumeration value="B"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StorageEnclosurePort.
  */
 @XmlType(name = "StorageEnclosurePort")
 @XmlEnum
@@ -37,11 +23,22 @@ public enum StorageEnclosurePort {
 
     A, B;
 
+    /**
+     * Value.
+     *
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
 
+    /**
+     * From value.
+     *
+     * @param v the v
+     * @return the storage enclosure port
+     */
     public static StorageEnclosurePort fromValue(String v) {
         return valueOf(v);
     }
