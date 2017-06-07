@@ -18,6 +18,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonPropertyOrder({ "discoveryConfig" })
 public class DiscoveryDeviceConfig {
 
+    /** The discovery config. */
     @JsonProperty("discoveryConfig")
     private DiscoveryConfig discoveryConfig;
 
