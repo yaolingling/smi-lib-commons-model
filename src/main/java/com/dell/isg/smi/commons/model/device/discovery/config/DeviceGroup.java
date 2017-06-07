@@ -16,107 +16,114 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * The Class DeviceGroup.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-    "discoveryRule",
-    "groupName"
-})
+@JsonPropertyOrder({ "discoveryRule", "groupName" })
 public class DeviceGroup {
 
-    /** The discovery rule. */
-    @JsonProperty("discoveryRule")
-    private List<DiscoveryRule> discoveryRule = null;
-    
-    /** The group name. */
-    @JsonProperty("groupName")
-    private String groupName;
+	/** The discovery rule. */
+	@JsonProperty("discoveryRule")
+	private List<DiscoveryRule> discoveryRule = null;
 
-    /**
-     * No args constructor for use in serialization.
-     */
-    public DeviceGroup() {
-    }
+	/** The group name. */
+	@JsonProperty("groupName")
+	private String groupName;
 
-    /**
-     * Instantiates a new device group.
-     *
-     * @param discoveryRule the discovery rule
-     * @param groupName the group name
-     */
-    public DeviceGroup(List<DiscoveryRule> discoveryRule, String groupName) {
-        super();
-        this.discoveryRule = discoveryRule;
-        this.groupName = groupName;
-    }
+	/**
+	 * No args constructor for use in serialization.
+	 */
+	public DeviceGroup() {
+	}
 
-    /**
-     * Gets the discovery rule.
-     *
-     * @return the discovery rule
-     */
-    @JsonProperty("discoveryRule")
-    public List<DiscoveryRule> getDiscoveryRule() {
-        return discoveryRule;
-    }
+	/**
+	 * Instantiates a new device group.
+	 *
+	 * @param discoveryRule
+	 *            the discovery rule
+	 * @param groupName
+	 *            the group name
+	 */
+	public DeviceGroup(List<DiscoveryRule> discoveryRule, String groupName) {
+		super();
+		this.discoveryRule = discoveryRule;
+		this.groupName = groupName;
+	}
 
-    /**
-     * Sets the discovery rule.
-     *
-     * @param discoveryRule the new discovery rule
-     */
-    @JsonProperty("discoveryRule")
-    public void setDiscoveryRule(List<DiscoveryRule> discoveryRule) {
-        this.discoveryRule = discoveryRule;
-    }
+	/**
+	 * Gets the discovery rule.
+	 *
+	 * @return the discovery rule
+	 */
+	@JsonProperty("discoveryRule")
+	public List<DiscoveryRule> getDiscoveryRule() {
+		return discoveryRule;
+	}
 
-    /**
-     * Gets the group name.
-     *
-     * @return the group name
-     */
-    @JsonProperty("groupName")
-    public String getGroupName() {
-        return groupName;
-    }
+	/**
+	 * Sets the discovery rule.
+	 *
+	 * @param discoveryRule
+	 *            the new discovery rule
+	 */
+	@JsonProperty("discoveryRule")
+	public void setDiscoveryRule(List<DiscoveryRule> discoveryRule) {
+		this.discoveryRule = discoveryRule;
+	}
 
-    /**
-     * Sets the group name.
-     *
-     * @param groupName the new group name
-     */
-    @JsonProperty("groupName")
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
-    }
+	/**
+	 * Gets the group name.
+	 *
+	 * @return the group name
+	 */
+	@JsonProperty("groupName")
+	public String getGroupName() {
+		return groupName;
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#toString()
-     */
-    @Override
-    public String toString() {
-        return ToStringBuilder.reflectionToString(this);
-    }
+	/**
+	 * Sets the group name.
+	 *
+	 * @param groupName
+	 *            the new group name
+	 */
+	@JsonProperty("groupName")
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#hashCode()
-     */
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder().append(discoveryRule).append(groupName).toHashCode();
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof DeviceGroup) == false) {
-            return false;
-        }
-        DeviceGroup rhs = ((DeviceGroup) other);
-        return new EqualsBuilder().append(discoveryRule, rhs.discoveryRule).append(groupName, rhs.groupName).isEquals();
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder().append(discoveryRule).append(groupName).toHashCode();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object other) {
+		if (other == this) {
+			return true;
+		}
+		if ((other instanceof DeviceGroup) == false) {
+			return false;
+		}
+		DeviceGroup rhs = ((DeviceGroup) other);
+		return new EqualsBuilder().append(discoveryRule, rhs.discoveryRule).append(groupName, rhs.groupName).isEquals();
+	}
 
 }

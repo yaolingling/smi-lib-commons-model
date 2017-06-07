@@ -15,134 +15,143 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * The Class DiscoveryRule.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-    "protocol",
-    "command",
-    "deviceType"
-})
+@JsonPropertyOrder({ "protocol", "command", "deviceType" })
 public class DiscoveryRule {
 
-    /** The protocol. */
-    @JsonProperty("protocol")
-    private String protocol;
-    
-    /** The command. */
-    @JsonProperty("command")
-    private String command;
-    
-    /** The device type. */
-    @JsonProperty("deviceType")
-    private List<DeviceType> deviceType = null;
+	/** The protocol. */
+	@JsonProperty("protocol")
+	private String protocol;
 
-    /**
-     * No args constructor for use in serialization.
-     */
-    public DiscoveryRule() {
-    }
+	/** The command. */
+	@JsonProperty("command")
+	private String command;
 
-    /**
-     * Instantiates a new discovery rule.
-     *
-     * @param protocol the protocol
-     * @param command the command
-     * @param deviceType the device type
-     */
-    public DiscoveryRule(String protocol, String command, List<DeviceType> deviceType) {
-        super();
-        this.protocol = protocol;
-        this.command = command;
-        this.deviceType = deviceType;
-    }
+	/** The device type. */
+	@JsonProperty("deviceType")
+	private List<DeviceType> deviceType = null;
 
-    /**
-     * Gets the protocol.
-     *
-     * @return the protocol
-     */
-    @JsonProperty("protocol")
-    public String getProtocol() {
-        return protocol;
-    }
+	/**
+	 * No args constructor for use in serialization.
+	 */
+	public DiscoveryRule() {
+	}
 
-    /**
-     * Sets the protocol.
-     *
-     * @param protocol the new protocol
-     */
-    @JsonProperty("protocol")
-    public void setProtocol(String protocol) {
-        this.protocol = protocol;
-    }
+	/**
+	 * Instantiates a new discovery rule.
+	 *
+	 * @param protocol
+	 *            the protocol
+	 * @param command
+	 *            the command
+	 * @param deviceType
+	 *            the device type
+	 */
+	public DiscoveryRule(String protocol, String command, List<DeviceType> deviceType) {
+		super();
+		this.protocol = protocol;
+		this.command = command;
+		this.deviceType = deviceType;
+	}
 
-    /**
-     * Gets the command.
-     *
-     * @return the command
-     */
-    @JsonProperty("command")
-    public String getCommand() {
-        return command;
-    }
+	/**
+	 * Gets the protocol.
+	 *
+	 * @return the protocol
+	 */
+	@JsonProperty("protocol")
+	public String getProtocol() {
+		return protocol;
+	}
 
-    /**
-     * Sets the command.
-     *
-     * @param command the new command
-     */
-    @JsonProperty("command")
-    public void setCommand(String command) {
-        this.command = command;
-    }
+	/**
+	 * Sets the protocol.
+	 *
+	 * @param protocol
+	 *            the new protocol
+	 */
+	@JsonProperty("protocol")
+	public void setProtocol(String protocol) {
+		this.protocol = protocol;
+	}
 
-    /**
-     * Gets the device type.
-     *
-     * @return the device type
-     */
-    @JsonProperty("deviceType")
-    public List<DeviceType> getDeviceType() {
-        return deviceType;
-    }
+	/**
+	 * Gets the command.
+	 *
+	 * @return the command
+	 */
+	@JsonProperty("command")
+	public String getCommand() {
+		return command;
+	}
 
-    /**
-     * Sets the device type.
-     *
-     * @param deviceType the new device type
-     */
-    @JsonProperty("deviceType")
-    public void setDeviceType(List<DeviceType> deviceType) {
-        this.deviceType = deviceType;
-    }
+	/**
+	 * Sets the command.
+	 *
+	 * @param command
+	 *            the new command
+	 */
+	@JsonProperty("command")
+	public void setCommand(String command) {
+		this.command = command;
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#toString()
-     */
-    @Override
-    public String toString() {
-        return ToStringBuilder.reflectionToString(this);
-    }
+	/**
+	 * Gets the device type.
+	 *
+	 * @return the device type
+	 */
+	@JsonProperty("deviceType")
+	public List<DeviceType> getDeviceType() {
+		return deviceType;
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#hashCode()
-     */
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder().append(protocol).append(command).append(deviceType).toHashCode();
-    }
+	/**
+	 * Sets the device type.
+	 *
+	 * @param deviceType
+	 *            the new device type
+	 */
+	@JsonProperty("deviceType")
+	public void setDeviceType(List<DeviceType> deviceType) {
+		this.deviceType = deviceType;
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof DiscoveryRule) == false) {
-            return false;
-        }
-        DiscoveryRule rhs = ((DiscoveryRule) other);
-        return new EqualsBuilder().append(protocol, rhs.protocol).append(command, rhs.command).append(deviceType, rhs.deviceType).isEquals();
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder().append(protocol).append(command).append(deviceType).toHashCode();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object other) {
+		if (other == this) {
+			return true;
+		}
+		if ((other instanceof DiscoveryRule) == false) {
+			return false;
+		}
+		DiscoveryRule rhs = ((DiscoveryRule) other);
+		return new EqualsBuilder().append(protocol, rhs.protocol).append(command, rhs.command)
+				.append(deviceType, rhs.deviceType).isEquals();
+	}
 
 }
