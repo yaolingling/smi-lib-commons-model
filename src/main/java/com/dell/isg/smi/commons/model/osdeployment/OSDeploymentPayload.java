@@ -3,60 +3,20 @@
  */
 package com.dell.isg.smi.commons.model.osdeployment;
 
-import com.dell.isg.smi.commons.model.credential.PasswordCredential;
 import com.dell.isg.smi.commons.model.fileshare.FileShare;
 
 /**
  * The Class OSDeploymentPayload.
  */
-public class OSDeploymentPayload {
-    protected String oobIp;
-    protected PasswordCredential oobCredentials;
+
+public class OSDeploymentPayload  extends ObmRequestBase{
+        
     protected FileShare isoFileShare;
     protected HypervisorEnum hypervisorType;
     protected String hypervisorVersion;
 
 
-    /**
-     * Gets the oob ip.
-     *
-     * @return the oobIp
-     */
-    public String getOobIp() {
-        return oobIp;
-    }
-
-
-    /**
-     * Sets the oob ip.
-     *
-     * @param oobIp the oobIp to set
-     */
-    public void setOobIp(String oobIp) {
-        this.oobIp = oobIp;
-    }
-
-
-    /**
-     * Gets the oob credentials.
-     *
-     * @return the oobCredentials
-     */
-    public PasswordCredential getOobCredentials() {
-        return oobCredentials;
-    }
-
-
-    /**
-     * Sets the oob credentials.
-     *
-     * @param oobCredentials the oobCredentials to set
-     */
-    public void setOobCredentials(PasswordCredential oobCredentials) {
-        this.oobCredentials = oobCredentials;
-    }
-
-
+  
     /**
      * Gets the iso file share.
      *
