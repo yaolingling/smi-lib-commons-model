@@ -3,6 +3,11 @@
  */
 package com.dell.isg.smi.commons.model.common;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.validator.routines.InetAddressValidator;
+
+import com.dell.isg.smi.commons.model.validation.ValidationResult;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -110,6 +115,24 @@ public class InventoryCallbackRequest {
      */
     public void setCallbackUri(String callbackUri) {
         this.callbackUri = callbackUri;
+    }
+    
+    
+    /**
+     * Validate.
+     *
+     * @return the validation result
+     */
+    public ValidationResult validate() {
+        ValidationResult validationResult = null;
+        if(null == credential){
+            validationResult = new ValidationResult();
+            validationResult.setMessage("credential is null");
+        }
+        else{
+            validationResult =  credential.validate();
+        }
+        return validationResult;
     }
 
 }
