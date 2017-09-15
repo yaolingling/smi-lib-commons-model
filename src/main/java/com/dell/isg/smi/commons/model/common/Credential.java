@@ -139,18 +139,12 @@ public class Credential {
      * @return the validation result
      */
     public ValidationResult validate() {
-        String message = "";
         ValidationResult validationResult = new ValidationResult();
-        
         if(InetAddressValidator.getInstance().isValidInet4Address(address)){
             validationResult.setValid(true);
         }else{
-            if( StringUtils.isNotBlank(message)) {
-                message += ", ";
-            }
-            message += "IP address";
+            validationResult.setMessage("IP address");
         }
-        validationResult.setMessage(message);
         return validationResult;
     }
 
