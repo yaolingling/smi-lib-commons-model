@@ -5,7 +5,11 @@ package com.dell.isg.smi.commons.model.common;
 
 import java.lang.reflect.Field;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.validator.routines.InetAddressValidator;
+
+import com.dell.isg.smi.commons.model.validation.ValidationResult;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -128,6 +132,21 @@ public class Credential {
         this.identifier = identifier;
     }
 
+    
+    /**
+     * Validate.
+     *
+     * @return the validation result
+     */
+    public ValidationResult validate() {
+        ValidationResult validationResult = new ValidationResult();
+        if(InetAddressValidator.getInstance().isValidInet4Address(address)){
+            validationResult.setValid(true);
+        }else{
+            validationResult.setMessage("IP address");
+        }
+        return validationResult;
+    }
 
     @Override
     public int hashCode() {
