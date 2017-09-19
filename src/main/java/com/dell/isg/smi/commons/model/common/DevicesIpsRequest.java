@@ -118,8 +118,9 @@ public class DevicesIpsRequest {
             validationResult.setMessage("IP list");
             return validationResult;
         }
+        InetAddressValidator inetAddressValidatior = InetAddressValidator.getInstance();
         for(String ip : ips) {
-            if( ! InetAddressValidator.getInstance().isValidInet4Address(ip)){
+            if( ! inetAddressValidatior.isValidInet4Address(ip)){
                 validationResult.setMessage("IP list entry");
                 return validationResult;
             }

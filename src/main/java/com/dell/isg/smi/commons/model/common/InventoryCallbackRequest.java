@@ -4,8 +4,6 @@
 package com.dell.isg.smi.commons.model.common;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.validator.routines.InetAddressValidator;
-
 import com.dell.isg.smi.commons.model.validation.ValidationResult;
 
 import io.swagger.annotations.ApiModel;
