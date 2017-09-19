@@ -32,6 +32,29 @@ public class InventoryCallbackRequest {
     @ApiModelProperty(value = "Type.", dataType = "string", required = true)
     String type;
 
+    @ApiModelProperty(value = "CallbackGraph.", dataType = "string", required = false)
+    String callbackGraph;
+
+
+    /**
+     * Gets the callback graph.
+     *
+     * @return the callback graph
+     */
+    public String getCallbackGraph() {
+        return callbackGraph;
+    }
+
+
+    /**
+     * Sets the callback graph.
+     *
+     * @param callbackGraph the new callback graph
+     */
+    public void setCallbackGraph(String callbackGraph) {
+        this.callbackGraph = callbackGraph;
+    }
+
 
     /**
      * Gets the type.
