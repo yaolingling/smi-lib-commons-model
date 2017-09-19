@@ -24,9 +24,9 @@ public class Credential {
     private String address;
     @ApiModelProperty(value = "Service identifier like service tag ... etc", dataType = "string", required = false)
     private String identifier;
-    @ApiModelProperty(value = "Username.", dataType = "string", required = false)
+    @ApiModelProperty(value = "Username.", dataType = "string", required = true)
     private String userName;
-    @ApiModelProperty(value = "Password.", dataType = "string", required = false)
+    @ApiModelProperty(value = "Password.", dataType = "string", required = true)
     private String password;
 
 
@@ -140,11 +140,19 @@ public class Credential {
      */
     public ValidationResult validate() {
         ValidationResult validationResult = new ValidationResult();
-        if(InetAddressValidator.getInstance().isValidInet4Address(address)){
-            validationResult.setValid(true);
-        }else{
+        if( ! InetAddressValidator.getInstance().isValidInet4Address(address)){
             validationResult.setMessage("IP address");
+            return validationResult;
         }
+        if(StringUtils.isBlank(userName)) {
+            validationResult.setMessage("User name");
+            return validationResult;
+        }
+        if(StringUtils.isBlank(password)) {
+            validationResult.setMessage("password");
+            return validationResult;
+        }
+        validationResult.setValid(true);
         return validationResult;
     }
 

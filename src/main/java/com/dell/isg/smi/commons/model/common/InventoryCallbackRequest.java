@@ -34,29 +34,6 @@ public class InventoryCallbackRequest {
     @ApiModelProperty(value = "Type.", dataType = "string", required = true)
     String type;
 
-    @ApiModelProperty(value = "CallbackGraph.", dataType = "string", required = false)
-    String callbackGraph;
-
-
-    /**
-     * Gets the callback graph.
-     *
-     * @return the callback graph
-     */
-    public String getCallbackGraph() {
-        return callbackGraph;
-    }
-
-
-    /**
-     * Sets the callback graph.
-     *
-     * @param callbackGraph the new callback graph
-     */
-    public void setCallbackGraph(String callbackGraph) {
-        this.callbackGraph = callbackGraph;
-    }
-
 
     /**
      * Gets the type.
@@ -130,8 +107,21 @@ public class InventoryCallbackRequest {
             validationResult.setMessage("credential is null");
         }
         else{
-            validationResult =  credential.validate();
+            validationResult = credential.validate();
         }
+        if( ! validationResult.isValid()) {
+            return validationResult;
+        }
+        validationResult.setValid(false); // reset validation flag
+        if(StringUtils.isBlank(callbackUri)) {
+            validationResult.setMessage("callback URI");
+            return validationResult;
+        }
+        if(StringUtils.isBlank(type)) {
+            validationResult.setMessage("type");
+            return validationResult;
+        }
+        validationResult.setValid(true);
         return validationResult;
     }
 
