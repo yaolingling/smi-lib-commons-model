@@ -17,8 +17,8 @@ ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
 buildscript {
    repositories {
     mavenLocal()
+    mavenCentral()
 	maven {
-		url "${artifactory_contextUrl}/${plugin_repo}"
 		url "https://plugins.gradle.org/m2/"
 	}
   }
@@ -67,9 +67,7 @@ task javadocJar(type: Jar) {
 
 repositories {
 	mavenLocal()
-	maven {
-	    url "${artifactory_contextUrl}/${dependency_repo}"
-	}
+	mavenCentral()
 }
 
 dependencies {
@@ -171,7 +169,7 @@ license {
 }
 
 artifactory {
-    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    //contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
         defaults{ publications ("mavenJava")}
         repository {
