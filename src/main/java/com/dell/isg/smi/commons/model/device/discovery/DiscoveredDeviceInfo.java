@@ -133,22 +133,4 @@ public class DiscoveredDeviceInfo {
     public void setSummary(Object summary) {
         this.summary = summary;
     }
-    
-    String buildDeviceSummaryExample() {
-    	StringBuilder data = new StringBuilder();
-		try {
-			Path path = Paths.get(getClass().getClassLoader().getResource("swagger-samples/device-summary.txt").toURI());
-			Stream<String> lines = Files.lines(path);
-	    	lines.forEach(line -> data.append(line).append("\n"));
-	    	lines.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}	
-    	return data.toString();
-    }
-
-    public static void main(String args[]) {
-    	DiscoveredDeviceInfo a = new DiscoveredDeviceInfo();
-    	System.out.println(a.buildDeviceSummaryExample());
-    }
 }
