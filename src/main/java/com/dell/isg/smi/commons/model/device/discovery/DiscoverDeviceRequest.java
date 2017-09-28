@@ -16,13 +16,13 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel(value = "DiscoverDeviceRequest", description = "IP range request  for device discovery. ")
 public class DiscoverDeviceRequest {
 
-    @ApiModelProperty(value = "Device type", required = false)
+    @ApiModelProperty(value = "Device type filter. Filter can SERVER / CHASSIS / SWITCH or STORAGE. By default all types would be selected. ", required = false)
     private String[] deviceType;
     @ApiModelProperty(value = "IP start range", required = true)
     private String deviceStartIp;
     @ApiModelProperty(value = "IP end range", required = true)
     private String deviceEndIp;
-    @ApiModelProperty(value = "Credential", required = false)
+    @ApiModelProperty(value = "Credential for all the devices for summary extraction.", required = false)
     private Credential credential;
 
 

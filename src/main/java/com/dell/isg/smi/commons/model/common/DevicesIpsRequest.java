@@ -20,10 +20,10 @@ public class DevicesIpsRequest {
     @ApiModelProperty(value = "Credential", required = false)
     private Credential credential;
 
-    @ApiModelProperty(value = "Device type", required = false)
+    @ApiModelProperty(value = "Device type filter. Filter can SERVER / CHASSIS / SWITCH or STORAGE. By default all types would be selected. ", required = false)
     private String[] deviceType;
 
-    @ApiModelProperty(value = "IP Array", required = true)
+    @ApiModelProperty(value = "List of valid IP's", required = true)
     String ips[];
 
 
