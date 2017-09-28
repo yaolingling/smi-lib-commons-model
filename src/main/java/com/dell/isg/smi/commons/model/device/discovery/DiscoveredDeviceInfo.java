@@ -3,6 +3,11 @@
  */
 package com.dell.isg.smi.commons.model.device.discovery;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -26,7 +31,7 @@ public class DiscoveredDeviceInfo {
 	@ApiModelProperty(value = "Discovery status . It could be any on these status . UNKNOWN : TIMEDOUT : STARTED(\"Started discovery process\") : DEVICE_IDENTFIED : NO_DEVICE(\"No device identifed\") : SUMMARY_INPROGRESS : DEVICE_DISCOVERED_SUMMARY_FAILED(\"Device is discovered without summary.\") : SUCCESS(\"Successfully discovered with device summary.\") : FAILED(\"Failed to discover\")", dataType = "string")
     String status = DiscoveryDeviceStatus.UNKNOWN.name();
 	
-	@ApiModelProperty(value = "Brief summary  for discovered device. Supported - SERVER,CHASSIS and STORAGE (Complellent) .Not supported SWITCH. ", dataType = "HwSystem.class")
+	@ApiModelProperty(value = "Brief summary  for discovered device. Refer 'Device Summary Response' for the details on summary schema.", dataType = "string", example ="")
     Object summary;
 
 
@@ -128,5 +133,22 @@ public class DiscoveredDeviceInfo {
     public void setSummary(Object summary) {
         this.summary = summary;
     }
+    
+    String buildDeviceSummaryExample() {
+    	StringBuilder data = new StringBuilder();
+		try {
+			Path path = Paths.get(getClass().getClassLoader().getResource("swagger-samples/device-summary.txt").toURI());
+			Stream<String> lines = Files.lines(path);
+	    	lines.forEach(line -> data.append(line).append("\n"));
+	    	lines.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
+    	return data.toString();
+    }
 
+    public static void main(String args[]) {
+    	DiscoveredDeviceInfo a = new DiscoveredDeviceInfo();
+    	System.out.println(a.buildDeviceSummaryExample());
+    }
 }
